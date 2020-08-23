@@ -1,0 +1,18 @@
+{
+  "name": "express.app",
+  "version": "1.0.0",
+  "description": "express is awesome | made by puji",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pujiermanto",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "netlify-lambda": "^2.0.1",
+    "serverless-http": "^2.5.0"
+  }
+}
