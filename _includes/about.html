@@ -102,11 +102,14 @@
               <div class="card-body">
                 <h5 id="card-title" class="card-title">{{author.name}}</h5>
                 <small class="text-success blockquote-footer">{{author.tagline}}</small>
-                <p class="card-text">{{author.bio}}.</p>
-                <p class="card-text"><small class="text-warning" style="color:">{{author.work}}</small><br/>
-                @my work <i class='fas fa-laptop'></i> : <a href="{{author.company}}" target="_blank">OurCitrus</a><br/>
-                @my blog <i class='fas fa-code'></i> : <a href="{{author.myblog}}" target="_blank">Codesyariah Blog</a>
-                </p>
+                <p class="card-tex text-justify">{{author.bio}}.</p>
+                <div id="author-work">
+                    <p class="card-text"><small class="text-warning">{{author.work}} : </small><br/>
+                    <span class="my-work text-white">@My-Work</span>&nbsp; <i class='fas fa-laptop text-success'></i> : <a href="{{author.company}}" target="_blank">OurCitrus</a><br/>
+                    <span class="my-blog text-white">@My Blog</span>&nbsp; <i class='fas fa-code text-danger'></i> : <a href="{{author.myblog}}" target="_blank">Codesyariah Blog</a>
+                    </p>  
+                </div>
+                
               </div>
             </div>
           </div>
