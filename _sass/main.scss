@@ -8,8 +8,9 @@
     width: 105%;
     box-shadow: .2rem .4rem rgb(189,183,107); 
     cursor: progress;
-    margin-left: -1.5rem;
-    margin-top: 7rem;
+    margin-left: .3rem;
+    margin-top: .5rem;
+    display: flex;
     .my-work{
         margin-right: -.3rem;
     }
@@ -19,8 +20,11 @@
 }
 
 #post-list{
+    background: rgb(238,232,170);
+    border: none;
+    color: #A0522D;
     margin-top: -3.5rem;
-    box-shadow: .3rem .5rem rgba(41, 255, 0, 0.8);
+    box-shadow: .3rem .5rem rgba(212, 111, 0, 0.8);
     cursor: pointer;
     font-family: 'Fira Code', monospace;
 }
@@ -28,10 +32,10 @@
     color: #BC8F8F;
 }
 #post-list:hover{
-    background: rgb(238,232,170);
-    color: #A0522D;
+    background: rgb(239,235,235);
+    color: rgb(105,105,105);
     border:none;
-    box-shadow: .3rem .5rem rgba(212, 111, 0, 0.8);
+    box-shadow: .3rem .5rem rgba(41, 255, 0, 0.8);
     font-family: 'Source Code Pro', monospace;
 }
 
