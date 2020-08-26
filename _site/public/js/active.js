@@ -4,8 +4,10 @@ function activeNav(base){
            let item = document.getElementsByClassName('sidebar-nav-item')[i].getAttribute('href');
            let url = location.href;
            let baseUrl = base;
+           
+           console.log(url);
 
-        if(url === baseUrl+item){
+        if(url == baseUrl+item){
         	console.log(url+" : "+baseUrl+item);
             document.getElementsByClassName('sidebar-nav-item')[i].classList.add('active');
         }
