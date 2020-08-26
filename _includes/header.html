@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon.ico">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Lobster&family=Rambla&family=Satisfy&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="{{'/public/css/main.css' | absolute_url}}">
+      <link rel="stylesheet" href="{{'/public/css/hyde.css' | absolute_url}}">
+      <link rel="stylesheet" href="{{'/public/css/poole.css' | absolute_url}}">
+<!--       <link rel="stylesheet" type="text/css" href="{{'/public/css/mode_theme.css' | absolute_url}}"> -->
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <style type="text/css">
+        
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+
+        :root {
+          --primary-color: #302AE6;
+          --secondary-color: #536390;
+          --font-color: #424242;
+          --bg-color: #fff;
+          --heading-color: #FFF7BF;
+          --checked-color: #E6C900;
+          --link-hover-color: #F08080;
+          --link-color:#F08080;
+          --post-title-color: #283747;
+          --small-color:#283747;
+          --social-color:#D2691E;
+          --social-background-color: #FFDEAD;
+        }
+
+        [data-theme="dark"]{
+          --primary-color: #9A97F3;
+          --secondary-color: #818cab;
+          --font-color: #FF6347;
+          --bg-color: #161625;
+          --heading-color: #CD5C5C;
+          --li-color: #C8C8C1;
+          --p-color: #99a304;
+          --card-header-color: #2e4053;
+          --collapse-color: #283747;
+          --post-title-color: #e5e7e9;
+          --link-hover-color: #f0b27a;
+          --link-color:#FFE4B5;
+          --small-color:#FFE4E1;
+          --social-color:#8B4513;
+          --social-background-color: #DEB887;
+        }
+
+        .social-work{
+          text-decoration: none !important;
+        }
+        .social-work:hover{
+          background-color: var(--social-background-color)!important;
+          color: var(--social-color) !important;
+          border-radius: 10px;
+          width:10px;
+          height: 10px;
+        }
+
+        b{
+          color: var(--font-color)!important;
+        }
+        em{
+          color: var(--font-color)!important;
+        }
+        strong{
+          color: var(--font-color)!important;
+        }
+        
+        small{
+          color: var(--small-color);
+        }
+        .post-link{
+          color: var(--post-title-color) !important;
+        }
+
+        .card-header{
+          background-color: var(--card-header-color);
+          border:none;
+        }
+        .card-text{
+          color:var(--small-color)!important;
+        }
+        .card-body{
+          color:var(--small-color)!important;
+        }
+        .collapse{
+          background-color: var(--collapse-color);
+        }
+
+       
+        a:hover{
+          color: var(--link-hover-color) !important;
+        }
+
+        .card-body a{
+          color: var(--link-color) !important;
+        }
+
+        body{
+          font-family : "lato", sans-serif;
+          background-color: var(--bg-color);
+          color: var(--font-color);
+          max-width: 90%;
+          margin: 0 auto;
+          font-size: calc(1rem + 0.15vh);
+        }
+
+        h1, h2, h3, h4, h5{
+          color: var(--post-title-color);
+          font-family: "Sansita One", serif;
+          font-size: 2rem;
+          margin-bottom: 1.25vh;
+        }
+
+        li .card-body {
+          color: var(--font-color);
+        }
+
+
+        .theme-switch-wrapper{
+          display: flex;
+          align-items: center;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          margin-left: -3em;
+
+          em{
+            margin-left: 10.25px;
+            font-size: 1rem;
+            margin-top: -1.5rem;
+          }
+
+        }
+
+        .theme-switch {
+          display: inline-block;
+          height: 34px;
+          position: relative;
+          width: 60px;
+        }
+
+        .theme-switch input {
+          display:none;
+        }
+
+        .slider {
+          background-color: #A9A9A9;
+          bottom: 0;
+          cursor: pointer;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transition: .4s;
+        }
+
+        .slider:before {
+          background-color: moccasin;
+          bottom: 4px;
+          content: "";
+          height: 26px;
+          left: 4px;
+          position: absolute;
+          transition: .4s;
+          width: 26px;
+        }
+
+        input:checked + .slider {
+          background-color: var(--checked-color);
+        }
+
+        input:checked + .slider:before {
+          transform: translateX(26px);
+        }
+
+        .slider.round {
+          border-radius: 34px;
+        }
+
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        .trans{
+          transition: 2s;
+        }
+
+        .btn-render{
+          justify-content: space-between !important;
+          margin-bottom: 1rem;
+        }
+        .btn-render:hover{
+          color:var(--font-color) !important;
+        }
+
+      </style>
+      
+ <title>{{site.title}}</title>
+
+</head>
+
+  <body>
+  
+    {% assign author = site.author %}        
+
+    <div class="sidebar">
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+          <h1 id="name">
+            <a href="/">
+              {{site.title}}
+            </a>
+          </h1>
+            <p class="lead tagline">{{author.tagline}}</p>
+        </div>
+
+        <nav class="sidebar-nav">
+              <a id="home" class="sidebar-nav-item" href="/">Home</a>
+              
+              <a id="about" class="sidebar-nav-item" href="/about/">About</a>
+
+              <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
+              
+              <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
+
+        </nav>
+
+       
+          <div id="social-media">
+                 {% include social.html %}    
+          </div>
+
+
+
+        <p class="small">&copy; {{page.date | date: "%Y"}}
+           <a href='mailto:{{author.email}}'>{{author.name}}.</a>  All rights reserved.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+ 

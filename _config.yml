@@ -1,0 +1,82 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Puji
+author: 
+    name: Puji Ermanto
+    email: pujiermanto@gmail.com
+    tagline: coffe again script again
+description: >- # this means to ignore newlines until "baseurl:"
+  I'am web developer at ourcitrus by PT. Gemilang Citrus Berjaya
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://pujiermanto.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: pujiermanto
+github_username:  codesyariah122
+show_excerpts: true
+minima:
+  date_format: "%b %-d, %Y"
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+
+social_links:
+  twitter: pujiermanto
+  github:  codesyariah122
+
+paginate: 3
+paginate_path: /blog/page:num/
+excerpt_separator: <!--more-->
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+theme: minima
+
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true   # change to false to default to comments off site-wide
+      published: true  # default to published
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: codesyariah122-github-io
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+   - Gemfile
+   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

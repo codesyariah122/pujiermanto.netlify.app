@@ -1,0 +1,29 @@
+{
+    "projects" :
+    {
+        "project1":
+        {
+            "name" : "DNA Bisnis",
+            "url" : "https://dna-bisnis.com/",
+            "tagline": "lorem ipsum"
+        },
+        "project2" :
+        {
+            "name" : "GNet Network",
+            "url" : "https://gnet-network.ourcitrus.id/",
+            "tagline" : "lorem ipsum"
+        },
+        "project3" :
+        {
+            "name" : "Stylishtic By OurCitrus",
+            "url" : "https://stylishtic.com/",
+            "tagline" : "lorem ipsum"
+        }, 
+        "project4" :
+        {
+            "name" : "PT. Gemilang Citrus Berjaya",
+            "url" : "https://ourcitrus.id",
+            "tagline": "For Today And Future"
+        }
+    }
+}

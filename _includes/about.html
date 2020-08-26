@@ -1,0 +1,172 @@
+<style type="text/css">
+  .speech-bubble {
+  position: relative;
+  background: #00aabb;
+  border-radius: .4em;
+}
+
+.speech-bubble:after {
+  content: 'halo';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 68px solid transparent;
+  border-top-color: #00aabb;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -34px;
+  margin-bottom: -68px;
+}
+.is-visible {
+  display: block;
+  height: auto;
+  opacity: 1;
+}
+/*.fade {
+    opacity: 0;
+    transition: none;
+}*/
+</style>
+
+{% assign author = site.data.about[page.author] %}
+<div class="container">
+
+    <div class="row">
+    
+    <div class="col">
+      
+      <div class="theme-switch-wrapper">
+        
+        <label class="theme-switch" for="checkbox">
+
+          <input type="checkbox" id="checkbox">
+          
+          <div class="slider round"></div>
+
+        </label>
+
+        <em class="ml-2">Enable Dark Mode !</em>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="visitor">
+    <div id="namakamu" class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
+  </div>
+  
+    <div class="col">
+        <h1 class="text-info">{{page.title1}}</h1>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Halo🙏</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap 🍜</label>
+            <input type="text" autocomplete="off" id="nama" name="nama" class="form-control" placeholder="Nama Lengkap Anda">
+            <input type="text" id="namamu" name="namamu" class="form-control" placeholder="">
+            <small id="emailHelp" class="form-text text-muted">Isi nama lengkap anda. ⌨📋</small>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="submit" class="btn btn-primary">Submit 🔓</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="row justify-content-center">
+      <div class="col-xs-6 col-sm">
+        <div class="card mb-3" style="max-width: 540px; background-color: var(--card-header-color);">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="{{'/public/images/bio/' | absolute_url}}{{author.image}}" class="img-thumbnail img-fluid rounded mx-auto d-block img-responsive" alt="{{author.name}}">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 id="card-title" class="card-title">{{author.name}}</h5>
+                <small class="text-success blockquote-footer">{{author.tagline}}</small>
+                <p class="card-text">{{author.bio}}.</p>
+                <p class="card-text"><small class="text-warning" style="color:">{{author.work}}</small><br/>
+                @my work <i class='fas fa-laptop'></i> : <a href="{{author.company}}" target="_blank">OurCitrus</a><br/>
+                @my blog <i class='fas fa-code'></i> : <a href="{{author.myblog}}" target="_blank">Codesyariah Blog</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-xs-6 col-md">
+    <h1 class="text-info">{{page.title2}}</h1>
+
+      {% assign data = site.data.about[page.data1] %}
+        <h4 class="blockquote-footer">Version Control</h4>
+        <label>Git : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my git skill" data-progress="git" class="progress-bar progress-bar-striped progress-bar-animated {% if data.git <= 75 %} bg-danger {% else %} bg-success {% endif %}" role="progressbar" aria-valuenow="{{data.git}}" aria-valuemin="0" aria-valuemax="100">{{data.git}}%</div>
+          </div>
+          {% assign data = site.data.about[page.data2] %}
+          <h4 class="blockquote-footer mt-4">Programming Language</h4>
+          <label>Javascript : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my javascript skill" data-progress="javascript" class="progress-bar progress-bar-striped progress-bar-animated {% if data.javascript <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.javascript}}" aria-valuemin="0" aria-valuemax="100">{{data.javascript}}%</div>
+          </div>
+          <label>Ruby : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my ruby skill" data-progress="ruby" class="progress-bar progress-bar-striped progress-bar-animated {% if data.ruby <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.ruby}}" aria-valuemin="0" aria-valuemax="100">{{data.ruby}}%</div>
+          </div>
+          <label>PHP : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my php skill" data-progress="php" class="progress-bar progress-bar-striped progress-bar-animated {% if data.php <= 50 %} bg-warning {% else %} bg-success {% endif %}" role="progressbar" aria-valuenow="{{data.php}}" aria-valuemin="0" aria-valuemax="100">{{data.php}}%</div>
+          </div>
+
+          {% assign data = site.data.about[page.data3] %}
+          <h4 class="blockquote-footer mt-4">Framework</h4>
+          <label>Codeigniter : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my codeigniter skill"data-progress="codeigniter" class="progress-bar progress-bar-striped progress-bar-animated {% if data.codeigniter <= 50 %} bg-warning {% else %} bg-danger {% endif %}" role="progressbar" aria-valuenow="{{data.codeigniter}}" aria-valuemin="0" aria-valuemax="100">{{data.codeigniter}}%</div>
+          </div>
+          <label>Rails : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my rails skill" data-progress="rails" class="progress-bar progress-bar-striped progress-bar-animated {% if data.rails <= 50 %} bg-warning {% else %} bg-danger {% endif %}" role="progressbar" aria-valuenow="{{data.rails}}" aria-valuemin="0" aria-valuemax="100">{{data.rails}}%</div>
+          </div>
+          <label>Laravel : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my laravel skill" data-progress="laravel" class="progress-bar progress-bar-striped progress-bar-animated {% if data.laravel <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.laravel}}" aria-valuemin="0" aria-valuemax="100">{{data.laravel}}%</div>
+          </div>
+
+          {% assign data = site.data.about[page.data4] %}
+          <h4 class="blockquote-footer mt-4">CMS</h4>
+          <label>Jekyll : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my jekyll skill" data-progress="jekyll" class="progress-bar progress-bar-striped progress-bar-animated {% if data.jekyll <= 50 %} bg-warning {% else %} bg-danger {% endif %}" role="progressbar" aria-valuenow="{{data.jekyll}}" aria-valuemin="0" aria-valuemax="100">{{data.jekyll}}%</div>
+          </div>
+          <label>wordpress : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="click here to see my wordpress skill" data-progress="wordpress" class="progress-bar progress-bar-striped progress-bar-animated {% if data.wordpress <= 50 %} bg-warning {% else %} bg-success {% endif %}" role="progressbar" aria-valuenow="{{data.wordpress}}" aria-valuemin="0" aria-valuemax="100">{{data.wordpress}}%</div>
+          </div>
+
+    </div>
+
+  </div>

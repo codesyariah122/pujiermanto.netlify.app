@@ -1,0 +1,21 @@
+puji:
+  name: Puji Ermanto
+  image: uji.jpg
+  work: Fullstack Dev
+  myblog: https://codesyariah122.github.io
+  company: https://ourcitrus.id
+  tagline: coffee again script again
+  bio: Hello World ! Myname is Puji Ermanto I'm fullstack web dev at ourcitrus by PT. Gemilang Citrus Berjaya.
+version-control:
+   git: 75
+programming-language:
+  javascript: 80
+  ruby: 35
+  php: 85
+framework:
+  codeigniter: 85
+  rails: 35
+  laravel: 35
+cms:
+  jekyll: 80
+  wordpress: 65

@@ -1,0 +1,168 @@
+<div class="container">
+
+    <div class="row">
+    
+    <div class="col">
+      
+      <div class="theme-switch-wrapper">
+        
+        <label class="theme-switch" for="checkbox">
+
+          <input type="checkbox" id="checkbox">
+          
+          <div class="slider round"></div>
+
+        </label>
+
+        <em class="ml-2">Enable Dark Mode !</em>
+
+      </div>
+
+    </div>
+
+  </div>      
+
+<div class="row">
+    <div class="col">
+        <h1 class="text-info">{{page.title}}</h1>
+    </div>
+        <button id="generate_pdf" class="btn btn-outline-warning btn-sm btn-render">Generate PDF</button>
+</div>
+    
+</div>
+
+<div id="animated"></div>
+
+<div id="cv_resume"></div>
+
+
+<div class="resume_view">
+    <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Introduce
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+            {% assign intro = site.data.resume[page.data1] %}
+            <div class="row">
+                <div class="col-xs-6">
+                    <ul>
+                            <li>Name : {{ intro.nama }}</li>
+                            <li>Age : {{ intro. usia }} Tahun</li>
+                            <li>Gender : {{ intro.gender }}</li>
+                            <li>Religion : {{ intro.religion }}</li>
+                            <li>Height : {{ intro.tinggi }} Cm</li>
+                            <li>Weight : {{ intro.berat }} Kg</li>
+                            <li>Domicile : {{ intro.domisili }}</li>
+                            <li>Phone : {{ intro.phone }}</li>
+                            <li>Email : {{ intro.email }}</li>
+                            <li>Website : {{ intro.website }}</li>
+                        </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{site.url}}/public/images/{{intro.img}}" class="img-thumbnail img-responsive ml-5" width="150" height="200">
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Education
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+            {% assign intro = site.data.resume[page.data2] %}
+
+                    <ul>
+                            <li>High School : {{ intro.sma }}</li>
+                            <li>Majors : {{ intro.jurusan }}</li>
+                    </ul>
+                    <ul>
+                        <li>College : {{ intro.college }}</li>
+                        <li>Majors : {{intro.majors}}</li>
+
+                    </ul>
+
+                    <ul>
+                        <li>Courses : {{intro.courses}}</li>
+                        <li>Focus : {{intro.focus}}</li>
+                    </ul>
+
+        </div><!-- end card body -->
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Experience
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            {% assign data = site.data.resume[page.data3] %}
+                    <ul>
+                        {% for exp in data[page.exp1] %}
+                            <li>{{ exp }}</li>
+                            {% endfor %}
+                            <li class="text-success">Work Repository : </li>
+                            {% assign repo = site.data.resume[page.repositori] %} 
+                            <ul>
+                                {% for work in repo[page.repo1] %}
+                                <li>
+                                    {{work}}
+                                </li>
+                                {% endfor %}
+                                </hr>
+
+                            </ul>
+                    </ul>
+        
+                    <ul class="mt-5">
+                        {% for exp in data[page.exp2] %}
+                            <li>{{ exp }}</li>
+                            {% endfor %}
+                            <li>Work Repository : </li>
+                            {% assign repo2 = site.data.resume[page.repositori] %} 
+                            <ul>
+                                {% for work in repo2[page.repo2] %}
+                                <li>
+                                    {{work}}
+                                </li>
+                                {% endfor %}
+                                </hr> 
+                            </ul>
+                    </ul>
+
+                    <ul class="mt-5">
+                        {% for exp in data[page.exp3] %}
+                            <li>{{ exp }}</li>
+                            {% endfor %}
+                             {% assign repo3 = site.data.resume[page.repositori] %} 
+                            <ul>
+                                {% for work in repo3[page.repo3] %}
+                                <li>
+                                    {{work}}
+                                </li>
+                                {% endfor %}
+                                </hr> 
+                            </ul>
+                    </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>   

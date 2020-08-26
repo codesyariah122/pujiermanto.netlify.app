@@ -1,0 +1,24 @@
+<button id="exit_pdf" class="btn btn-danger btn-block btn-sm btn-render">Exit PDF</button>
+   <div class="embed-responsive embed-responsive-4by3">
+  		<iframe class="embed-responsive-item" src="..."></iframe>
+  		<iframe class="embed-responsive-item" src="https://pujiermanto.netlify.app/public/file/resume_puji.pdf"></iframe>
+
+	</div> 
+     
+<!-- <embed src="https://pujiermanto.netlify.app/public/file/resume_puji.pdf" type="application/pdf" height="700px" width="680"> -->
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#exit_pdf').click(function(){
+		$('#cv_resume').hide('slow').fadeOut(1000);
+		$('#animated').load('https://pujiermanto.netlify.app/public/file/animated2.html').fadeIn(1000);
+		setTimeout(function(){
+			$('#animated').hide('slow').fadeOut(1000);
+			$('.resume_view').show().fadeIn(1000);
+		}, 2500);
+	})
+})
+	
+</script>

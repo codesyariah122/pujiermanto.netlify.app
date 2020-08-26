@@ -1,0 +1,15 @@
+{
+    "projects" : 
+    {
+        "project1":
+        {
+            "name" : "DNA Bisnis(eccommerce)",
+            "url" : "https://dna-bisnis.com/"
+        },
+        "project2":
+        {
+            "name": "GNet Network",
+            "url": "https://gnet-network.netlify.app"
+        }
+    }
+}

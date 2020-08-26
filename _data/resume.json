@@ -1,0 +1,67 @@
+{
+  "intro" : 
+  {
+    "img" : "uji.jpg",
+    "nama" : "Puji Ermanto",
+    "usia" : 32,
+    "gender" : "Laki-laki",
+    "religion" : "Islam",
+    "tinggi" : 169,
+    "berat" : 60,
+    "domisili": "Cimahi",
+    "phone" : "0882-2266-8778",
+    "email" : "pujiermanto@gmail.com",
+    "website" : "codesyariah122.github.io"
+  },
+
+  "education" : 
+  {
+    "sma" : "SMA PASUNDAN 4 Bandung",
+    "jurusan" : "Social",
+    "college" : "Akademi Telekomunikasi Bogor",
+    "majors" : "System Informatika",
+    "courses" : "Yayasan Qalbu Salim",
+    "focus" : "Web Programming & Web Design"
+  },
+
+  "experience" : 
+  {
+    "exp1" : {
+    "Company : " : "PT. Gemilang Citrus Berjaya",
+    "Division : " : "Web Developer",
+    "Year : " : "2018-Now"
+    },
+    "exp2" : {
+      "Company : " : "GNet Network",
+      "Division : " : "Sysadmin",
+      "Year : ": "2015-2017"
+    },
+    "exp3" : {
+      "Company : " : "HypeMedia Dev",
+      "Division : " : "Network Tech",
+      "Year : " : "2013-2015"
+    }
+  },
+
+  "repo" : {
+    "ourcitrus" : 
+    {
+      "Codeigniter Blogging => " : "<a href='https://github.com/codesyariah122/codeigniter_blogging' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View repo</a>",
+      "Email Services => " : "<a href='https://github.com/codesyariah122/phpmailer_ourcitrus' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
+      "Point Of Sales => " : "<a href='https://github.com/codesyariah122/point-of-sales-edit' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
+      "Web Design => " : "<a href='https://github.com/codesyariah122/ourcitrus_new' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
+      "Template Library => " : "<a href='https://github.com/codesyariah122/ourcitrus_template_library' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i> View Repo </a>",
+      "System Polling => " : "<a href='https://github.com/codesyariah122/system_polling' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>"
+    },
+    "gnet" : 
+    {
+      "GNet Network / Kab.Bandung => " : "<a href='https://github.com/codesyariah122/server_pujiermanto' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>"
+    },
+       "hype" : 
+    {
+      "Hype Media Network / Bogor => " : "<a href='https://github.com/codesyariah122/proxy-pujiermanto-files' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>"
+    }
+  }
+
+
+}

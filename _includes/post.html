@@ -1,0 +1,53 @@
+ <div class="row">
+    
+    <div class="col">
+      
+      <div class="theme-switch-wrapper">
+        
+        <label class="theme-switch" for="checkbox">
+
+          <input type="checkbox" id="checkbox">
+          
+          <div class="slider round"></div>
+
+        </label>
+
+        <em class="ml-2">Enable Dark Mode !</em>
+
+      </div>
+
+    </div>
+
+  </div>
+
+{{content}}
+
+<div class="container">
+
+	<div class="row justify-content-center">
+		<div class="col-xs-4 mt-5 mb-5">
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination">
+			  	<li class="page-item">
+			  		<a href="{{ page.previous.url }}" class="page-link text-danger">
+			  		<div><i class="fas fa-fw fa-chevron-left"></i> Previous Post</div>
+					</a>
+				</li>
+
+				<li class="page-item">
+					<a href="{{ page.next.url }}" class="page-link text-success">
+					  <div>Newer Post <i class="fas fa-fw fa-chevron-right"></i></div>
+					</a>
+				</li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
+
+
+</div>

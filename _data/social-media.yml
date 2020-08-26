@@ -1,0 +1,24 @@
+email:
+  id: 'pujiermanto'
+  href: 'mailto:pujiermanto@gmail.com'
+  title: 'Email'
+  fa-icon: 'fa-envelope-square fa-fw'
+
+twitter:
+  id: 'pujiermanto'
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fab fa-twitter-square fa-fw'
+
+github:
+  id: 'codesyariah122'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fas fa-code-branch fa-fw'
+
+stackoverflow:
+  id: 'puji-ermanto'
+  href: 'https://stackoverflow.com/users/13602184/puji-ermanto'
+  title: 'StackOverFlow'
+  fa-icon: 'fab fa-stack-overflow fa-fw'
+

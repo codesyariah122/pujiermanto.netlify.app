@@ -1,0 +1,40 @@
+---
+---
+
+{% include header.html %}
+<main class="page-content" aria-label="Content">
+
+  <div class="row">
+    
+    <div class="col">
+      
+      <div class="theme-switch-wrapper">
+        
+        <label class="theme-switch" for="checkbox">
+
+          <input type="checkbox" id="checkbox">
+          
+          <div class="slider round"></div>
+
+        </label>
+
+        <em class="ml-2">Enable Dark Mode !</em>
+
+      </div>
+
+    </div>
+
+  </div>
+
+      <div class="wrapper content container">
+        	<div class="home">
+    			<div class="posts">
+    				<div class="row justify-content-center">
+    					<div class="col-xs-6 col-sm">
+				{{content}}
+			</div>	
+		</div>
+      </div>
+    </div>
+</main>
+{% include footer.html %}

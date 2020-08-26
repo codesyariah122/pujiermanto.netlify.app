@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>installing ruby | Puji</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="installing ruby" />
+<meta name="author" content="puji" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="installing ruby on debian curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list sudo apt-get update sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs yarn git clone https://github.com/rbenv/rbenv.git ~/.rbenv echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bashrc exec $SHELL git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build echo &#39;export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc exec $SHELL rbenv install 2.4.2 rbenv global 2.4.2 gem install bundler gem install rails rbenv rehash gem update --system installing ruby using rbenv Rbenv is a lightweight Ruby version management tool which allows you to easily switch Ruby versions. By default Rbenv doesn’t handle installing Ruby versions so we also need to install ruby-build which is a tool that helps you to install any version of Ruby you may need. It is available as a standalone program and as a plugin for rbenv. To install Ruby using the Rbenv script, follow these steps: First, update the packages index and install the packages required for the ruby-build tool to build Ruby from source: apt update apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev Next, run the following curl command to install both rbenv and ruby-build: curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash - Add $HOME/.rbenv/bin to the user PATH. If you are using Bash, run: echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bashrc source ~/.bashrc If you are using Zsh run: echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.zshrc source ~/.zshrc Install the latest stable version of Ruby and set it as a default version with rbenv install 2.5.1 rbenv global 2.5.1 To list all available Ruby versions you can use: rbenv install -l Verify that Ruby was properly installed by printing the version number: ruby -v output: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]" />
+<meta property="og:description" content="installing ruby on debian curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list sudo apt-get update sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs yarn git clone https://github.com/rbenv/rbenv.git ~/.rbenv echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bashrc exec $SHELL git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build echo &#39;export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc exec $SHELL rbenv install 2.4.2 rbenv global 2.4.2 gem install bundler gem install rails rbenv rehash gem update --system installing ruby using rbenv Rbenv is a lightweight Ruby version management tool which allows you to easily switch Ruby versions. By default Rbenv doesn’t handle installing Ruby versions so we also need to install ruby-build which is a tool that helps you to install any version of Ruby you may need. It is available as a standalone program and as a plugin for rbenv. To install Ruby using the Rbenv script, follow these steps: First, update the packages index and install the packages required for the ruby-build tool to build Ruby from source: apt update apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev Next, run the following curl command to install both rbenv and ruby-build: curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash - Add $HOME/.rbenv/bin to the user PATH. If you are using Bash, run: echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bashrc source ~/.bashrc If you are using Zsh run: echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.zshrc source ~/.zshrc Install the latest stable version of Ruby and set it as a default version with rbenv install 2.5.1 rbenv global 2.5.1 To list all available Ruby versions you can use: rbenv install -l Verify that Ruby was properly installed by printing the version number: ruby -v output: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]" />
+<link rel="canonical" href="http://localhost:4000/ruby/2020/05/27/Installing-Ruby.html" />
+<meta property="og:url" content="http://localhost:4000/ruby/2020/05/27/Installing-Ruby.html" />
+<meta property="og:site_name" content="Puji" />
+<meta property="og:image" content="http://localhost:4000/public/images/post/ruby.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-27T00:00:00+07:00" />
+<script type="application/ld+json">
+{"description":"installing ruby on debian curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list sudo apt-get update sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs yarn git clone https://github.com/rbenv/rbenv.git ~/.rbenv echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bashrc exec $SHELL git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build echo &#39;export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc exec $SHELL rbenv install 2.4.2 rbenv global 2.4.2 gem install bundler gem install rails rbenv rehash gem update --system installing ruby using rbenv Rbenv is a lightweight Ruby version management tool which allows you to easily switch Ruby versions. By default Rbenv doesn’t handle installing Ruby versions so we also need to install ruby-build which is a tool that helps you to install any version of Ruby you may need. It is available as a standalone program and as a plugin for rbenv. To install Ruby using the Rbenv script, follow these steps: First, update the packages index and install the packages required for the ruby-build tool to build Ruby from source: apt update apt install git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev Next, run the following curl command to install both rbenv and ruby-build: curl -sL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash - Add $HOME/.rbenv/bin to the user PATH. If you are using Bash, run: echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bashrc source ~/.bashrc If you are using Zsh run: echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.zshrc echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.zshrc source ~/.zshrc Install the latest stable version of Ruby and set it as a default version with rbenv install 2.5.1 rbenv global 2.5.1 To list all available Ruby versions you can use: rbenv install -l Verify that Ruby was properly installed by printing the version number: ruby -v output: ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]","url":"http://localhost:4000/ruby/2020/05/27/Installing-Ruby.html","headline":"installing ruby","dateModified":"2020-05-27T00:00:00+07:00","@type":"BlogPosting","datePublished":"2020-05-27T00:00:00+07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ruby/2020/05/27/Installing-Ruby.html"},"image":"http://localhost:4000/public/images/post/ruby.png","author":{"@type":"Person","name":"puji"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Puji" /></head>
+<body><!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="http://localhost:4000/favicon.ico">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Lobster&family=Rambla&family=Satisfy&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="http://localhost:4000/public/css/main.css">
+      <link rel="stylesheet" href="http://localhost:4000/public/css/hyde.css">
+      <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+<!--       <link rel="stylesheet" type="text/css" href="http://localhost:4000/public/css/mode_theme.css"> -->
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <style type="text/css">
+        
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+
+        :root {
+          --primary-color: #302AE6;
+          --secondary-color: #536390;
+          --font-color: #424242;
+          --bg-color: #fff;
+          --heading-color: #FFF7BF;
+          --checked-color: #E6C900;
+          --link-hover-color: #F08080;
+          --link-color:#F08080;
+          --post-title-color: #283747;
+          --small-color:#283747;
+          --social-color:#D2691E;
+          --social-background-color: #FFDEAD;
+        }
+
+        [data-theme="dark"]{
+          --primary-color: #9A97F3;
+          --secondary-color: #818cab;
+          --font-color: #FF6347;
+          --bg-color: #161625;
+          --heading-color: #CD5C5C;
+          --li-color: #C8C8C1;
+          --p-color: #99a304;
+          --card-header-color: #2e4053;
+          --collapse-color: #283747;
+          --post-title-color: #e5e7e9;
+          --link-hover-color: #f0b27a;
+          --link-color:#FFE4B5;
+          --small-color:#FFE4E1;
+          --social-color:#8B4513;
+          --social-background-color: #DEB887;
+        }
+
+        .social-work{
+          text-decoration: none !important;
+        }
+        .social-work:hover{
+          background-color: var(--social-background-color)!important;
+          color: var(--social-color) !important;
+          border-radius: 10px;
+          width:10px;
+          height: 10px;
+        }
+
+        b{
+          color: var(--font-color)!important;
+        }
+        em{
+          color: var(--font-color)!important;
+        }
+        strong{
+          color: var(--font-color)!important;
+        }
+        
+        small{
+          color: var(--small-color);
+        }
+        .post-link{
+          color: var(--post-title-color) !important;
+        }
+
+        .card-header{
+          background-color: var(--card-header-color);
+          border:none;
+        }
+        .card-text{
+          color:var(--small-color)!important;
+        }
+        .card-body{
+          color:var(--small-color)!important;
+        }
+        .collapse{
+          background-color: var(--collapse-color);
+        }
+
+       
+        a:hover{
+          color: var(--link-hover-color) !important;
+        }
+
+        .card-body a{
+          color: var(--link-color) !important;
+        }
+
+        body{
+          font-family : "lato", sans-serif;
+          background-color: var(--bg-color);
+          color: var(--font-color);
+          max-width: 90%;
+          margin: 0 auto;
+          font-size: calc(1rem + 0.15vh);
+        }
+
+        h1, h2, h3, h4, h5{
+          color: var(--post-title-color);
+          font-family: "Sansita One", serif;
+          font-size: 2rem;
+          margin-bottom: 1.25vh;
+        }
+
+        li .card-body {
+          color: var(--font-color);
+        }
+
+
+        .theme-switch-wrapper{
+          display: flex;
+          align-items: center;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          margin-left: -3em;
+
+          em{
+            margin-left: 10.25px;
+            font-size: 1rem;
+            margin-top: -1.5rem;
+          }
+
+        }
+
+        .theme-switch {
+          display: inline-block;
+          height: 34px;
+          position: relative;
+          width: 60px;
+        }
+
+        .theme-switch input {
+          display:none;
+        }
+
+        .slider {
+          background-color: #A9A9A9;
+          bottom: 0;
+          cursor: pointer;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transition: .4s;
+        }
+
+        .slider:before {
+          background-color: moccasin;
+          bottom: 4px;
+          content: "";
+          height: 26px;
+          left: 4px;
+          position: absolute;
+          transition: .4s;
+          width: 26px;
+        }
+
+        input:checked + .slider {
+          background-color: var(--checked-color);
+        }
+
+        input:checked + .slider:before {
+          transform: translateX(26px);
+        }
+
+        .slider.round {
+          border-radius: 34px;
+        }
+
+        .slider.round:before {
+          border-radius: 50%;
+        }
+        .trans{
+          transition: 2s;
+        }
+
+        .btn-render{
+          justify-content: space-between !important;
+          margin-bottom: 1rem;
+        }
+        .btn-render:hover{
+          color:var(--font-color) !important;
+        }
+
+      </style>
+      
+ <title>Puji</title>
+
+</head>
+
+  <body>
+  
+            
+
+    <div class="sidebar">
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+          <h1 id="name">
+            <a href="/">
+              Puji
+            </a>
+          </h1>
+            <p class="lead tagline">coffe again script again</p>
+        </div>
+
+        <nav class="sidebar-nav">
+              <a id="home" class="sidebar-nav-item" href="/">Home</a>
+              
+              <a id="about" class="sidebar-nav-item" href="/about/">About</a>
+
+              <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
+              
+              <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
+
+        </nav>
+
+       
+          <div id="social-media">
+                 
+    
+    
+        
+        
+<a href="mailto:pujiermanto@gmail.compujiermanto" class="social" title="Email">
+	<i class="fa fa-envelope-square fa-fw"></i></a>
+        
+    
+        
+        
+<a href="https://www.twitter.com/pujiermanto" class="social" title="Twitter">
+	<i class="fa fab fa-twitter-square fa-fw"></i></a>
+        
+    
+        
+        
+<a href="https://github.com/codesyariah122" class="social" title="GitHub">
+	<i class="fa fas fa-code-branch fa-fw"></i></a>
+        
+    
+        
+        
+<a href="https://stackoverflow.com/users/13602184/puji-ermantopuji-ermanto" class="social" title="StackOverFlow">
+	<i class="fa fab fa-stack-overflow fa-fw"></i></a>
+        
+    
+    
+          </div>
+
+
+
+        <p class="small">&copy; 2020
+           <a href='mailto:pujiermanto@gmail.com'>Puji Ermanto.</a>  All rights reserved.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+ <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+         <div class="row">
+    
+    <div class="col">
+      
+      <div class="theme-switch-wrapper">
+        
+        <label class="theme-switch" for="checkbox">
+
+          <input type="checkbox" id="checkbox">
+          
+          <div class="slider round"></div>
+
+        </label>
+
+        <em class="ml-2">Enable Dark Mode !</em>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<p><img src="http://localhost:4000/public/images/post/ruby.png" alt="rails2" /></p>
+<h2 id="installing-ruby-on-debian">installing ruby on debian</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">curl</span> <span class="o">-</span><span class="n">sL</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">deb</span><span class="p">.</span><span class="nf">nodesource</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">setup_8</span><span class="p">.</span><span class="nf">x</span> <span class="o">|</span> <span class="n">sudo</span> <span class="o">-</span><span class="no">E</span> <span class="n">bash</span> <span class="o">-</span>
+<span class="n">curl</span> <span class="o">-</span><span class="n">sS</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">dl</span><span class="p">.</span><span class="nf">yarnpkg</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">debian</span><span class="o">/</span><span class="n">pubkey</span><span class="p">.</span><span class="nf">gpg</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">key</span> <span class="n">add</span> <span class="o">-</span>
+<span class="n">echo</span> <span class="s2">"deb https://dl.yarnpkg.com/debian/ stable main"</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="sr">/etc/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="p">.</span><span class="nf">list</span><span class="p">.</span><span class="nf">d</span><span class="o">/</span><span class="n">yarn</span><span class="p">.</span><span class="nf">list</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">git</span><span class="o">-</span><span class="n">core</span> <span class="n">zlib1g</span><span class="o">-</span><span class="n">dev</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">libssl</span><span class="o">-</span><span class="n">dev</span> <span class="n">libreadline</span><span class="o">-</span><span class="n">dev</span> <span class="n">libyaml</span><span class="o">-</span><span class="n">dev</span> <span class="n">libsqlite3</span><span class="o">-</span><span class="n">dev</span> <span class="n">sqlite3</span> <span class="n">libxml2</span><span class="o">-</span><span class="n">dev</span> <span class="n">libxslt1</span><span class="o">-</span><span class="n">dev</span> <span class="n">libcurl4</span><span class="o">-</span><span class="n">openssl</span><span class="o">-</span><span class="n">dev</span> <span class="n">python</span><span class="o">-</span><span class="n">software</span><span class="o">-</span><span class="n">properties</span> <span class="n">libffi</span><span class="o">-</span><span class="n">dev</span> <span class="n">nodejs</span> <span class="n">yarn</span>
+<span class="n">git</span> <span class="nb">clone</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">rbenv</span><span class="o">/</span><span class="n">rbenv</span><span class="p">.</span><span class="nf">git</span> <span class="o">~</span><span class="sr">/.rbenv
+echo 'export PATH="$HOME/</span><span class="p">.</span><span class="nf">rbenv</span><span class="o">/</span><span class="n">bin</span><span class="p">:</span><span class="vg">$PATH</span><span class="s2">"' &gt;&gt; ~/.bashrc
+echo 'eval "</span><span class="err">$</span><span class="p">(</span><span class="n">rbenv</span> <span class="n">init</span> <span class="o">-</span><span class="p">)</span><span class="s2">"' &gt;&gt; ~/.bashrc
+exec $SHELL
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="</span><span class="vg">$HOME</span><span class="o">/</span><span class="p">.</span><span class="nf">rbenv</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="n">build</span><span class="o">/</span><span class="n">bin</span><span class="p">:</span><span class="vg">$PATH</span><span class="s2">"' &gt;&gt; ~/.bashrc
+exec $SHELL
+rbenv install 2.4.2
+rbenv global 2.4.2
+gem install bundler
+gem install rails
+rbenv rehash</span></code></pre></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem update --system
+</code></pre></div></div>
+<h3 id="installing-ruby-using-rbenv">installing ruby using rbenv</h3>
+
+<p>Rbenv is a lightweight Ruby version management tool which allows you to easily switch Ruby versions. By default Rbenv doesn’t handle installing Ruby versions so we also need to install ruby-build which is a tool that helps you to install any version of Ruby you may need. It is available as a standalone program and as a plugin for rbenv.</p>
+
+<p>To install Ruby using the Rbenv script, follow these steps:</p>
+<ul>
+  <li>First, update the packages index and install the packages required for the ruby-build tool to build Ruby from source:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt update
+apt <span class="nb">install </span>git curl libssl-dev libreadline-dev zlib1g-dev autoconf bison build-essential libyaml-dev libreadline-dev libncurses5-dev libffi-dev libgdbm-dev</code></pre></figure>
+
+<ul>
+  <li>Next, run the following curl command to install both rbenv and ruby-build:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-sL</span> https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash -</code></pre></figure>
+
+<ul>
+  <li>Add $HOME/.rbenv/bin to the user PATH.</li>
+</ul>
+
+<p>If you are using Bash, run:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
+echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
+source ~/.bashrc
+</code></pre></div></div>
+<p>If you are using Zsh run:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.zshrc
+echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.zshrc
+source ~/.zshrc
+</code></pre></div></div>
+
+<ul>
+  <li>Install the latest stable version of Ruby and set it as a default version with
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv install 2.5.1
+rbenv global 2.5.1
+</code></pre></div>    </div>
+    <p>To list all available Ruby versions you can use: <code class="highlighter-rouge">rbenv install -l</code><br />
+Verify that Ruby was properly installed by printing the version number:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -v
+</code></pre></div>    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output: 
+ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+
+<div class="container">
+
+	<div class="row justify-content-center">
+		<div class="col-xs-4 mt-5 mb-5">
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination">
+			  	<li class="page-item">
+			  		<a href="/jekyll/git/2020/05/26/Updates-were-rejected-because-the-tip-of-your-current-branch-is-behind.html" class="page-link text-danger">
+			  		<div><i class="fas fa-fw fa-chevron-left"></i> Previous Post</div>
+					</a>
+				</li>
+
+				<li class="page-item">
+					<a href="/jekyll/ruby/2020/05/27/create-pagination-on-post-jekyll.html" class="page-link text-success">
+					  <div>Newer Post <i class="fas fa-fw fa-chevron-right"></i></div>
+					</a>
+				</li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+
+  
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://codesyariah122-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+</div>
+      </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+    <script type="text/javascript" src="http://localhost:4000/public/js/MyJs.js"></script>
+
+    <script type="text/javascript" src="http://localhost:4000/public/js/progressJs.js"></script>
+
+    <script type="text/javascript" src="http://localhost:4000/public/js/MyResume.js "></script>
+    <script type="text/javascript" src="http://localhost:4000/public/js/accept.js"></script>
+    <script type="text/javascript">
+        askYou('http://localhost:4000');
+    </script>
+    <script type="text/javascript" src="http://localhost:4000/public/js/emoji.js"></script>
+  </body>
+</html></body>
+
+</html>

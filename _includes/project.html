@@ -1,0 +1,60 @@
+<div class="project">
+    {% assign data = site.data.projects[page.data] %}
+    {% assign data1 = data[page.rule1] %}
+    {% assign data2 = data[page.rule2] %}
+    {% assign data3 = data[page.rule3] %}
+    {% assign data4 = data[page.rule4] %}
+    <div class="container">
+
+       <div class="row">
+        
+        <div class="col">
+          
+          <div class="theme-switch-wrapper">
+            
+            <label class="theme-switch" for="checkbox">
+
+              <input type="checkbox" id="checkbox">
+              
+              <div class="slider round"></div>
+
+            </label>
+
+            <em class="ml-2">Enable Dark Mode !</em>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col">
+          <h1 class="text-info">{{page.title}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-10">
+        
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              {{data4.name}}
+              <a href="{{data4.url}}" id="data-project" data-project="4" target="_blank" class="badge badge-default badge-pill badge-4"><span id="view-project1">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              {{data1.name}}
+              <a href="{{data1.url}}" id="data-project" data-project="1" target="_blank" class="badge badge-default badge-pill"><span id="view-project2">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{data3.name}}
+                <a href="{{data3.url}}" id="data-project" data-project="3" target="_blank" class="badge badge-default badge-pill"><span id="view-project3">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{data2.name}}
+                <a href="{{data2.url}}" id="data-project" data-project="2" target="_blank" class="badge badge-default badge-pill"><span id="view-project4">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
+            </li>
+          </ul>
+        </div>
+    </div>  
+</div>
+
+
