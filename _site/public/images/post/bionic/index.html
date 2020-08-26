@@ -33,10 +33,8 @@
       <link rel="stylesheet" href="http://localhost:4000/public/css/main.css">
       <link rel="stylesheet" href="http://localhost:4000/public/css/hyde.css">
       <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
-<!--       <link rel="stylesheet" type="text/css" href="http://localhost:4000/public/css/mode_theme.css"> -->
-
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet"> 
       <style type="text/css">
         
         @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
@@ -55,6 +53,9 @@
           --small-color:#283747;
           --social-color:#D2691E;
           --social-background-color: #FFDEAD;
+          --excerpt: #000;
+          --post-header: #000;
+          --post-content: #000;
         }
 
         [data-theme="dark"]{
@@ -76,8 +77,32 @@
           --card-body-bg: rgb(255,235,205);
           --card-header-bg: rgb(255,235,205);
           --card-body-color: rgb(205,133,63);
+          --excerpt:#EEE8AA;
+          --post-header:#F0E68C ;
+          --post-content:#FFE4B5;
         }
-
+        /*post setup by puji*/
+        .intro, .excerpt {
+            color:var(--excerpt);
+            font-style: normal;
+            font-size: 0.85em;
+            padding: 0.25em 0.5em;
+            margin-bottom: 1.5em;
+            font-family: 'Source Code Pro', monospace;
+        }
+        .intro p, .excerpt p {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-family: 'Fira Code', monospace;
+        }
+        #post-content h1, h2, h3, h4{
+            color: var(--post-header);
+        }
+        #post-content p {
+            color: var(--post-content);
+            font-family: 'Source Code Pro', monospace;
+        }
+        /*end post setup*/
         .social-work{
           text-decoration: none !important;
         }
@@ -94,6 +119,7 @@
         }
         em{
           color: var(--font-color)!important;
+          font-size: 2rem;
         }
         strong{
           color: var(--font-color)!important;
@@ -116,9 +142,11 @@
         }
         .card-text{
           color:var(--small-color)!important;
+          font-family: 'Source Code Pro', monospace;
         }
         .card-body{
           color:var(--card-body-color)!important;
+          font-family: 'Source Code Pro', monospace;
         }
         .collapse{
           background-color: var(--card-body-bg);
@@ -144,6 +172,7 @@
           max-width: 90%;
           margin: 0 auto;
           font-size: calc(1rem + 0.15vh);
+          font-family: 'Source Code Pro', monospace;
         }
 
         h1, h2, h3, h4, h5{
@@ -364,6 +393,26 @@
         })
 
         activeNav("http://localhost:4000");
+        $('.space').html('<i class="fas fa-user-astronaut"></i>').fadeIn(1000);
+        // $('.theme-switch').html('🚀');
+
+        // $('.theme-switch').css({
+        //     'font-size': '2.5rem'
+        // })
+        // $('.theme-switch').hover(function(){
+        //     $('.theme-switch').css({
+        //         'font-size': '2.5rem',
+        //         'margin-left': '1.5rem',
+        //         'cursor': 'pointer'
+        //     })
+        // }, function(){
+        //     $(this).css({
+        //         '-webkit-transform': 'scaleX(-1)',
+        //         'transform': 'scaleX(-1)',
+        //         'animation': 'shake 0.5s',
+        //         'animation-iteration-count': 'infinite' 
+        //     })
+        // })
     </script>
   </body>
 </html></body>

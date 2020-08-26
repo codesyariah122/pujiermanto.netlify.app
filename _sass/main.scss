@@ -20,12 +20,14 @@
     margin-top: -3.5rem;
     box-shadow: .3rem .5rem rgba(41, 255, 0, 0.8);
     cursor: pointer;
+    font-family: 'Fira Code', monospace;
 }
 #post-list:hover{
     background: rgb(111, 0.8, 0.9);
     color: #fff;
     border:none;
     box-shadow: .3rem .5rem rgba(212, 111, 0, 0.8);
+    font-family: 'Source Code Pro', monospace;
 }
 
 .loader{
@@ -169,17 +171,7 @@ p.more-link {
     text-decoration: none;
 }
 
-.intro, .excerpt {
-    font-style: italic;
-    font-size: 0.85em;
-    background: #f5f5f5;
-    padding: 0.25em 0.5em;
-    margin-bottom: 1.5em;
-}
-.intro p, .excerpt p {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
+
 * {
     word-spacing: 1px;
 }
