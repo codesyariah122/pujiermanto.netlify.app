@@ -314,6 +314,9 @@
 <div class="row justify-content-end">
 	<div class="col-xs-12">
 		
+		<div class="mb-5 alert alert-secondary" id="post-list" role="alert">
+		  Wait ... 
+		</div>
 		
 	<ul class="post-list"> 
 	   
@@ -325,28 +328,6 @@
 				 <p> Bedah Satuan CSS Jika pada praktek sehari-hari kita hanya menggunakan satuan % dan px, namun kali ini saya akan membahas penggunaan berbagai satuan yang tepat yang mungkin belum diketahui. Satuan (%) (Persentase) Persentase adalah satuan yang tidak menghitung berdasarkan ukuran elemen itu sendiri namun perbandingan dengan induk elemennya. Biasanya digunakan...</p>
 				 
 			<p class="more-link"> ... <a href="/css/webdev/2020/06/28/Satuan-pada-css.html">read more &raquo;</a></p>
-		
-	  </li>
-	   
-		<li class="post">
-		<h1 class="post-title" id="post-title" style="color:#e5e7e9;">
-		  <a class="post-link" href="/rails/bootstrap/2020/05/27/intergrasi-bootstrap-di-rails.html">integrasi bootstrap di ruby on rails</a>
-		</h1>
-				  <span class="post-meta post-date">May 27, 2020
-				 <p> menambahkan CSS di aplikasi rails kita. Framework seperti Rails menyediakan cara mengintegrasikan framework UI seperti Bootstrap tanpa harus men-setup secara manual. Caranya adalah seperti ini: Matikan server Rails yang sedang berjalan pada Terminal/console/command prompt dengan menekan “Ctrl+C” Buka file Gemfile (bukan Gemfile.lock) yang terdapat pada root direktori aplikasi web Rails...</p>
-				 
-			<p class="more-link"> ... <a href="/rails/bootstrap/2020/05/27/intergrasi-bootstrap-di-rails.html">read more &raquo;</a></p>
-		
-	  </li>
-	   
-		<li class="post">
-		<h1 class="post-title" id="post-title" style="color:#e5e7e9;">
-		  <a class="post-link" href="/jekyll/ruby/2020/05/27/create-pagination-on-post-jekyll.html">Create pagination jekyll</a>
-		</h1>
-				  <span class="post-meta post-date">May 27, 2020
-				 <p> open _config.yml file on root directori : adding new plugin config. plugins: - jekyll-paginate at same file on _config.yml, adding pagginate configuration : paginate: 6 paginate_path: /page:num/ open gemfile on the root directori : group :jekyll_plugins do gem "jekyll-feed", "~&gt; 0.6" gem "jekyll-paginate" gem "jekyll-coffeescript" gem 'jekyll-sass-converter' end and than...</p>
-				 
-			<p class="more-link"> ... <a href="/jekyll/ruby/2020/05/27/create-pagination-on-post-jekyll.html">read more &raquo;</a></p>
 		
 	  </li>
 	
@@ -403,5 +384,14 @@
         askYou('http://localhost:4000');
     </script>
     <script type="text/javascript" src="http://localhost:4000/public/js/emoji.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function(){
+                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : sebagian tulisan di blog ini hanya membahas seputar trend perkembangan budaya di era yang ku lalui.") 
+            }, 1500);
+
+        })
+    </script>
   </body>
 </html>

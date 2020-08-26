@@ -17,5 +17,14 @@
         askYou('{{site.url}}');
     </script>
     <script type="text/javascript" src="{{ '/public/js/emoji.js' | absolute_url }}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function(){
+                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : sebagian tulisan di blog ini hanya membahas seputar trend perkembangan budaya di era yang ku lalui.") 
+            }, 1500);
+
+        })
+    </script>
   </body>
 </html>
