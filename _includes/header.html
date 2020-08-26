@@ -147,6 +147,7 @@
           height: 34px;
           position: relative;
           width: 60px;
+          margin-left: 3rem;
         }
 
         .theme-switch input {
@@ -201,7 +202,14 @@
         .btn-render:hover{
           color:var(--font-color) !important;
         }
-
+        .active{
+          background: rgb(238,232,170);
+          width: 37%;
+          border: none;
+          color: moccasin;
+          border-radius: .7rem;
+          text-align: center;
+      }
       </style>
       
  <title>{{site.title}}</title>
@@ -223,15 +231,16 @@
             <p class="lead tagline">{{author.tagline}}</p>
         </div>
 
-        <nav class="sidebar-nav">
-              <a id="home" class="sidebar-nav-item" href="/">Home</a>
-              
-              <a id="about" class="sidebar-nav-item" href="/about/">About</a>
+        <nav id="navbar" class="sidebar-nav">
 
-              <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
-              
-              <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
-
+            <a id="home" class="sidebar-nav-item" href="/">Home</a>
+            
+            <a id="about" class="sidebar-nav-item" href="/about/">About</a>  
+            
+            <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
+            
+            <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
+            
         </nav>
 
        

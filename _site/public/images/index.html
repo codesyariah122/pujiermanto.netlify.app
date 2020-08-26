@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://localhost:4000/public/images/" />
 <meta property="og:site_name" content="Puji" />
 <script type="application/ld+json">
-{"description":"I’am web developer at ourcitrus by PT. Gemilang Citrus Berjaya","url":"http://localhost:4000/public/images/","headline":"Puji","@type":"WebPage","author":{"@type":"Person","name":"Puji Ermanto"},"@context":"https://schema.org"}</script>
+{"description":"I’am web developer at ourcitrus by PT. Gemilang Citrus Berjaya","url":"http://localhost:4000/public/images/","@type":"WebPage","headline":"Puji","author":{"@type":"Person","name":"Puji Ermanto"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Puji" /></head>
 <body><!doctype html>
@@ -166,6 +166,7 @@
           height: 34px;
           position: relative;
           width: 60px;
+          margin-left: 3rem;
         }
 
         .theme-switch input {
@@ -220,7 +221,14 @@
         .btn-render:hover{
           color:var(--font-color) !important;
         }
-
+        .active{
+          background: rgb(238,232,170);
+          width: 37%;
+          border: none;
+          color: moccasin;
+          border-radius: .7rem;
+          text-align: center;
+      }
       </style>
       
  <title>Puji</title>
@@ -242,15 +250,16 @@
             <p class="lead tagline">coffe again script again</p>
         </div>
 
-        <nav class="sidebar-nav">
-              <a id="home" class="sidebar-nav-item" href="/">Home</a>
-              
-              <a id="about" class="sidebar-nav-item" href="/about/">About</a>
+        <nav id="navbar" class="sidebar-nav">
 
-              <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
-              
-              <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
-
+            <a id="home" class="sidebar-nav-item" href="/">Home</a>
+            
+            <a id="about" class="sidebar-nav-item" href="/about/">About</a>  
+            
+            <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
+            
+            <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
+            
         </nav>
 
        
@@ -346,10 +355,32 @@
     <script type="text/javascript">
         $(document).ready(function(){
             setTimeout(function(){
-                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : sebagian tulisan di blog ini hanya membahas seputar trend perkembangan budaya di era yang ku lalui.") 
+                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : sebagian tulisan di blog ini hanya membahas seputar trend perkembangan budaya berteknologi di era yang ku lalui.") 
             }, 1500);
-
         })
+
+
+        let navbar = document.getElementsByClassName('sidebar-nav-item');
+        for(let i=0; i<=navbar.length-1; i++){
+           let item = document.getElementsByClassName('sidebar-nav-item')[i].getAttribute('href');
+           let url = location.href;
+           let baseUrl = "http://localhost:4000";
+
+           if(url == baseUrl+item){
+                document.getElementsByClassName('sidebar-nav-item')[i].classList.add('active');
+           }
+        }
+
+        // const header = document.getElementById("navbar");
+        // const btns = header.getElementsByClassName("sidebar-nav-item");
+        // alert(btns.lengt);
+        // for (let i = 0; i < btns.length; i++) {
+        //   btns[i].addEventListener("click", function() {
+        //     let current = document.getElementsByClassName("active");
+        //         current[0].className = current[0].className.replace(" active", "");
+        //         this.className += " active";
+        //   });
+        // }
     </script>
   </body>
 </html></body>

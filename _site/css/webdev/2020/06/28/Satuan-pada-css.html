@@ -17,7 +17,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-06-28T00:00:00+07:00" />
 <script type="application/ld+json">
-{"description":"Bedah Satuan CSS Jika pada praktek sehari-hari kita hanya menggunakan satuan % dan px, namun kali ini saya akan membahas penggunaan berbagai satuan yang tepat yang mungkin belum diketahui. Satuan (%) (Persentase) Persentase adalah satuan yang tidak menghitung berdasarkan ukuran elemen itu sendiri namun perbandingan dengan induk elemennya. Biasanya digunakan dalam hal penentuan ukuran kolom (Grid System), mari kita intip Grid System dari beberapa Framework CSS: Semantic UI .ui[class*=&quot;six column&quot;].grid &gt; .row &gt; .column, .ui[class*=&quot;six column&quot;].grid &gt; .column:not(.row) { width: 16.66666667%; } Bootstrap .col-xs-6 { width: 50%; } Namun satuan ini juga baik digunakan dalam penentuan ukuran header atau h1, h2, h3, dst. dalam beberapa kasus, seperti ingin mempermudah pengerjaan situs yang responsif. Satuan px(pixel) ni adalah satuan yang sering digunakan oleh mayoritas programmer, namun tahukah? bahwa satuan ini hanya cocok digunakan oleh elemen yang berukuran akurat, tidak terpengaruh oleh elemen disekitarnya atau induknya. Satuan rem dan em Satuan rem dan em bisa dikatakan 16 kali dari satuan px, jadi 1rem/em = 16px, namun pada satuan em bisa bergantung pada font-size, misalnya induk elemen memiliki property font-size 14px dan anaknya memiliki property font-size: 1.6em, maka hasil yang akan ditampilkan adalah 14px * 1.6em = 22.4px. Salah satu contoh kasus yang satuan em terasa sangat bermanfaat adalah pada padding untuk elemen yang font-sizenya mudah berubah-ubah, contoh seperti : .button{ font-size: 1em; padding: 5em 10em; } Dikarenakan induk yang mempunyai property font-size dari element .button tidak ada, maka property font-size bernilai 1em = 16px, namun pada padding 5em dan 10em terpengaruh oleh nilai dari font-size, jadi 5em 16px = 80px, dan 10em 16px = 160px. Tapi tidak dengan satuan rem, rem satuan yang tidak terpengaruh oleh font-size, em bisa dikatakan pewaris dari rem yang berarti “r” adalah “root”. Satuan vw dan vh Satuan ini disebut viewport, satuan ini adalah cara terbaik untuk membuat elemen responsif, kenapa bisa? Hampir sama dengan % atau persentase, namun persen tidak bisa menentukan height, beda dengan vw dan vh, vw artinya viewport width dan vh artinya viewport height. Satuan ini bergantung pada induk elemennya, jika induk elemen mempunyai ukuran 300px x 400px maka 1vh darinya adalah 400 * 1/100 = 4px dan jika 100vh artinya adalah height yang kita tentukan 100% dari height induknya. Jika induk dari element adalah 100% atau tak terhingga, maka 100vh bergantung pada ukuran layar. body{ height: 100%; } body .screen.cover{ height: 100vh; } Teknik ini sangat bermanfaat jika kita ingin membuat fullscreen elemen, dan saya sangat sering menggunakannya terutama membuat cover untuk front page. Satuan vmin dan vmax Satuan ini mirip dengan vw dan vh, bedanya jika kita menentukan 100vmin satuan ini akan bergantung pada induk dengan ukuran terendah, bingung? Misalnya induk elemen memiliki ukuran 1000px x 1200px, jika anak elemen memakai : .anak{ height: 100vmin; width: 100vmin; } Maka hasil yang akan ditampilkan seperti : .anak{ height: 1000px; width: 1000px; } Begitu juga sebaliknya. Satuan ex dan ch Satuan ini mirip dengan rem dan em, bedanya 1ex/ch = 8px, namun satuan ini tidak hanya bergantung pada font-size tapi juga bergantung pada font-family agar ukurannya lebih spesifik. Kesimpulan : ~ Bahwa mengetahui detil dari setiap satuan pada css sangat penting demi kualitas produk yang kita buat, semoga bermanfaat! ~","url":"http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html","headline":"Satuan Pada Css","dateModified":"2020-06-28T00:00:00+07:00","@type":"BlogPosting","datePublished":"2020-06-28T00:00:00+07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html"},"image":"http://localhost:4000/public/images/post/css.png","author":{"@type":"Person","name":"puji"},"@context":"https://schema.org"}</script>
+{"dateModified":"2020-06-28T00:00:00+07:00","description":"Bedah Satuan CSS Jika pada praktek sehari-hari kita hanya menggunakan satuan % dan px, namun kali ini saya akan membahas penggunaan berbagai satuan yang tepat yang mungkin belum diketahui. Satuan (%) (Persentase) Persentase adalah satuan yang tidak menghitung berdasarkan ukuran elemen itu sendiri namun perbandingan dengan induk elemennya. Biasanya digunakan dalam hal penentuan ukuran kolom (Grid System), mari kita intip Grid System dari beberapa Framework CSS: Semantic UI .ui[class*=&quot;six column&quot;].grid &gt; .row &gt; .column, .ui[class*=&quot;six column&quot;].grid &gt; .column:not(.row) { width: 16.66666667%; } Bootstrap .col-xs-6 { width: 50%; } Namun satuan ini juga baik digunakan dalam penentuan ukuran header atau h1, h2, h3, dst. dalam beberapa kasus, seperti ingin mempermudah pengerjaan situs yang responsif. Satuan px(pixel) ni adalah satuan yang sering digunakan oleh mayoritas programmer, namun tahukah? bahwa satuan ini hanya cocok digunakan oleh elemen yang berukuran akurat, tidak terpengaruh oleh elemen disekitarnya atau induknya. Satuan rem dan em Satuan rem dan em bisa dikatakan 16 kali dari satuan px, jadi 1rem/em = 16px, namun pada satuan em bisa bergantung pada font-size, misalnya induk elemen memiliki property font-size 14px dan anaknya memiliki property font-size: 1.6em, maka hasil yang akan ditampilkan adalah 14px * 1.6em = 22.4px. Salah satu contoh kasus yang satuan em terasa sangat bermanfaat adalah pada padding untuk elemen yang font-sizenya mudah berubah-ubah, contoh seperti : .button{ font-size: 1em; padding: 5em 10em; } Dikarenakan induk yang mempunyai property font-size dari element .button tidak ada, maka property font-size bernilai 1em = 16px, namun pada padding 5em dan 10em terpengaruh oleh nilai dari font-size, jadi 5em 16px = 80px, dan 10em 16px = 160px. Tapi tidak dengan satuan rem, rem satuan yang tidak terpengaruh oleh font-size, em bisa dikatakan pewaris dari rem yang berarti “r” adalah “root”. Satuan vw dan vh Satuan ini disebut viewport, satuan ini adalah cara terbaik untuk membuat elemen responsif, kenapa bisa? Hampir sama dengan % atau persentase, namun persen tidak bisa menentukan height, beda dengan vw dan vh, vw artinya viewport width dan vh artinya viewport height. Satuan ini bergantung pada induk elemennya, jika induk elemen mempunyai ukuran 300px x 400px maka 1vh darinya adalah 400 * 1/100 = 4px dan jika 100vh artinya adalah height yang kita tentukan 100% dari height induknya. Jika induk dari element adalah 100% atau tak terhingga, maka 100vh bergantung pada ukuran layar. body{ height: 100%; } body .screen.cover{ height: 100vh; } Teknik ini sangat bermanfaat jika kita ingin membuat fullscreen elemen, dan saya sangat sering menggunakannya terutama membuat cover untuk front page. Satuan vmin dan vmax Satuan ini mirip dengan vw dan vh, bedanya jika kita menentukan 100vmin satuan ini akan bergantung pada induk dengan ukuran terendah, bingung? Misalnya induk elemen memiliki ukuran 1000px x 1200px, jika anak elemen memakai : .anak{ height: 100vmin; width: 100vmin; } Maka hasil yang akan ditampilkan seperti : .anak{ height: 1000px; width: 1000px; } Begitu juga sebaliknya. Satuan ex dan ch Satuan ini mirip dengan rem dan em, bedanya 1ex/ch = 8px, namun satuan ini tidak hanya bergantung pada font-size tapi juga bergantung pada font-family agar ukurannya lebih spesifik. Kesimpulan : ~ Bahwa mengetahui detil dari setiap satuan pada css sangat penting demi kualitas produk yang kita buat, semoga bermanfaat! ~","datePublished":"2020-06-28T00:00:00+07:00","url":"http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html"},"@type":"BlogPosting","headline":"Satuan Pada Css","image":"http://localhost:4000/public/images/post/css.png","author":{"@type":"Person","name":"puji"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Puji" /></head>
 <body><!doctype html>
@@ -169,6 +169,7 @@
           height: 34px;
           position: relative;
           width: 60px;
+          margin-left: 3rem;
         }
 
         .theme-switch input {
@@ -223,7 +224,14 @@
         .btn-render:hover{
           color:var(--font-color) !important;
         }
-
+        .active{
+          background: rgb(238,232,170);
+          width: 37%;
+          border: none;
+          color: moccasin;
+          border-radius: .7rem;
+          text-align: center;
+      }
       </style>
       
  <title>Puji</title>
@@ -245,15 +253,16 @@
             <p class="lead tagline">coffe again script again</p>
         </div>
 
-        <nav class="sidebar-nav">
-              <a id="home" class="sidebar-nav-item" href="/">Home</a>
-              
-              <a id="about" class="sidebar-nav-item" href="/about/">About</a>
+        <nav id="navbar" class="sidebar-nav">
 
-              <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
-              
-              <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
-
+            <a id="home" class="sidebar-nav-item" href="/">Home</a>
+            
+            <a id="about" class="sidebar-nav-item" href="/about/">About</a>  
+            
+            <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
+            
+            <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
+            
         </nav>
 
        
@@ -495,10 +504,32 @@ s.setAttribute('data-timestamp', +new Date());
     <script type="text/javascript">
         $(document).ready(function(){
             setTimeout(function(){
-                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : sebagian tulisan di blog ini hanya membahas seputar trend perkembangan budaya di era yang ku lalui.") 
+                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : sebagian tulisan di blog ini hanya membahas seputar trend perkembangan budaya berteknologi di era yang ku lalui.") 
             }, 1500);
-
         })
+
+
+        let navbar = document.getElementsByClassName('sidebar-nav-item');
+        for(let i=0; i<=navbar.length-1; i++){
+           let item = document.getElementsByClassName('sidebar-nav-item')[i].getAttribute('href');
+           let url = location.href;
+           let baseUrl = "http://localhost:4000";
+
+           if(url == baseUrl+item){
+                document.getElementsByClassName('sidebar-nav-item')[i].classList.add('active');
+           }
+        }
+
+        // const header = document.getElementById("navbar");
+        // const btns = header.getElementsByClassName("sidebar-nav-item");
+        // alert(btns.lengt);
+        // for (let i = 0; i < btns.length; i++) {
+        //   btns[i].addEventListener("click", function() {
+        //     let current = document.getElementsByClassName("active");
+        //         current[0].className = current[0].className.replace(" active", "");
+        //         this.className += " active";
+        //   });
+        // }
     </script>
   </body>
 </html></body>
