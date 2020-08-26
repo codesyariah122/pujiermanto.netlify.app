@@ -46,12 +46,12 @@
   "repo" : {
     "ourcitrus" : 
     {
-      "Codeigniter Blogging => " : "<a href='https://github.com/codesyariah122/codeigniter_blogging' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View repo</a>",
-      "Email Services => " : "<a href='https://github.com/codesyariah122/phpmailer_ourcitrus' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
-      "Point Of Sales => " : "<a href='https://github.com/codesyariah122/point-of-sales-edit' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
-      "Web Design => " : "<a href='https://github.com/codesyariah122/ourcitrus_new' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
-      "Template Library => " : "<a href='https://github.com/codesyariah122/ourcitrus_template_library' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i> View Repo </a>",
-      "System Polling => " : "<a href='https://github.com/codesyariah122/system_polling' class='social-work' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>"
+      "Codeigniter Blogging => " : "<a href='https://github.com/codesyariah122/codeigniter_blogging' class='social-work text-danger bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View repo</a>",
+      "Email Services => " : "<a href='https://github.com/codesyariah122/phpmailer_ourcitrus' class='social-work text-danger bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
+      "Point Of Sales => " : "<a href='https://github.com/codesyariah122/point-of-sales-edit' class='social-work text-danger bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
+      "Web Design => " : "<a href='https://github.com/codesyariah122/ourcitrus_new' class='social-work bg-primary text-danger' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
+      "Template Library => " : "<a href='https://github.com/codesyariah122/ourcitrus_template_library' class='social-work text-danger bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i> View Repo </a>",
+      "System Polling => " : "<a href='https://github.com/codesyariah122/system_polling' class='social-work text-danger bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>"
     },
     "gnet" : 
     {

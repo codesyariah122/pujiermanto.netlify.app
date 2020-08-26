@@ -23,6 +23,7 @@
         @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
 
         :root {
+          --body-bg: #fff;
           --primary-color: #302AE6;
           --secondary-color: #536390;
           --font-color: #424242;
@@ -38,6 +39,7 @@
         }
 
         [data-theme="dark"]{
+          --body-bg: url("http://localhost:4000/public/images/space1.gif");
           --primary-color: #9A97F3;
           --secondary-color: #818cab;
           --font-color: #FF6347;
@@ -46,13 +48,15 @@
           --li-color: #C8C8C1;
           --p-color: #99a304;
           --card-header-color: #2e4053;
-          --collapse-color: #283747;
           --post-title-color: #e5e7e9;
           --link-hover-color: #f0b27a;
           --link-color:#FFE4B5;
           --small-color:#FFE4E1;
-          --social-color:#8B4513;
+          --social-color:rgb(205,133,63);
           --social-background-color: #DEB887;
+          --card-body-bg: rgb(255,235,205);
+          --card-header-bg: rgb(255,235,205);
+          --card-body-color: rgb(205,133,63);
         }
 
         .social-work{
@@ -84,17 +88,21 @@
         }
 
         .card-header{
-          background-color: var(--card-header-color);
+          background-color: var(--card-header-bg);
           border:none;
+          border-radius: 2%;
+        }
+        .collapsed{
+          text-decoration: none;
         }
         .card-text{
           color:var(--small-color)!important;
         }
         .card-body{
-          color:var(--small-color)!important;
+          color:var(--card-body-color)!important;
         }
         .collapse{
-          background-color: var(--collapse-color);
+          background-color: var(--card-body-bg);
         }
 
        
@@ -108,7 +116,11 @@
 
         body{
           font-family : "lato", sans-serif;
-          background-color: var(--bg-color);
+          background-image: var(--body-bg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: 'fixed';
+          background-position: center;
           color: var(--font-color);
           max-width: 90%;
           margin: 0 auto;
@@ -132,7 +144,7 @@
           align-items: center;
           margin-top: 2rem;
           margin-bottom: 2rem;
-          margin-left: -3em;
+          margin-left: -2.3em;
 
           em{
             margin-left: 10.25px;
