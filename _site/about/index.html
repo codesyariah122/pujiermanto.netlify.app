@@ -56,6 +56,7 @@
           --excerpt: #000;
           --post-header: #000;
           --post-content: #000;
+          --card-about-body:#000;
         }
 
         [data-theme="dark"]{
@@ -74,12 +75,13 @@
           --small-color:#FFE4E1;
           --social-color:rgb(205,133,63);
           --social-background-color: #DEB887;
-          --card-body-bg: rgb(255,235,205);
-          --card-header-bg: rgb(255,235,205);
-          --card-body-color: rgb(205,133,63);
+          --card-body-bg: rgb(222,184,135);
+          --card-header-bg: rgb(210,180,140);
+          --card-body-color: rgb(47,79,79);
           --excerpt:#EEE8AA;
           --post-header:#F0E68C ;
           --post-content:#FFE4B5;
+          --card-about-body:rgb(245,222,179);
         }
         /*post setup by puji*/
         .intro, .excerpt {
@@ -130,6 +132,16 @@
         }
         .post-link{
           color: var(--post-title-color) !important;
+        }
+
+        .card-about {
+          color: var(--card-about-body);
+          font-size: .9rem;
+          margin-left.9rem;
+          text-align: justify;
+        }
+        .card-about p{
+          margin-left: 1rem;
         }
 
         .card-header{
@@ -446,20 +458,20 @@
 
     <div class="row justify-content-center">
       <div class="col-xs-6 col-sm">
-        <div class="card mb-3" style="max-width: 540px; background-color: var(--card-header-color);">
+        <div class="card mb-3" style="max-width: 650px; height: 55vh; background-color: var(--card-header-color);">
           <div class="row no-gutters">
             <div class="col-md-4">
               <img src="http://localhost:4000/public/images/bio/uji.jpg" class="img-thumbnail img-fluid rounded mx-auto d-block img-responsive" alt="Puji Ermanto">
             </div>
             <div class="col-md-8">
-              <div class="card-body">
-                <h5 id="card-title" class="card-title">Puji Ermanto</h5>
-                <small class="text-success blockquote-footer">coffee again script again</small>
-                <p class="card-tex text-justify">Hello <span id='nama_mu'>World</span> ! Myname is Puji Ermanto I'm fullstack web dev from <br/> OurCitrus by PT. Gemilang Citrus Berjaya..</p>
+              <div class="card-about">
+                <h5 id="card-title" class="card-title ml-2">Puji Ermanto</h5>
+                <small class="text-primary ml-2 blockquote-footer">coffee again script again</small>
+                <p class="card-tex">Hello <span id='nama_mu'>World</span> ! Myname is Puji Ermanto I'm fullstack web dev from OurCitrus by PT. Gemilang Citrus Berjaya..</p>
                 <div id="author-work">
                     <p class="card-text"><small class="text-warning">Fullstack Dev : </small><br/>
-                    <span class="my-work text-white">@My-Work</span>&nbsp; <i class='fas fa-laptop text-success'></i> : <a href="https://ourcitrus.id" target="_blank">OurCitrus</a><br/>
-                    <span class="my-blog text-white">@My Blog</span>&nbsp; <i class='fas fa-code text-danger'></i> : <a href="https://codesyariah122.github.io" target="_blank">Codesyariah Blog</a>
+                    <span class="my-work text-white">@My-Work</span>&nbsp; <i class='fas fa-laptop text-success'></i> : <a href="https://ourcitrus.id" target="_blank" class="text-warning">OurCitrus</a><br/>
+                    <span class="my-blog text-white">@My Blog</span>&nbsp; <i class='fas fa-code text-danger'></i> : <a href="https://codesyariah122.github.io" target="_blank" class="text-warning">Codesyariah Blog</a>
                     </p>  
                 </div>
                 

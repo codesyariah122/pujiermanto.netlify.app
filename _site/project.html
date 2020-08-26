@@ -56,6 +56,7 @@
           --excerpt: #000;
           --post-header: #000;
           --post-content: #000;
+          --card-about-body:#000;
         }
 
         [data-theme="dark"]{
@@ -74,12 +75,13 @@
           --small-color:#FFE4E1;
           --social-color:rgb(205,133,63);
           --social-background-color: #DEB887;
-          --card-body-bg: rgb(255,235,205);
-          --card-header-bg: rgb(255,235,205);
-          --card-body-color: rgb(205,133,63);
+          --card-body-bg: rgb(222,184,135);
+          --card-header-bg: rgb(210,180,140);
+          --card-body-color: rgb(47,79,79);
           --excerpt:#EEE8AA;
           --post-header:#F0E68C ;
           --post-content:#FFE4B5;
+          --card-about-body:rgb(245,222,179);
         }
         /*post setup by puji*/
         .intro, .excerpt {
@@ -130,6 +132,16 @@
         }
         .post-link{
           color: var(--post-title-color) !important;
+        }
+
+        .card-about {
+          color: var(--card-about-body);
+          font-size: .9rem;
+          margin-left.9rem;
+          text-align: justify;
+        }
+        .card-about p{
+          margin-left: 1rem;
         }
 
         .card-header{
@@ -389,19 +401,19 @@
       <div class="col-sm-10">
         
         <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center text-primary">
               PT. Gemilang Citrus Berjaya
               <a href="https://ourcitrus.id" id="data-project" data-project="4" target="_blank" class="badge badge-default badge-pill badge-4"><span id="view-project1">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center text-primary">
               DNA Bisnis
               <a href="https://dna-bisnis.com/" id="data-project" data-project="1" target="_blank" class="badge badge-default badge-pill"><span id="view-project2">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center text-primary">
                 Stylishtic By OurCitrus
                 <a href="https://stylishtic.com/" id="data-project" data-project="3" target="_blank" class="badge badge-default badge-pill"><span id="view-project3">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center text-primary">
                 GNet Network
                 <a href="https://gnet-network.ourcitrus.id/" id="data-project" data-project="2" target="_blank" class="badge badge-default badge-pill"><span id="view-project4">View Project</span><i class="far fa-fw fa-lg fa-eye"></i></a>
             </li>

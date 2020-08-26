@@ -56,6 +56,7 @@
           --excerpt: #000;
           --post-header: #000;
           --post-content: #000;
+          --card-about-body:#000;
         }
 
         [data-theme="dark"]{
@@ -74,12 +75,13 @@
           --small-color:#FFE4E1;
           --social-color:rgb(205,133,63);
           --social-background-color: #DEB887;
-          --card-body-bg: rgb(255,235,205);
-          --card-header-bg: rgb(255,235,205);
-          --card-body-color: rgb(205,133,63);
+          --card-body-bg: rgb(222,184,135);
+          --card-header-bg: rgb(210,180,140);
+          --card-body-color: rgb(47,79,79);
           --excerpt:#EEE8AA;
           --post-header:#F0E68C ;
           --post-content:#FFE4B5;
+          --card-about-body:rgb(245,222,179);
         }
         /*post setup by puji*/
         .intro, .excerpt {
@@ -130,6 +132,16 @@
         }
         .post-link{
           color: var(--post-title-color) !important;
+        }
+
+        .card-about {
+          color: var(--card-about-body);
+          font-size: .9rem;
+          margin-left.9rem;
+          text-align: justify;
+        }
+        .card-about p{
+          margin-left: 1rem;
         }
 
         .card-header{
