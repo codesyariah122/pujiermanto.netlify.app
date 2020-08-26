@@ -6,6 +6,7 @@ function activeNav(base){
            let baseUrl = base;
 
         if(url === baseUrl+item){
+        	console.log(url+" : "+baseUrl+item);
             document.getElementsByClassName('sidebar-nav-item')[i].classList.add('active');
         }
     }
