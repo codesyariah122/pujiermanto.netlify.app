@@ -13,7 +13,8 @@
 // })
 $(document).ready(function(){
 	$('#generate_pdf').click(function(){
-		$('#animated').load('/public/file/animated2.html').fadeIn(1500);
+		$(this).hide('slow').slideUp(1000);
+		$('#animated').load('/public/file/animated.html').fadeIn(1500);
 		$('.resume_view').hide('slow').fadeOut(1000);
 		setTimeout(function(){
 			$('#animated').hide('slow').slideUp(1000);

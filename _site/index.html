@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="data-theme">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -38,6 +38,7 @@
           --post-header: #000;
           --post-content: #000;
           --card-about-body:#000;
+          --btn-render:rgb(139,69,19);
         }
 
         [data-theme="dark"]{
@@ -63,6 +64,7 @@
           --post-header:#F0E68C ;
           --post-content:#FFE4B5;
           --card-about-body:rgb(245,222,179);
+          --btn-render:rgb(250,235,215);
         }
         /*post setup by puji*/
         .intro, .excerpt {
@@ -200,7 +202,6 @@
           height: 34px;
           position: relative;
           width: 60px;
-          margin-left: 3rem;
         }
 
         .theme-switch input {
@@ -251,19 +252,14 @@
         .btn-render{
           justify-content: space-between !important;
           margin-bottom: 1rem;
+          font-weight: bold;
+          color:var(--btn-render) !important;
         }
         .btn-render:hover{
-          color:var(--font-color) !important;
+          color:var(--btn-render) !important;
+          font-weight:bold;
         }
-        .active{
-          background: rgb(238,232,170);
-          width: 37%;
-          border: none;
-          color: moccasin;
-          border-radius: .7rem;
-          text-align: center;
-      }
-      </style>
+        </style>
       
  <title>Puji</title>
 
@@ -344,8 +340,8 @@
 
  
 <main class="page-content" aria-label="Content">
-
-  <div class="row">
+  
+ <div class="row">
     
     <div class="col">
       
@@ -359,9 +355,13 @@
 
         </label>
 
-        <em class="ml-2 space">Space animated mode !</em>
+        <em class="space">Space animated mode !</em>
 
       </div>
+
+          <audio id="space-sound" loop>
+            <source src="http://localhost:4000/public/space-sound.mp3" type="audio/mpeg" >
+          </audio>
 
     </div>
 
@@ -443,7 +443,7 @@
     <script type="text/javascript" src="http://localhost:4000/public/js/MyResume.js "></script>
     <script type="text/javascript" src="http://localhost:4000/public/js/accept.js"></script>
     <script type="text/javascript">
-        // askYou('http://localhost:4000');
+        askYou('http://localhost:4000');
     </script>
     <script type="text/javascript" src="http://localhost:4000/public/js/emoji.js"></script>
     <script type="text/javascript" src="http://localhost:4000/public/js/active.js"></script>

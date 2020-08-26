@@ -105,8 +105,17 @@ a.sidebar-nav-item:focus {
     text-decoration: none;
 }
 .sidebar-nav-item.active {
-  font-weight: bold;
+    font-weight: bold;
     text-decoration: none;
+    background: rgb(238,232,170);
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    border: none;
+    border-radius: .9rem;
+    box-shadow: .3rem .2rem rgb(169,169,169);
+    //       text-align: center;
+    //       align-content:center;
 }
 
 /* Sticky sidebar

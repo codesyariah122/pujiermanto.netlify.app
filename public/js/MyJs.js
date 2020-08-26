@@ -1,4 +1,12 @@
 // vanilla javascript
+function playSound(audio){
+	audio.play();
+}
+
+function pauseSound(audio){
+	audio.pause()
+}
+
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 const currentTheme = localStorage.getItem('theme');

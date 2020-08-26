@@ -13,10 +13,13 @@
 $(document).ready(function(){
 	$('#exit_pdf').click(function(){
 		$('#cv_resume').hide('slow').fadeOut(1000);
-		$('#animated').load('https://pujiermanto.netlify.app/public/file/animated2.html').fadeIn(1000);
+		$('#animated').load('/public/file/animated2.html').fadeIn(1000);
 		setTimeout(function(){
 			$('#animated').hide('slow').fadeOut(1000);
 			$('.resume_view').show().fadeIn(1000);
+			$('#generate_pdf').show('slow').fadeIn(1000);
+			$('#generate_pdf').removeClass('btn-outline-danger text-white');
+			$('#generate_pdf').addClass('btn-outline-info text-success')
 		}, 2500);
 	})
 })
