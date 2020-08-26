@@ -22,9 +22,12 @@
     cursor: pointer;
     font-family: 'Fira Code', monospace;
 }
+.text-start{
+    color: #BC8F8F;
+}
 #post-list:hover{
-    background: rgb(111, 0.8, 0.9);
-    color: #fff;
+    background: rgb(238,232,170);
+    color: #A0522D;
     border:none;
     box-shadow: .3rem .5rem rgba(212, 111, 0, 0.8);
     font-family: 'Source Code Pro', monospace;
