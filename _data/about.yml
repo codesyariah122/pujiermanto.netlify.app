@@ -5,7 +5,7 @@ puji:
   myblog: https://codesyariah122.github.io
   company: https://ourcitrus.id
   tagline: coffee again script again
-  bio: Hello <span id='nama_mu'>World</span> ! Myname is Puji Ermanto I'm fullstack web dev from OurCitrus by PT. Gemilang Citrus Berjaya.
+  bio: Hello <span id='nama_mu' class="text-danger">World</span> ! Myname is Puji Ermanto I'm fullstack web dev from OurCitrus by PT. Gemilang Citrus Berjaya.
 version-control:
    git: 75
 programming-language:
