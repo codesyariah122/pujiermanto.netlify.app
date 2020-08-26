@@ -66,6 +66,7 @@ function askYou(url){
 				setTimeout(function(){
 					$('#visitor').show('slow').fadeIn(1000);
 					document.getElementById('namakamu').innerHTML = "Terima kasih, "+tanya;
+					document.getElementById('nama_mu').innerHTML = tanya;
 				}, 1500)
 			}
 		})

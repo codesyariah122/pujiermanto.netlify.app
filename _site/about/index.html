@@ -391,7 +391,7 @@
           <div class="form-group">
             <label for="nama">Nama Lengkap 🍜</label>
             <input type="text" autocomplete="off" id="nama" name="nama" class="form-control" placeholder="Nama Lengkap Anda">
-            <input type="text" id="namamu" name="namamu" class="form-control" placeholder="">
+            <input type="text" id="namamu" name="namamu" class="form-control" placeholder="" disabled>
             <small id="emailHelp" class="form-text text-muted">Isi nama lengkap anda. ⌨📋</small>
           </div>
       </div>
@@ -414,7 +414,7 @@
               <div class="card-body">
                 <h5 id="card-title" class="card-title">Puji Ermanto</h5>
                 <small class="text-success blockquote-footer">coffee again script again</small>
-                <p class="card-tex text-justify">Hello World ! Myname is Puji Ermanto I'm fullstack web dev at ourcitrus by PT. Gemilang Citrus Berjaya..</p>
+                <p class="card-tex text-justify">Hello <span id='nama_mu'>World</span> ! Myname is Puji Ermanto I'm fullstack web dev at ourcitrus by PT. Gemilang Citrus Berjaya..</p>
                 <div id="author-work">
                     <p class="card-text"><small class="text-warning">Fullstack Dev : </small><br/>
                     <span class="my-work text-white">@My-Work</span>&nbsp; <i class='fas fa-laptop text-success'></i> : <a href="https://ourcitrus.id" target="_blank">OurCitrus</a><br/>
@@ -509,7 +509,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
             setTimeout(function(){
-                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : sebagian tulisan di blog ini hanya membahas seputar trend perkembangan budaya berteknologi di era yang ku lalui.") 
+                $('#post-list').fadeIn(1500).html("<span class='text-success'>Blog List</span> : Setiap tulisan di blog ini akan membahas seputar trend perkembangan budaya berteknologi di era yang ku lalui.") 
             }, 1500);
         })
 
