@@ -2,10 +2,10 @@
   url: /
 
 - name: About
-  url: /about
+  url: /about/
 
 - name: Project
-  url: /project
+  url: /project/
 
 - name: Resume/CV
-  url: /resume
+  url: /resume/
