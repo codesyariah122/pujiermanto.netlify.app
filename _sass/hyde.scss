@@ -87,12 +87,13 @@ a.sidebar-about:hover{
   text-decoration: none !important;
 }
 .sidebar-about a{
-      text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
+  justify-content:center;
 }
 .sidebar-nav-item {
   line-height: 1.75;
@@ -109,8 +110,8 @@ a.sidebar-nav-item:focus {
     text-decoration: none;
     background: rgb(238,232,170);
     width: 50%;
-    display: flex;
-    justify-content:center;
+    text-align:center;
+    margin-left: 4rem;
     border: none;
     border-radius: .9rem;
     box-shadow: .3rem .2rem rgb(169,169,169);
