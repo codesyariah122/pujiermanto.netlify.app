@@ -59,7 +59,7 @@
           --social-background-color: #DEB887;
           --card-body-bg: rgb(222,184,135);
           --card-header-bg: rgb(210,180,140);
-          --card-body-color: rgb(47,79,79);
+          --card-body-color: rgb(255,255,240);
           --excerpt:#EEE8AA;
           --post-header:#F0E68C ;
           --post-content:#FFE4B5;
@@ -90,6 +90,8 @@
         /*end post setup*/
         .social-work{
           text-decoration: none !important;
+          color: #fff;
+          font-size: 1rem;
         }
         .social-work:hover{
           background-color: var(--social-background-color)!important;
@@ -142,6 +144,7 @@
         .card-body{
           color:var(--card-body-color)!important;
           font-family: 'Source Code Pro', monospace;
+          font-weight: bold;
         }
         .collapse{
           background-color: var(--card-body-bg);
@@ -280,17 +283,7 @@
             <p class="lead tagline">{{author.tagline}}</p>
         </div>
 
-        <nav id="navbar" class="sidebar-nav">
-
-            <a id="home" class="sidebar-nav-item" href="/">Home</a>
-            
-            <a id="about" class="sidebar-nav-item" href="/about/">About</a>  
-            
-            <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
-            
-            <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
-            
-        </nav>
+        {% include navbar.html %}
 
        
           <div id="social-media">

@@ -63,131 +63,131 @@ $(document).ready(function(){
 })
 
 $('.progress').css({
-	'cursor':'help',
-	'content': 'Click me ! Guys'
+	'cursor':'alias',
+	'content': 'Click Please !'
 });
-	$('.progress-bar').on("click", function(){
-		const value = $(this).attr('aria-valuenow');
-		const skillName = $(this).attr('data-progress');
-		//alert(skillName);
-		if(skillName == "git"){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/git.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName == 'javascript'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/javascript.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName === 'ruby'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/ruby.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName == 'php'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/php.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName == 'codeigniter'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/codeigniter.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName == 'rails'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/rails.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName == 'laravel'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/laravel.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName == 'jekyll'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/jekyll.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}else if(skillName == 'wordpress'){
-			Swal.fire({
-			  title: 'My '+skillName+' : '+value+'%',
-			  width: 600,
-			  padding: '2em',
-			  background: '#fff url(/public/images/animated/trees.png)',
-			  backdrop: `
-			    rgba(0,0,123,0.4)
-			    url("/public/images/animated/wp.gif")
-			    left top
-			    no-repeat
-			  `
-			});
-		}
-	})
+	// $('.progress-bar').on("click", function(){
+	// 	const value = $(this).attr('aria-valuenow');
+	// 	const skillName = $(this).attr('data-progress');
+	// 	//alert(skillName);
+	// 	if(skillName == "git"){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/git.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName == 'javascript'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/javascript.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName === 'ruby'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/ruby.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName == 'php'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/php.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName == 'codeigniter'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/codeigniter.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName == 'rails'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/rails.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName == 'laravel'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/laravel.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName == 'jekyll'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/jekyll.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}else if(skillName == 'wordpress'){
+	// 		Swal.fire({
+	// 		  title: 'My '+skillName+' : '+value+'%',
+	// 		  width: 600,
+	// 		  padding: '2em',
+	// 		  background: '#fff url(/public/images/animated/trees.png)',
+	// 		  backdrop: `
+	// 		    rgba(0,0,123,0.4)
+	// 		    url("/public/images/animated/wp.gif")
+	// 		    left top
+	// 		    no-repeat
+	// 		  `
+	// 		});
+	// 	}
+	// })
 
 })

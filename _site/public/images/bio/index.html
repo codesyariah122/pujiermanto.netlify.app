@@ -78,7 +78,7 @@
           --social-background-color: #DEB887;
           --card-body-bg: rgb(222,184,135);
           --card-header-bg: rgb(210,180,140);
-          --card-body-color: rgb(47,79,79);
+          --card-body-color: rgb(255,255,240);
           --excerpt:#EEE8AA;
           --post-header:#F0E68C ;
           --post-content:#FFE4B5;
@@ -109,6 +109,8 @@
         /*end post setup*/
         .social-work{
           text-decoration: none !important;
+          color: #fff;
+          font-size: 1rem;
         }
         .social-work:hover{
           background-color: var(--social-background-color)!important;
@@ -161,6 +163,7 @@
         .card-body{
           color:var(--card-body-color)!important;
           font-family: 'Source Code Pro', monospace;
+          font-weight: bold;
         }
         .collapse{
           background-color: var(--card-body-bg);
@@ -300,16 +303,44 @@
         </div>
 
         <nav id="navbar" class="sidebar-nav">
+	
+	   <a href="http://localhost:4000/" class="sidebar-nav-item  ">
+	      Home
+	   </a>
+	
+	   <a href="http://localhost:4000/about" class="sidebar-nav-item  ">
+	      About
+	   </a>
+	
+	   <a href="http://localhost:4000/project" class="sidebar-nav-item  ">
+	      Project
+	   </a>
+	
+	   <a href="http://localhost:4000/resume" class="sidebar-nav-item  ">
+	      Resume/CV
+	   </a>
+	
+</nav>
 
-            <a id="home" class="sidebar-nav-item" href="/">Home</a>
+<!-- <nav id="navbar" class="sidebar-nav">
+	
+	   	<a class="sidebar-nav-item " href="http://localhost:4000/"></a>
+	
+	   	<a class="sidebar-nav-item " href="http://localhost:4000/about"></a>
+	
+	   	<a class="sidebar-nav-item " href="http://localhost:4000/project"></a>
+	
+	   	<a class="sidebar-nav-item " href="http://localhost:4000/resume"></a>
+	
+</nav> -->
+
+
+        
+<!--     <a id="about" class="sidebar-nav-item" href="/about/">About</a>  
             
-            <a id="about" class="sidebar-nav-item" href="/about/">About</a>  
+    <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
             
-            <a id="project" class="sidebar-nav-item" href="/project/">Projects</a>
-            
-            <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a>
-            
-        </nav>
+    <a id="resume" class="sidebar-nav-item" href="/resume/">Resume/CV</a> -->
 
        
           <div id="social-media">
@@ -408,27 +439,7 @@
             }, 1500);
         })
 
-        activeNav("http://localhost:4000");
-        $('.space').html('<i class="fas fa-user-astronaut"></i>').fadeIn(1000);
-        // $('.theme-switch').html('🚀');
-
-        // $('.theme-switch').css({
-        //     'font-size': '2.5rem'
-        // })
-        // $('.theme-switch').hover(function(){
-        //     $('.theme-switch').css({
-        //         'font-size': '2.5rem',
-        //         'margin-left': '1.5rem',
-        //         'cursor': 'pointer'
-        //     })
-        // }, function(){
-        //     $(this).css({
-        //         '-webkit-transform': 'scaleX(-1)',
-        //         'transform': 'scaleX(-1)',
-        //         'animation': 'shake 0.5s',
-        //         'animation-iteration-count': 'infinite' 
-        //     })
-        // })
+        // activeNav("http://localhost:4000");
     </script>
   </body>
 </html></body>

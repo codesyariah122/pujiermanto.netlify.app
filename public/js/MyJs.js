@@ -6,7 +6,7 @@ function playSound(audio){
 function pauseSound(audio){
 	audio.pause()
 }
-
+$('.space').html('<i class="fas fa-user-astronaut"></i>').fadeIn(1000);
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 const currentTheme = localStorage.getItem('theme');

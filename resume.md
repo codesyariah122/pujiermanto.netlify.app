@@ -2,6 +2,7 @@
 layout: resume
 title: Resume / CV
 permalink: /resume/
+nav: resume
 data1: intro
 data2: education
 data3: experience

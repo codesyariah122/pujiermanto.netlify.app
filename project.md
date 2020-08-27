@@ -1,6 +1,8 @@
 ---
 layout: project
 title: My project
+permalink: /project/
+
 data: projects
 rule1: project1
 rule2: project2
