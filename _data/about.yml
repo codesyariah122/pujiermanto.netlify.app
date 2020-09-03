@@ -9,10 +9,11 @@ puji:
 version-control:
    git: 75
 programming-language:
-  javascript: 80
-  ruby: 35
-  php: 85
-  nodejs: 80
+  javascript: 90
+  ruby: 50
+  php: 100
+  python: 90
+  nodejs: 90
 database:
   maria-db: 90
   mongo-db: 70
@@ -21,6 +22,8 @@ framework:
   codeigniter: 85
   rails: 35
   laravel: 35
+  django: 50
+  flask: 50
 cms:
   wordpress: 65
   prestashop: 50

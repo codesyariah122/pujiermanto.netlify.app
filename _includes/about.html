@@ -111,7 +111,11 @@
           <h4 class="blockquote-footer mt-4">Programming Language</h4>
           <label>Javascript : </label>
           <div class="progress">
-            <div data-toggle="tooltip" data-placement="top" title="My Javascript Skill = {{data.javascript}} %" data-progress="javascript" class="progress-bar progress-bar-striped progress-bar-animated {% if data.javascript <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.javascript}}" aria-valuemin="0" aria-valuemax="100">{{data.javascript}}%</div>
+            <div data-toggle="tooltip" data-placement="top" title="My Javascript Skill = {{data.javascript}} %" data-progress="javascript" class="progress-bar progress-bar-striped progress-bar-animated {% if data.javascript <= 50 %} bg-danger {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.javascript}}" aria-valuemin="0" aria-valuemax="100">{{data.javascript}}%</div>
+          </div>
+          <label>Python : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="My Python Skill = {{data.python}} %" data-progress="python" class="progress-bar progress-bar-striped progress-bar-animated {% if data.python <= 50 %} bg-warning {% else %} bg-success {% endif %}" role="progressbar" aria-valuenow="{{data.python}}" aria-valuemin="0" aria-valuemax="100">{{data.python}}%</div>
           </div>
           <label>Ruby : </label>
           <div class="progress">
@@ -119,7 +123,7 @@
           </div>
           <label>PHP : </label>
           <div class="progress">
-            <div data-toggle="tooltip" data-placement="top" title="My PHP Skill = {{data.php}} %" data-progress="php" class="progress-bar progress-bar-striped progress-bar-animated {% if data.php <= 50 %} bg-warning {% else %} bg-success {% endif %}" role="progressbar" aria-valuenow="{{data.php}}" aria-valuemin="0" aria-valuemax="100">{{data.php}}%</div>
+            <div data-toggle="tooltip" data-placement="top" title="My PHP Skill = {{data.php}} %" data-progress="php" class="progress-bar progress-bar-striped progress-bar-animated {% if data.php <= 50 %} bg-danger{% else %} bg-python {% endif %}" role="progressbar" aria-valuenow="{{data.php}}" aria-valuemin="0" aria-valuemax="100">{{data.php}}%</div>
           </div>
 
           {% assign data = site.data.about[page.data3] %}
@@ -150,6 +154,10 @@
           <label>Laravel : </label>
           <div class="progress">
             <div data-toggle="tooltip" data-placement="top" title="My Laravel Skill = {{data.laravel}} %" data-progress="laravel" class="progress-bar progress-bar-striped progress-bar-animated {% if data.laravel <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.laravel}}" aria-valuemin="0" aria-valuemax="100">{{data.laravel}}%</div>
+          </div>
+          <label>Django : </label>
+          <div class="progress">
+            <div data-toggle="tooltip" data-placement="top" title="My Django Skill = {{data.django}} %" data-progress="django" class="progress-bar progress-bar-striped progress-bar-animated {% if data.django <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.django}}" aria-valuemin="0" aria-valuemax="100">{{data.django}}%</div>
           </div>
 
           {% assign data = site.data.about[page.data5] %}
