@@ -21,14 +21,19 @@ framework:
   express: 80
   codeigniter: 85
   rails: 35
-  laravel: 35
+  laravel: 75
   django: 50
   flask: 50
 cms:
-  wordpress: 65
+  wordpress: 95
   prestashop: 50
   joomla: 50
 
 ssg:
   jekyll: 80
   gatsby: 50
+
+libraryJavascript: 
+  jquery: 95
+  react: 35
+  vue: 75
