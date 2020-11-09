@@ -4,7 +4,7 @@ function getCookie(url){
 	if(location.href !== baseUrl){
 		Swal.fire(getCookie);
 	}else{
-		if(getCookie == '' && getCookie == 'undefined'){
+		if(!getCookie){
 			askYou(getCookie);
 		}else{
 			Swal.fire({
@@ -12,10 +12,10 @@ function getCookie(url){
 				text: 'Salam Kenal Yah !',
 				width: 600,
 				padding: '3em',
-				background: `#fff url(${imgURL}model1.jpg)`,
+				background: '#fff url(https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_jekyll/public/images/model1.jpg)',
 				backdrop: `
 				  rgba(0,0,123,0.4)
-				  url("${imgURL}animated/giphy.gif")
+				  url("https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_jekyll/public/images/animated/giphy.gif")
 				  left top
 				  no-repeat
 				`
