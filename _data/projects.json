@@ -24,6 +24,12 @@
             "name" : "PT. Gemilang Citrus Berjaya",
             "url" : "https://ourcitrus.id",
             "tagline": "For Today And Future"
+        },
+        "project5" :
+        {
+            "name" : "PT. Syoobe Inti Perdana",
+            "url" : "https://syoobe.co.id",
+            "tagline": "Revolution of Marketplace"
         }
     }
 }

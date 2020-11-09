@@ -2,9 +2,10 @@ function getCookie(url){
 	const baseUrl = `${url}/about/`;
 	let getCookie = Cookies.get('codeXcode');
 	if(location.href !== baseUrl){
-		Swal.fire(getCookie);
+		console.log(false);
 	}else{
-		if(!getCookie){
+
+		if(!getCookie || getCookie == 'undefined'){
 			askYou(getCookie);
 		}else{
 			Swal.fire({
@@ -21,6 +22,14 @@ function getCookie(url){
 				`
 			  });
 			// Swal.fire(imgURL+'model1.jpg');
+			setTimeout(function(){
+				$('#visitor').show('slow').fadeIn(1000);
+				document.getElementById('namakamu').innerHTML = `Hai, ${getCookie} ... Salam kenal yah`;
+				document.getElementById('namakamu').classList.remove('alert-primary');
+				document.getElementById('namakamu').classList.add('alert-success');
+				document.getElementById('namakamu').classList.add('text-danger');
+			}, 2500);
+
 		}
 
 	}
@@ -88,18 +97,19 @@ function askYou(cookie){
 						'Terimakasih',
 						`${tanya}, salam kenal !`,
 						'success'
-					)
-					}
+					);
+					setTimeout(function(){
+						$('#visitor').show('slow').fadeIn(1000);
+						document.getElementById('namakamu').innerHTML = "Terima kasih, "+tanya;
+						document.getElementById('nama_mu').innerHTML = tanya;
+					}, 1500)
+				}
 			});
 			let id = tanya;
 			Cookies.set('codeXcode', id, {expires: 1});
 			$('#aboutModal').modal('hide');
 			// document.getElementById('visitor').classList.add('is-visible');
-			setTimeout(function(){
-				$('#visitor').show('slow').fadeIn(1000);
-				document.getElementById('namakamu').innerHTML = "Terima kasih, "+tanya;
-				document.getElementById('nama_mu').innerHTML = tanya;
-			}, 1500)
+			
 		}
 	})
 }

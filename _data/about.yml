@@ -3,7 +3,9 @@ puji:
   image: uji.jpg
   work: Fullstack Dev
   myblog: https://codesyariah122.github.io
-  company: https://ourcitrus.id
+  old: https://ourcitrus.id
+  new1: https://syoobe.co.id/mulai-berjualan/cms/view/13
+  new2: https://blog.syoobe.co.id/
   tagline: coffee again script again
   bio: Hello <span id='nama_mu' class="text-danger"><b>World</b></span> ! Myname is Puji Ermanto I'm fullstack web dev from OurCitrus by PT. Gemilang Citrus Berjaya.
 version-control:
