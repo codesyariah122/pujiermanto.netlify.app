@@ -6,7 +6,7 @@
     "usia" : 32,
     "gender" : "Laki-laki",
     "religion" : "Islam",
-    "tinggi" : 169,
+    "tinggi" : 170,
     "berat" : 60,
     "domisili": "Cimahi",
     "phone" : "0882-2266-8778",
@@ -27,16 +27,26 @@
   "experience" : 
   {
     "exp1" : {
-    "Company : " : "PT. Gemilang Citrus Berjaya",
-    "Division : " : "Web Developer",
-    "Year : " : "2018-Now"
+      "Company : " : "PT. Syoobe Inti Perdana",
+      "Division : " : "Fullstack Developer",
+      "Year : " : "2020"
     },
     "exp2" : {
+    "Company : " : "PT. Gemilang Citrus Berjaya",
+    "Division : " : "Fullstack Developer",
+    "Year : " : "2018-2020"
+    },
+    "exp3" : {
+      "Company : " : "DNA Bisnis",
+      "Division : " : "Fullstack Developer",
+      "Year : " : "2020" 
+    },
+    "exp4" : {
       "Company : " : "GNet Network",
       "Division : " : "Sysadmin",
       "Year : ": "2015-2017"
     },
-    "exp3" : {
+    "exp5" : {
       "Company : " : "HypeMedia Dev",
       "Division : " : "Network Tech",
       "Year : " : "2013-2015"
@@ -44,6 +54,13 @@
   },
 
   "repo" : {
+    "syoobe" : 
+    {
+      "Fullstack Developer => " : "<a href='https://github.com/codesyariah122/kerjaan-syoobe' class='social-work text-white bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View repo</a>",
+      "website => " : "<a href='https://syoobe.co.id/mulai-berjualan/cms/view/13' class='social-work text-white bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Project</a>",
+      "Blog => " : "<a href='https://blog.syoobe.co.id/' class='social-work text-white bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Project</a>"
+    },
+
     "ourcitrus" : 
     {
       "Codeigniter Blogging => " : "<a href='https://github.com/codesyariah122/codeigniter_blogging' class='social-work text-white bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View repo</a>",
@@ -52,6 +69,10 @@
       "Web Design => " : "<a href='https://github.com/codesyariah122/ourcitrus_new' class='social-work bg-primary text-danger' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>",
       "Template Library => " : "<a href='https://github.com/codesyariah122/ourcitrus_template_library' class='social-work text-white bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i> View Repo </a>",
       "System Polling => " : "<a href='https://github.com/codesyariah122/system_polling' class='social-work text-white bg-primary' title='' target='_blank'><i class='fas fa-code-branch fa-fw'></i>View Repo</a>"
+    },
+    "DNA Bisnis" : 
+    {
+      "website => " : "<a href='https://dna-bisnis.com/' class='social-work text-white bg-primary' title='' target='_blank'> <i class='fas fa-code-branch fa-fw'></i>View Project</a>"
     },
     "gnet" : 
     {
