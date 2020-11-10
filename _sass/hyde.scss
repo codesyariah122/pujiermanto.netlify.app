@@ -38,10 +38,18 @@ html {
   html {
     font-size: 16px;
   }
+  .sidebar-nav-item.active {
+    margin-left: 15rem;
+  }
 }
 @media (min-width: 58em) {
   html {
     font-size: 20px;
+  }
+}
+@media (min-width: 576px) { 
+  .sidebar-nav-item.active {
+    margin-left: 3rem;
   }
 }
 
@@ -68,6 +76,7 @@ html {
     width: 18rem;
     text-align: left;
   }
+
 }
 
 /* Sidebar links */
@@ -111,7 +120,7 @@ a.sidebar-nav-item:focus {
     background: rgb(238,232,170);
     width: 50%;
     text-align:center;
-    margin-left: 4rem;
+    margin-left: -1.3rem;
     border: none;
     border-radius: .9rem;
     box-shadow: .3rem .2rem rgb(169,169,169);

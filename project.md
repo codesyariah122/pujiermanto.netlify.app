@@ -1,7 +1,7 @@
 ---
 layout: project
 title: My project
-permalink: /project/
+permalink: project/
 
 data: projects
 rule1: project1

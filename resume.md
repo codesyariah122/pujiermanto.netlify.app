@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: Resume / CV
-permalink: /resume/
+permalink: resume/
 nav: resume
 data1: intro
 data2: education

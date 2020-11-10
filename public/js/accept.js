@@ -25,6 +25,7 @@ function getCookie(url){
 			setTimeout(function(){
 				$('#visitor').show('slow').fadeIn(1000);
 				document.getElementById('namakamu').innerHTML = `Hai, ${getCookie} ... Salam kenal yah`;
+				document.getElementById('nama_mu').innerHTML = getCookie;
 				document.getElementById('namakamu').classList.remove('alert-primary');
 				document.getElementById('namakamu').classList.add('alert-success');
 				document.getElementById('namakamu').classList.add('text-danger');
