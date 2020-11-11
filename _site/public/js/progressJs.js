@@ -47,25 +47,44 @@ $(document).ready(function(){
 	// 	})
 	// })
 
-// set up with hover
-$(document).ready(function(){
-    $('.progress-bar').hover(function(){
-        let value = $(this).attr('aria-valuenow');
+const progress = $('.progress');
 
-     	$(this).animate({
-            width: value+'%',
-        }), function(){
-                $(this).animate({
-                    width:'0px'
-             	})
-         }
-    })
-})
+$('.progress-bar').css({
+	'width' : '0px'
+});
+
 
 $('.progress').css({
-	'cursor':'alias',
-	'content': 'Click Please !'
+	'cursor':'zoom-in',
 });
+
+for(let i = 0; i<=progress.length; i++){
+	$('.progress').eq(i).on('mouseover', function(){
+		let value = $('.progress-bar').eq(i).attr('aria-valuenow');
+		$('.progress-bar').eq(i).animate({
+			width: `${value}%`
+		});
+	});
+	$('.progress').eq(i).on('mouseout', function(){
+		$('.progress-bar').animate({
+			width: '0px'
+		});
+	})
+}
+// set up with hover
+    // $('.progress-bar').hover(function(){
+    //     let value = $(this).attr('aria-valuenow');
+
+    //  	$(this).animate({
+    //         width: value+'%',
+    //     }), function(){
+    //             $(this).animate({
+    //                 width:'0px'
+    //          	})
+    //      }
+    // })
+
+
 	// $('.progress-bar').on("click", function(){
 	// 	const value = $(this).attr('aria-valuenow');
 	// 	const skillName = $(this).attr('data-progress');
@@ -190,4 +209,4 @@ $('.progress').css({
 	// 	}
 	// })
 
-})
+});

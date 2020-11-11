@@ -1,8 +1,41 @@
+function imageURL(url, param){
+	return url+param;
+}
+
 function getCookie(url){
 	const baseUrl = `${url}/about/`;
 	let getCookie = Cookies.get('codeXcode');
 	if(location.href !== baseUrl){
 		console.log(false);
+		if(!getCookie || getCookie == 'undefined'){
+			Swal.fire({
+				title: 'Halo Selamat datang ! ',
+				width: 500,
+				padding: '.7rem',
+				background: `#fff url(${imgURL}model1.jpg)`,
+				backdrop: `
+				  rgba(0,0,123,0.4)
+				  url("${imgURL}animated/halo2.gif")
+				  left top
+				  no-repeat
+				`
+			  });	
+		}else{
+			Swal.fire({
+				title: `Hai ${getCookie}, salam kenal.`,
+				width: 500,
+				padding: '.7rem',
+				background: `#fff url(${imgURL}model1.jpg)`,
+				backdrop: `
+				  rgba(0,0,123,0.4)
+				  url("${imgURL}animated/halo3.gif")
+				  left top
+				  no-repeat
+				`
+			  });	
+		}
+
+
 	}else{
 
 		if(!getCookie || getCookie == 'undefined'){
@@ -11,12 +44,12 @@ function getCookie(url){
 			Swal.fire({
 				title: `halo ${getCookie}`,
 				text: 'Salam Kenal Yah !',
-				width: 600,
-				padding: '3em',
-				background: '#fff url(https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_jekyll/public/images/model1.jpg)',
+				width: 400,
+				padding: '.2rem',
+				background: `#fff url(${imgURL}model1.jpg)`,
 				backdrop: `
 				  rgba(0,0,123,0.4)
-				  url("https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_jekyll/public/images/animated/giphy.gif")
+				  url("${imgURL}animated/giphy.gif")
 				  left top
 				  no-repeat
 				`

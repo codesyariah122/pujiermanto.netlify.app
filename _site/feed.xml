@@ -1,103 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-10T07:14:27+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Puji</title><subtitle>I'am web developer at ourcitrus by PT. Gemilang Citrus Berjaya</subtitle><author><name>Puji Ermanto</name><email>pujiermanto@gmail.com</email></author><entry><title type="html">Satuan Pada Css</title><link href="http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html" rel="alternate" type="text/html" title="Satuan Pada Css" /><published>2020-06-28T00:00:00+07:00</published><updated>2020-06-28T00:00:00+07:00</updated><id>http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css</id><content type="html" xml:base="http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html">![css]({{site.url}}/public/images/post/css.png)  
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-11T23:13:04+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Puji</title><subtitle>I'am web developer at ourcitrus by PT. Gemilang Citrus Berjaya</subtitle><author><name>Puji Ermanto</name><email>pujiermanto@gmail.com</email></author><entry><title type="html">Satuan Pada Css</title><link href="http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html" rel="alternate" type="text/html" title="Satuan Pada Css" /><published>2020-06-28T00:00:00+07:00</published><updated>2020-06-28T00:00:00+07:00</updated><id>http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css</id><content type="html" xml:base="http://localhost:4000/css/webdev/2020/06/28/Satuan-pada-css.html">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/public/images/post/css.png&quot; alt=&quot;css&quot; /&gt;&lt;/p&gt;
 
-# Bedah Satuan CSS  
-Jika pada praktek sehari-hari kita hanya menggunakan satuan % dan px, namun kali ini saya akan membahas penggunaan berbagai satuan yang tepat yang mungkin belum diketahui.  
+&lt;h1 id=&quot;bedah-satuan-css&quot;&gt;Bedah Satuan CSS&lt;/h1&gt;
+&lt;p&gt;Jika pada praktek sehari-hari kita hanya menggunakan satuan % dan px, namun kali ini saya akan membahas penggunaan berbagai satuan yang tepat yang mungkin belum diketahui.&lt;/p&gt;
 
-### Satuan (%) (Persentase)  
+&lt;h3 id=&quot;satuan--persentase&quot;&gt;Satuan (%) (Persentase)&lt;/h3&gt;
 
-Persentase adalah satuan yang tidak menghitung berdasarkan ukuran elemen itu sendiri namun perbandingan dengan induk elemennya.
+&lt;p&gt;Persentase adalah satuan yang tidak menghitung berdasarkan ukuran elemen itu sendiri namun perbandingan dengan induk elemennya.&lt;/p&gt;
 
-Biasanya digunakan dalam hal penentuan ukuran kolom (Grid System), mari kita intip Grid System dari beberapa Framework CSS:  
+&lt;p&gt;Biasanya digunakan dalam hal penentuan ukuran kolom (Grid System), mari kita intip Grid System dari beberapa Framework CSS:&lt;/p&gt;
 
-#### Semantic UI  
+&lt;h4 id=&quot;semantic-ui&quot;&gt;Semantic UI&lt;/h4&gt;
 
-{% highlight css %}
-	.ui[class*=&quot;six column&quot;].grid &gt; .row &gt; .column,
-  	.ui[class*=&quot;six column&quot;].grid &gt; .column:not(.row) {
-    width: 16.66666667%;
-  }
-{% endhighlight %}  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;	&lt;span class=&quot;nc&quot;&gt;.ui&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;six column&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.row&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+  	&lt;span class=&quot;nc&quot;&gt;.ui&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;six column&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.grid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.column&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:not&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;16.66666667%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-#### Bootstrap  
+&lt;h4 id=&quot;bootstrap&quot;&gt;Bootstrap&lt;/h4&gt;
 
-{% highlight css %}
-  .col-xs-6 {
-    width: 50%;
-  }
-{% endhighlight %}  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;  &lt;span class=&quot;nc&quot;&gt;.col-xs-6&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-Namun satuan ini juga baik digunakan dalam penentuan ukuran header atau h1, h2, h3, dst. dalam beberapa kasus, seperti ingin mempermudah pengerjaan situs yang responsif.  
+&lt;p&gt;Namun satuan ini juga baik digunakan dalam penentuan ukuran header atau h1, h2, h3, dst. dalam beberapa kasus, seperti ingin mempermudah pengerjaan situs yang responsif.&lt;/p&gt;
 
-### Satuan px(pixel)  
+&lt;h3 id=&quot;satuan-pxpixel&quot;&gt;Satuan px(pixel)&lt;/h3&gt;
 
-ni adalah satuan yang sering digunakan oleh mayoritas programmer, namun tahukah? bahwa satuan ini hanya cocok digunakan oleh elemen yang berukuran akurat, tidak terpengaruh oleh elemen disekitarnya atau induknya.  
+&lt;p&gt;ni adalah satuan yang sering digunakan oleh mayoritas programmer, namun tahukah? bahwa satuan ini hanya cocok digunakan oleh elemen yang berukuran akurat, tidak terpengaruh oleh elemen disekitarnya atau induknya.&lt;/p&gt;
 
-### Satuan rem dan em  
+&lt;h3 id=&quot;satuan-rem-dan-em&quot;&gt;Satuan rem dan em&lt;/h3&gt;
 
-Satuan rem dan em bisa dikatakan 16 kali dari satuan px, jadi 1rem/em = 16px, namun pada satuan em bisa bergantung pada font-size, misalnya induk elemen memiliki property font-size 14px dan anaknya memiliki property font-size: 1.6em, maka hasil yang akan ditampilkan adalah 14px * 1.6em = 22.4px.
+&lt;p&gt;Satuan rem dan em bisa dikatakan 16 kali dari satuan px, jadi 1rem/em = 16px, namun pada satuan em bisa bergantung pada font-size, misalnya induk elemen memiliki property font-size 14px dan anaknya memiliki property font-size: 1.6em, maka hasil yang akan ditampilkan adalah 14px * 1.6em = 22.4px.&lt;/p&gt;
 
-Salah satu contoh kasus yang satuan em terasa sangat bermanfaat adalah pada padding untuk elemen yang font-sizenya mudah berubah-ubah, contoh seperti :  
+&lt;p&gt;Salah satu contoh kasus yang satuan em terasa sangat bermanfaat adalah pada padding untuk elemen yang font-sizenya mudah berubah-ubah, contoh seperti :&lt;/p&gt;
 
-{% highlight css %}
-  .button{
-    font-size: 1em;
-    padding: 5em 10em;
-  }
-{% endhighlight %}  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;  &lt;span class=&quot;nc&quot;&gt;.button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-Dikarenakan induk yang mempunyai property font-size dari element .button tidak ada, maka property font-size bernilai 1em = 16px, namun pada padding 5em dan 10em terpengaruh oleh nilai dari font-size, jadi 5em 16px = 80px, dan 10em 16px = 160px.
+&lt;p&gt;Dikarenakan induk yang mempunyai property font-size dari element .button tidak ada, maka property font-size bernilai 1em = 16px, namun pada padding 5em dan 10em terpengaruh oleh nilai dari font-size, jadi 5em 16px = 80px, dan 10em 16px = 160px.&lt;/p&gt;
 
-Tapi tidak dengan satuan rem, rem satuan yang tidak terpengaruh oleh font-size, em bisa dikatakan pewaris dari rem yang berarti &quot;r&quot; adalah &quot;root&quot;.  
+&lt;p&gt;Tapi tidak dengan satuan rem, rem satuan yang tidak terpengaruh oleh font-size, em bisa dikatakan pewaris dari rem yang berarti “r” adalah “root”.&lt;/p&gt;
 
-### Satuan vw dan vh  
+&lt;h3 id=&quot;satuan-vw-dan-vh&quot;&gt;Satuan vw dan vh&lt;/h3&gt;
 
-Satuan ini disebut viewport, satuan ini adalah cara terbaik untuk membuat elemen responsif, kenapa bisa?
+&lt;p&gt;Satuan ini disebut viewport, satuan ini adalah cara terbaik untuk membuat elemen responsif, kenapa bisa?&lt;/p&gt;
 
-Hampir sama dengan % atau persentase, namun persen tidak bisa menentukan height, beda dengan vw dan vh, vw artinya viewport width dan vh artinya viewport height.
+&lt;p&gt;Hampir sama dengan % atau persentase, namun persen tidak bisa menentukan height, beda dengan vw dan vh, vw artinya viewport width dan vh artinya viewport height.&lt;/p&gt;
 
-Satuan ini bergantung pada induk elemennya, jika induk elemen mempunyai ukuran 300px x 400px maka 1vh darinya adalah 400 * 1/100 = 4px dan jika 100vh artinya adalah height yang kita tentukan 100% dari height induknya.
+&lt;p&gt;Satuan ini bergantung pada induk elemennya, jika induk elemen mempunyai ukuran 300px x 400px maka 1vh darinya adalah 400 * 1/100 = 4px dan jika 100vh artinya adalah height yang kita tentukan 100% dari height induknya.&lt;/p&gt;
 
-Jika induk dari element adalah 100% atau tak terhingga, maka 100vh bergantung pada ukuran layar.  
+&lt;p&gt;Jika induk dari element adalah 100% atau tak terhingga, maka 100vh bergantung pada ukuran layar.&lt;/p&gt;
 
-{% highlight css %}
-  body{
-    height: 100%;
-  }
-  body .screen.cover{
-    height: 100vh;
-  }
-{% endhighlight %}  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.screen.cover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100vh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-Teknik ini sangat bermanfaat jika kita ingin membuat fullscreen elemen, dan saya sangat sering menggunakannya terutama membuat cover untuk front page.  
+&lt;p&gt;Teknik ini sangat bermanfaat jika kita ingin membuat fullscreen elemen, dan saya sangat sering menggunakannya terutama membuat cover untuk front page.&lt;/p&gt;
 
-### Satuan vmin dan vmax  
+&lt;h3 id=&quot;satuan-vmin-dan-vmax&quot;&gt;Satuan vmin dan vmax&lt;/h3&gt;
 
-Satuan ini mirip dengan vw dan vh, bedanya jika kita menentukan 100vmin satuan ini akan bergantung pada induk dengan ukuran terendah, bingung?
+&lt;p&gt;Satuan ini mirip dengan vw dan vh, bedanya jika kita menentukan 100vmin satuan ini akan bergantung pada induk dengan ukuran terendah, bingung?&lt;/p&gt;
 
-Misalnya induk elemen memiliki ukuran 1000px x 1200px, jika anak elemen memakai :  
+&lt;p&gt;Misalnya induk elemen memiliki ukuran 1000px x 1200px, jika anak elemen memakai :&lt;/p&gt;
 
-{% highlight css %}
-  .anak{
-    height: 100vmin;
-    width: 100vmin;
-  }
-{% endhighlight %}  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;  &lt;span class=&quot;nc&quot;&gt;.anak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100vmin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100vmin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-Maka hasil yang akan ditampilkan seperti :  
+&lt;p&gt;Maka hasil yang akan ditampilkan seperti :&lt;/p&gt;
 
-{% highlight css %}
-  .anak{
-    height: 1000px;
-    width: 1000px;
-  }
-{% endhighlight %}  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;  &lt;span class=&quot;nc&quot;&gt;.anak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1000px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1000px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-Begitu juga sebaliknya.  
+&lt;p&gt;Begitu juga sebaliknya.&lt;/p&gt;
 
-### Satuan ex dan ch  
+&lt;h3 id=&quot;satuan-ex-dan-ch&quot;&gt;Satuan ex dan ch&lt;/h3&gt;
 
-Satuan ini mirip dengan rem dan em, bedanya 1ex/ch = 8px, namun satuan ini tidak hanya bergantung pada font-size tapi juga bergantung pada font-family agar ukurannya lebih spesifik.  
+&lt;p&gt;Satuan ini mirip dengan rem dan em, bedanya 1ex/ch = 8px, namun satuan ini tidak hanya bergantung pada font-size tapi juga bergantung pada font-family agar ukurannya lebih spesifik.&lt;/p&gt;
 
-#### Kesimpulan : 
+&lt;h4 id=&quot;kesimpulan-&quot;&gt;Kesimpulan :&lt;/h4&gt;
 
-~ Bahwa mengetahui detil dari setiap satuan pada css sangat penting demi kualitas produk yang kita buat, semoga bermanfaat! ~</content><author><name>puji</name></author><category term="css" /><category term="webdev" /><category term="webdevelopment" /><summary type="html">Bedah Satuan CSS Jika pada praktek sehari-hari kita hanya menggunakan satuan % dan px, namun kali ini saya akan membahas penggunaan berbagai satuan yang tepat yang mungkin belum diketahui. Satuan (%) (Persentase) Persentase adalah satuan yang tidak menghitung berdasarkan ukuran elemen itu sendiri namun perbandingan dengan induk elemennya. Biasanya digunakan dalam hal penentuan ukuran kolom (Grid System), mari kita intip Grid System dari beberapa Framework CSS: Semantic UI .ui[class*=&quot;six column&quot;].grid &amp;gt; .row &amp;gt; .column, .ui[class*=&quot;six column&quot;].grid &amp;gt; .column:not(.row) { width: 16.66666667%; } Bootstrap .col-xs-6 { width: 50%; } Namun satuan ini juga baik digunakan dalam penentuan ukuran header atau h1, h2, h3, dst. dalam beberapa kasus, seperti ingin mempermudah pengerjaan situs yang responsif. Satuan px(pixel) ni adalah satuan yang sering digunakan oleh mayoritas programmer, namun tahukah? bahwa satuan ini hanya cocok digunakan oleh elemen yang berukuran akurat, tidak terpengaruh oleh elemen disekitarnya atau induknya. Satuan rem dan em Satuan rem dan em bisa dikatakan 16 kali dari satuan px, jadi 1rem/em = 16px, namun pada satuan em bisa bergantung pada font-size, misalnya induk elemen memiliki property font-size 14px dan anaknya memiliki property font-size: 1.6em, maka hasil yang akan ditampilkan adalah 14px * 1.6em = 22.4px. Salah satu contoh kasus yang satuan em terasa sangat bermanfaat adalah pada padding untuk elemen yang font-sizenya mudah berubah-ubah, contoh seperti : .button{ font-size: 1em; padding: 5em 10em; } Dikarenakan induk yang mempunyai property font-size dari element .button tidak ada, maka property font-size bernilai 1em = 16px, namun pada padding 5em dan 10em terpengaruh oleh nilai dari font-size, jadi 5em 16px = 80px, dan 10em 16px = 160px. Tapi tidak dengan satuan rem, rem satuan yang tidak terpengaruh oleh font-size, em bisa dikatakan pewaris dari rem yang berarti “r” adalah “root”. Satuan vw dan vh Satuan ini disebut viewport, satuan ini adalah cara terbaik untuk membuat elemen responsif, kenapa bisa? Hampir sama dengan % atau persentase, namun persen tidak bisa menentukan height, beda dengan vw dan vh, vw artinya viewport width dan vh artinya viewport height. Satuan ini bergantung pada induk elemennya, jika induk elemen mempunyai ukuran 300px x 400px maka 1vh darinya adalah 400 * 1/100 = 4px dan jika 100vh artinya adalah height yang kita tentukan 100% dari height induknya. Jika induk dari element adalah 100% atau tak terhingga, maka 100vh bergantung pada ukuran layar. body{ height: 100%; } body .screen.cover{ height: 100vh; } Teknik ini sangat bermanfaat jika kita ingin membuat fullscreen elemen, dan saya sangat sering menggunakannya terutama membuat cover untuk front page. Satuan vmin dan vmax Satuan ini mirip dengan vw dan vh, bedanya jika kita menentukan 100vmin satuan ini akan bergantung pada induk dengan ukuran terendah, bingung? Misalnya induk elemen memiliki ukuran 1000px x 1200px, jika anak elemen memakai : .anak{ height: 100vmin; width: 100vmin; } Maka hasil yang akan ditampilkan seperti : .anak{ height: 1000px; width: 1000px; } Begitu juga sebaliknya. Satuan ex dan ch Satuan ini mirip dengan rem dan em, bedanya 1ex/ch = 8px, namun satuan ini tidak hanya bergantung pada font-size tapi juga bergantung pada font-family agar ukurannya lebih spesifik. Kesimpulan : ~ Bahwa mengetahui detil dari setiap satuan pada css sangat penting demi kualitas produk yang kita buat, semoga bermanfaat! ~</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/public/images/post/css.png" /><media:content medium="image" url="http://localhost:4000/public/images/post/css.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;~ Bahwa mengetahui detil dari setiap satuan pada css sangat penting demi kualitas produk yang kita buat, semoga bermanfaat! ~&lt;/p&gt;</content><author><name>puji</name></author><category term="css" /><category term="webdev" /><category term="webdevelopment" /><summary type="html">Bedah Satuan CSS Jika pada praktek sehari-hari kita hanya menggunakan satuan % dan px, namun kali ini saya akan membahas penggunaan berbagai satuan yang tepat yang mungkin belum diketahui. Satuan (%) (Persentase) Persentase adalah satuan yang tidak menghitung berdasarkan ukuran elemen itu sendiri namun perbandingan dengan induk elemennya. Biasanya digunakan dalam hal penentuan ukuran kolom (Grid System), mari kita intip Grid System dari beberapa Framework CSS: Semantic UI .ui[class*=&quot;six column&quot;].grid &amp;gt; .row &amp;gt; .column, .ui[class*=&quot;six column&quot;].grid &amp;gt; .column:not(.row) { width: 16.66666667%; } Bootstrap .col-xs-6 { width: 50%; } Namun satuan ini juga baik digunakan dalam penentuan ukuran header atau h1, h2, h3, dst. dalam beberapa kasus, seperti ingin mempermudah pengerjaan situs yang responsif. Satuan px(pixel) ni adalah satuan yang sering digunakan oleh mayoritas programmer, namun tahukah? bahwa satuan ini hanya cocok digunakan oleh elemen yang berukuran akurat, tidak terpengaruh oleh elemen disekitarnya atau induknya. Satuan rem dan em Satuan rem dan em bisa dikatakan 16 kali dari satuan px, jadi 1rem/em = 16px, namun pada satuan em bisa bergantung pada font-size, misalnya induk elemen memiliki property font-size 14px dan anaknya memiliki property font-size: 1.6em, maka hasil yang akan ditampilkan adalah 14px * 1.6em = 22.4px. Salah satu contoh kasus yang satuan em terasa sangat bermanfaat adalah pada padding untuk elemen yang font-sizenya mudah berubah-ubah, contoh seperti : .button{ font-size: 1em; padding: 5em 10em; } Dikarenakan induk yang mempunyai property font-size dari element .button tidak ada, maka property font-size bernilai 1em = 16px, namun pada padding 5em dan 10em terpengaruh oleh nilai dari font-size, jadi 5em 16px = 80px, dan 10em 16px = 160px. Tapi tidak dengan satuan rem, rem satuan yang tidak terpengaruh oleh font-size, em bisa dikatakan pewaris dari rem yang berarti “r” adalah “root”. Satuan vw dan vh Satuan ini disebut viewport, satuan ini adalah cara terbaik untuk membuat elemen responsif, kenapa bisa? Hampir sama dengan % atau persentase, namun persen tidak bisa menentukan height, beda dengan vw dan vh, vw artinya viewport width dan vh artinya viewport height. Satuan ini bergantung pada induk elemennya, jika induk elemen mempunyai ukuran 300px x 400px maka 1vh darinya adalah 400 * 1/100 = 4px dan jika 100vh artinya adalah height yang kita tentukan 100% dari height induknya. Jika induk dari element adalah 100% atau tak terhingga, maka 100vh bergantung pada ukuran layar. body{ height: 100%; } body .screen.cover{ height: 100vh; } Teknik ini sangat bermanfaat jika kita ingin membuat fullscreen elemen, dan saya sangat sering menggunakannya terutama membuat cover untuk front page. Satuan vmin dan vmax Satuan ini mirip dengan vw dan vh, bedanya jika kita menentukan 100vmin satuan ini akan bergantung pada induk dengan ukuran terendah, bingung? Misalnya induk elemen memiliki ukuran 1000px x 1200px, jika anak elemen memakai : .anak{ height: 100vmin; width: 100vmin; } Maka hasil yang akan ditampilkan seperti : .anak{ height: 1000px; width: 1000px; } Begitu juga sebaliknya. Satuan ex dan ch Satuan ini mirip dengan rem dan em, bedanya 1ex/ch = 8px, namun satuan ini tidak hanya bergantung pada font-size tapi juga bergantung pada font-family agar ukurannya lebih spesifik. Kesimpulan : ~ Bahwa mengetahui detil dari setiap satuan pada css sangat penting demi kualitas produk yang kita buat, semoga bermanfaat! ~</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/public/images/post/css.png" /><media:content medium="image" url="http://localhost:4000/public/images/post/css.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

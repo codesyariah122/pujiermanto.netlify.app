@@ -15,7 +15,7 @@
     <script type="text/javascript" src="{{ '/public/js/MyResume.js' | absolute_url }} "></script>
     <script type="text/javascript" src="{{ '/public/js/accept.js' | absolute_url }}"></script>
     <script type="text/javascript">
-        const imgURL = `{{site.url}}/images/`;
+        const imgURL = imageURL('{{site.url}}','/public/images/');
         getCookie('{{site.url}}');
     </script>
     <script type="text/javascript" src="{{ '/public/js/emoji.js' | absolute_url }}"></script>
