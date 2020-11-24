@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Puji" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/about/","headline":"Puji","name":"Puji","author":{"@type":"Person","name":"puji"},"description":"I’am web developer at ourcitrus by PT. Gemilang Citrus Berjaya","@context":"https://schema.org"}</script>
+{"@type":"WebSite","headline":"Puji","url":"http://localhost:4000/about/","name":"Puji","author":{"@type":"Person","name":"puji"},"description":"I’am web developer at ourcitrus by PT. Gemilang Citrus Berjaya","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Puji" /></head>
 <body><!doctype html>
@@ -485,17 +485,19 @@ Resume/CV
 
 
     <div class="row justify-content-center">
-      <div class="col-xs-6 col-sm">
+      <div class="col-md-12 col-xs-12 col-sm-12">
         <div class="card mb-3" style="max-width: 550px; background-color: var(--card-header-color);">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="http://localhost:4000/public/images/bio/uji.jpg" class="img-thumbnail img-fluid rounded mx-auto d-block img-responsive" alt="Puji Ermanto">
+              <div id="image-profile">
+              </div>
             </div>
             <div class="col-md-8 col-xs-12 col-sm-12">
-              <div class="card-about">
-                <h5 id="card-title" class="card-title ml-2">Puji Ermanto</h5>
+              <div class="card-about" id="card-github">
+                <!-- <h5 id="card-title" class="card-title ml-2">Puji Ermanto</h5>
                 <small class="text-primary ml-2 blockquote-footer">coffee again script again</small>
-                <p class="card-text">Halo <span id='nama_mu' class="text-danger"><b>Kamu</b></span> ! Myname is Puji Ermanto Project terbaru saya adalah menjadi Fullstack developer di PT.Syoobe Inti Perdana..</p>
+                <p class="card-text">Halo <span id='nama_mu' class="text-danger"><b>Kamu</b></span> ! Myname is Puji Ermanto Project terbaru saya adalah menjadi Fullstack developer di PT.Syoobe Inti Perdana..</p> -->
+                
               </div>
                 <div id="author-work">
                     <p class="card-text ml-2"><small class="text-warning">Fullstack Dev : </small><br/>
@@ -503,6 +505,10 @@ Resume/CV
                     <span class="my-work text-white">@My-Work</span>&nbsp; <i class='fas fa-laptop text-success'></i> : <a href="https://blog.syoobe.co.id/" target="_blank" class="text-warning">Syoobe Blog & Media</a><br/>
                     <span class="my-work text-white">@My-Work</span>&nbsp; <i class='fas fa-laptop text-success'></i> : <a href="https://ourcitrus.id" target="_blank" class="text-warning">OurCitrus</a><br/>
                     <span class="my-blog text-white">@My Blog</span>&nbsp; <i class='fas fa-code text-danger'></i> : <a href="https://codesyariah122.github.io" target="_blank" class="text-warning">Codesyariah Blog</a>
+                    <br><br>
+                    <button class="btn btn-success btn-sm" id="ShowRepo">My Repo</button> 
+                    <button class="btn btn-primary btn-sm text-white ml-2" id="ShowSkill">My Skill</button>
+                    <br><br>
                     </p>  
                 </div>
 
@@ -510,16 +516,26 @@ Resume/CV
           </div>
         </div>
     </div>
-  </div>
+    <hr>
 
+
+
+<div class="col-md-12 col-xs-12 col-sm-12 ml-2 mt-3">
+  <ul class="list-group list-group-flush" id="MyRepo">
+    
+  </ul>
 </div>
 
 
 
+
+
 <div class="row justify-content-center">
-    <div class="col-xs-6 col-md">
-      <h1 class="text-info">My Skill</h1>
-      <small class="text-danger blockquote-footer mb-4"><b>Arahkan mouse / jari anda ke bagian progress-bar dibawah untuk melihat persentase setiap skill</b></small>
+  <div class="col-md-12 col-xs-12 col-sm-12">      
+      <div id="MySkill">
+        <i class="far fa-window-close fa-2x fa-fw" id="CloseSkill"></i>
+            <!-- <h1 class="text-info">My Skill</h1> -->
+        <small class="text-danger blockquote-footer mb-4"><b>Arahkan mouse / jari anda ke bagian progress-bar dibawah untuk melihat persentase setiap skill</b></small>
         
           <h4 class="blockquote-footer">Version Control</h4>
           <label>Git : </label>
@@ -544,7 +560,7 @@ Resume/CV
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My PHP Skill = 100 %" data-progress="php" class="progress-bar progress-bar-striped progress-bar-animated  bg-python " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
             </div>
-  
+
             
             <h4 class="blockquote-footer mt-4">Database </h4>
             <label>Maria DB : </label>
@@ -555,7 +571,7 @@ Resume/CV
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Mongo DB Skill = 70 %" data-progress="mongo-db" class="progress-bar progress-bar-striped progress-bar-animated  bg-primary " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
             </div>
-  
+
             
             <h4 class="blockquote-footer mt-4">Framework</h4>
             <label>Express JS : </label>
@@ -578,7 +594,7 @@ Resume/CV
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Django Skill = 50 %" data-progress="django" class="progress-bar progress-bar-striped progress-bar-animated  bg-warning " role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
-  
+
             
             <h4 class="blockquote-footer mt-4">CMS</h4>
             <label>wordpress : </label>
@@ -593,46 +609,46 @@ Resume/CV
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Joomla Skill = 50 %" data-progress="joomla" class="progress-bar progress-bar-striped progress-bar-animated  bg-warning " role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
-  
+
             
             <h4 class="blockquote-footer mt-4">Static Site Generator</h4>
             <label>Jekyll : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My jekyll Skill = 80 % / I Love Jekyll cause simple" data-progress="jekyll" class="progress-bar progress-bar-striped progress-bar-animated  bg-danger " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
             </div>
-  
+
             <label>Gatsby JS : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Gatsby Skill = 50 %" data-progress="gatsby" class="progress-bar progress-bar-striped progress-bar-animated  bg-warning " role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
-  
+
             
             <h4 class="blockquote-footer mt-4">Javascript Library</h4>
             <label>jQuery : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My jquery skill = 95 % / I Love Jquery cause its simple" data-progress="jquery" class="progress-bar progress-bar-striped progress-bar-animated  bg-primary " role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
             </div>
-  
+
             <label>React : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My React Skill = 35 %" data-progress="react" class="progress-bar progress-bar-striped progress-bar-animated  bg-info " role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
             </div>
-  
+
             <label>Vue: </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Vue Skill = 75 %" data-progress="vue" class="progress-bar progress-bar-striped progress-bar-animated  bg-success " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
             </div>
-  
-  
       </div>
-  
-    </div>
+
+  </div>
+</div>
       </div>
     </main>
     <!-- Optional JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>	
     <script src="/public/js/cookie.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://localhost:4000/public/js/MyObj.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -651,6 +667,7 @@ Resume/CV
     <script type="text/javascript" src="http://localhost:4000/public/js/emoji.js"></script>
     <script type="text/javascript" src="http://localhost:4000/public/js/active.js"></script>
     <script type="text/javascript" src="http://localhost:4000/public/js/disableClick.js"></script>
+    <script type="text/javascript" src="http://localhost:4000/public/js/github.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             setTimeout(function(){

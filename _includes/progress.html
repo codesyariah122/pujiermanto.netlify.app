@@ -1,7 +1,9 @@
 <div class="row justify-content-center">
-    <div class="col-xs-6 col-md">
-      <h1 class="text-info">{{page.title2}}</h1>
-      <small class="text-danger blockquote-footer mb-4"><b>Arahkan mouse / jari anda ke bagian progress-bar dibawah untuk melihat persentase setiap skill</b></small>
+  <div class="col-md-12 col-xs-12 col-sm-12">      
+      <div id="MySkill">
+        <i class="far fa-window-close fa-2x fa-fw" id="CloseSkill"></i>
+            <!-- <h1 class="text-info">{{page.title2}}</h1> -->
+        <small class="text-danger blockquote-footer mb-4"><b>Arahkan mouse / jari anda ke bagian progress-bar dibawah untuk melihat persentase setiap skill</b></small>
         {% assign data = site.data.about[page.data1] %}
           <h4 class="blockquote-footer">Version Control</h4>
           <label>Git : </label>
@@ -26,7 +28,7 @@
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My PHP Skill = {{data.php}} %" data-progress="php" class="progress-bar progress-bar-striped progress-bar-animated {% if data.php <= 50 %} bg-danger{% else %} bg-python {% endif %}" role="progressbar" aria-valuenow="{{data.php}}" aria-valuemin="0" aria-valuemax="100">{{data.php}}%</div>
             </div>
-  
+
             {% assign data = site.data.about[page.data3] %}
             <h4 class="blockquote-footer mt-4">Database </h4>
             <label>Maria DB : </label>
@@ -37,7 +39,7 @@
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Mongo DB Skill = {{data.mongo-db}} %" data-progress="mongo-db" class="progress-bar progress-bar-striped progress-bar-animated {% if data.mongo-db <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.mongo-db}}" aria-valuemin="0" aria-valuemax="100">{{data.mongo-db}}%</div>
             </div>
-  
+
             {% assign data = site.data.about[page.data4] %}
             <h4 class="blockquote-footer mt-4">Framework</h4>
             <label>Express JS : </label>
@@ -60,7 +62,7 @@
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Django Skill = {{data.django}} %" data-progress="django" class="progress-bar progress-bar-striped progress-bar-animated {% if data.django <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.django}}" aria-valuemin="0" aria-valuemax="100">{{data.django}}%</div>
             </div>
-  
+
             {% assign data = site.data.about[page.data5] %}
             <h4 class="blockquote-footer mt-4">CMS</h4>
             <label>wordpress : </label>
@@ -75,37 +77,36 @@
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Joomla Skill = {{data.joomla}} %" data-progress="joomla" class="progress-bar progress-bar-striped progress-bar-animated {% if data.joomla <= 50 %} bg-warning {% else %} bg-success {% endif %}" role="progressbar" aria-valuenow="{{data.joomla}}" aria-valuemin="0" aria-valuemax="100">{{data.joomla}}%</div>
             </div>
-  
+
             {% assign data = site.data.about[page.data6] %}
             <h4 class="blockquote-footer mt-4">Static Site Generator</h4>
             <label>Jekyll : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My jekyll Skill = {{data.jekyll}} % / I Love Jekyll cause simple" data-progress="jekyll" class="progress-bar progress-bar-striped progress-bar-animated {% if data.jekyll <= 50 %} bg-warning {% else %} bg-danger {% endif %}" role="progressbar" aria-valuenow="{{data.jekyll}}" aria-valuemin="0" aria-valuemax="100">{{data.jekyll}}%</div>
             </div>
-  
+
             <label>Gatsby JS : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Gatsby Skill = {{data.gatsby}} %" data-progress="gatsby" class="progress-bar progress-bar-striped progress-bar-animated {% if data.gatsby <= 50 %} bg-warning {% else %} bg-danger {% endif %}" role="progressbar" aria-valuenow="{{data.gatsby}}" aria-valuemin="0" aria-valuemax="100">{{data.gatsby}}%</div>
             </div>
-  
+
             {% assign data = site.data.about[page.data7] %}
             <h4 class="blockquote-footer mt-4">Javascript Library</h4>
             <label>jQuery : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My jquery skill = {{data.jquery}} % / I Love Jquery cause its simple" data-progress="jquery" class="progress-bar progress-bar-striped progress-bar-animated {% if data.jquery <= 50 %} bg-warning {% else %} bg-primary {% endif %}" role="progressbar" aria-valuenow="{{data.jquery}}" aria-valuemin="0" aria-valuemax="100">{{data.jquery}}%</div>
             </div>
-  
+
             <label>React : </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My React Skill = {{data.react}} %" data-progress="react" class="progress-bar progress-bar-striped progress-bar-animated {% if data.react <= 50 %} bg-info {% else %} bg-danger {% endif %}" role="progressbar" aria-valuenow="{{data.react}}" aria-valuemin="0" aria-valuemax="100">{{data.react}}%</div>
             </div>
-  
+
             <label>Vue: </label>
             <div class="progress">
               <div data-toggle="tooltip" data-placement="top" title="My Vue Skill = {{data.vue}} %" data-progress="vue" class="progress-bar progress-bar-striped progress-bar-animated {% if data.vue <= 50 %} bg-warning {% else %} bg-success {% endif %}" role="progressbar" aria-valuenow="{{data.vue}}" aria-valuemin="0" aria-valuemax="100">{{data.vue}}%</div>
             </div>
-  
-  
       </div>
-  
-    </div>
+
+  </div>
+</div>
