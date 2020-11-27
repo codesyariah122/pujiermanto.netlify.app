@@ -1,10 +1,10 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+      title: "My Portfolio",
+      author: "pujiermanto",
+      email: "pujiermanto@gmail.com",
+  },
+  plugins: [
+    'gatsby-plugin-sass'
+  ],
 }
