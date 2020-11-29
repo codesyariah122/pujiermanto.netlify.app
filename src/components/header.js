@@ -27,7 +27,8 @@ const Header = () => {
           <div class="hover hover-7"></div>
           <div class="hover hover-8"></div>
           <div class="hover hover-9"></div>
-          <h1>Hello Guys</h1>
+          <h1>Assalamualaikum</h1>
+           <h2>Selamat Datang di Ruang kerjaku</h2>
         </div>
     )
 }

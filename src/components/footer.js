@@ -18,15 +18,27 @@ const Footer = () => {
     const date = new Date();
     const year = date.getFullYear();
     const profileData = {
+        'home': '/',
         'portfolio': '/portfolio',
+        'contact': '/contact',
+        'blog': '/blog',
         'twitter': `https://twitter.com/${data.site.siteMetadata.author}`,
         'github': `https://github.com/${data.site.siteMetadata.github}`,
         'dribbble': `https://dribbble.com/${data.site.siteMetadata.dribbble}`
     }
     return (
             <footer>
+                <Link to={profileData.home} target="_blank">
+                    <i class="icon-home icons"></i>
+                </Link>
                 <Link to={profileData.portfolio} target="_blank">
                     <i class="icon-docs icons"></i>
+                </Link>
+                <Link to={profileData.contact} target="_blank">
+                    <i class="icon-envelope-open icons"></i>
+                </Link>
+                <Link to={profileData.blog} target="_blank">
+                    <i class="icon-book-open icons"></i>
                 </Link>
                 <Link to={profileData.twitter} target="_blank">
                     <i class="icon-social-twitter icons"></i>

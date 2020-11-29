@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'SpringSakura';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SpringSakura'), url('https://github.com/codesyariah122/kerjaan-syoobe/blob/main/for_page/fonts/SpringSakura-3z1m8.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Reey Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Reey Regular'), url('https://github.com/codesyariah122/kerjaan-syoobe/blob/main/for_page/fonts/Reey-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lemon/Milk Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('https://github.com/codesyariah122/kerjaan-syoobe/blob/main/for_page/fonts/Lemon__Milk%20400.otf') format('otf');
+}
+
+
 body {
 	background: #fff;
 	font-family: "Comfortaa", sans-serif;
@@ -58,6 +80,7 @@ h1 {
 	text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+
 .concept {
 	position: relative;
 	padding: 5em;
@@ -88,6 +111,7 @@ h1 {
 	background: url(https://images.pexels.com/photos/4218883/pexels-photo-4218883.jpeg?cs=srgb&dl=pexels-paras-katwal-4218883.jpg&fm=jpg)
 		no-repeat center center / cover;
 	h1 {
+		font-family: 'Poiret One', cursive;
 		position: absolute;
 		margin: auto;
 		left: 0;
@@ -97,6 +121,11 @@ h1 {
 		transition: 0.5s ease;
 		z-index: 0;
 		letter-spacing: 25px;
+	}
+	h2 {
+		text-align:center;
+		font-family: 'Poiret One', cursive;
+		width:70%;
 	}
 	.hover {
 		z-index: 1;
@@ -216,7 +245,7 @@ h1 {
 }
 
 .concept-five {
-	background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/mountains.jpg)
+	background: url(https://images.pexels.com/photos/2947337/pexels-photo-2947337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
 		center center / cover;
 	display: flex;
 	align-items: center;
@@ -379,3 +408,5 @@ h1 {
 		top: 100px;
 	}
 }
+
+

@@ -27,64 +27,10 @@ const IndexPage = () => {
                   <h1>E</h1>
                 </div>
               </div>
-              <div class="concept concept-three">
-                <div class="word">
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>M</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>Y</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>P</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>O</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>R</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>T</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>F</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>O</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>L</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>I</h1>
-                  </div>
-                  <div class="hover">
-                    <div></div>
-                    <div></div>
-                    <h1>O</h1>
-                  </div>
-                </div>
+
+            <div class="concept concept-five">
+                <h1 class="word"><span class="char">I</span><span class="char">N</span><span class="char"></span><span class="char">M</span><span class="char">Y</span><span class="char">P</span><span class="char">O</span><span class="char">R</span><span class="char">T</span><span class="char">F</span><span class="char">O</span><span class="char">L</span><span class="char">I</span><span class="char">O</span>
+                </h1>
               </div>
         </Layout>
   )
