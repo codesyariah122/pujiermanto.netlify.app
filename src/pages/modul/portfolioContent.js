@@ -4,7 +4,6 @@ import {Link, graphql, useStaticQuery} from 'gatsby'
 import Experience from './experience'
 import Skills from './skills'
 
-document.querySelector('body').classList.add('w3-light-grey');
 
 const PortfolioContent = () => {
     const data = useStaticQuery(graphql`
@@ -50,3 +49,5 @@ const PortfolioContent = () => {
 }
 
 export default PortfolioContent
+
+document.querySelector('body').classList.add('w3-light-grey');
