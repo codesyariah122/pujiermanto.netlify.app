@@ -1,33 +1,34 @@
 import React from 'react'
-import { Link } from 'gatsby'
-// import './module/header.module.scss'
-import headerStyles from './module/header.module.scss'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+// import layoutStyles from './module/layout.module.scss'
+
+// import headerStyles from './module/layout.module.scss'
 
 const Header = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                    author
+                    email
+                }
+            }
+        }
+    `);
     return (
-        <header className={headerStyles.header}>
-            <h1>
-                <Link className={headerStyles.title} to="/">
-                My Portfolio Website
-                </Link>
-            </h1>
-            <nav>
-                <ul className={headerStyles.navList}>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link>
-                    </li>
-                    <li>
-                        <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div class="concept concept-one">
+          <div class="hover hover-1"></div>
+          <div class="hover hover-2"></div>
+          <div class="hover hover-3"></div>
+          <div class="hover hover-4"></div>
+          <div class="hover hover-5"></div>
+          <div class="hover hover-6"></div>
+          <div class="hover hover-7"></div>
+          <div class="hover hover-8"></div>
+          <div class="hover hover-9"></div>
+          <h1>Hello Guys</h1>
+        </div>
     )
 }
 

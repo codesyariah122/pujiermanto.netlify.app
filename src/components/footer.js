@@ -1,10 +1,45 @@
-import React from 'react' 
+import React from 'react'
+import {Link, graphql, useStaticQuery} from 'gatsby'
+// import footerStyles from './module/footer.module.scss'
 
 const Footer = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    author
+                    email
+                    github
+                    dribbble
+                }
+            }
+        }
+    `);
+    const date = new Date();
+    const year = date.getFullYear();
+    const profileData = {
+        'portfolio': '/portfolio',
+        'twitter': `https://twitter.com/${data.site.siteMetadata.author}`,
+        'github': `https://github.com/${data.site.siteMetadata.github}`,
+        'dribbble': `https://dribbble.com/${data.site.siteMetadata.dribbble}`
+    }
     return (
-        <footer>
-            <p>Created By pujiermanto &copy; 2020</p>
-        </footer>
+            <footer>
+                <Link to={profileData.portfolio} target="_blank">
+                    <i class="icon-docs icons"></i>
+                </Link>
+                <Link to={profileData.twitter} target="_blank">
+                    <i class="icon-social-twitter icons"></i>
+                </Link>
+
+                <Link to={profileData.github} target="_blank">
+                    <i class="icon-social-github icons"></i>
+                </Link>
+
+                <Link to={profileData.dribbble} target="_blank">
+                    <i class="icon-social-dribbble icons"></i>
+                </Link>
+            </footer>
     )
 }
 
