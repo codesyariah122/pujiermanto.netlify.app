@@ -12,6 +12,9 @@ const PortfolioPage = () => {
                 <link href={withPrefix('https://www.w3schools.com/w3css/4/w3.css')} rel="stylesheet" type="text/css" />
                 <link rel='stylesheet' href={withPrefix('https://fonts.googleapis.com/css?family=Roboto')} />
                 <link rel="stylesheet" href={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')} />
+                <script type="text/javascript">
+                    document.querySelector('body').classList.add('w3-light-grey');
+                </script>
             </Helmet>
         </div>
         

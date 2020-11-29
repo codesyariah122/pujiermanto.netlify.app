@@ -31,14 +31,34 @@ module.exports = {
         'tiga': 'Network Technition | '
       },
       experienceYear: {
-        'satu': '2020',
-        'dua': '2018 - 2020',
-        'tiga': '2015 - 2018'
+        'satu': 'Aug 2020',
+        'dua': 'Aug 2018 - Aug 2020',
+        'tiga': 'Mar 2015 - Jul 2018'
       },
       experienceJobdesk : {
         'satu': 'Disini saya bertugas mengelola content website, blog, membuat riset untuk kontent yang akan di terbitkan, membuat konsep design untuk layout dalam skala client side. Mempersiapkan content yang akan dirilis ke publik agar tetap terjaga originalitasnya sebelum dirilis ke publik.',
         'dua': 'Dalam perusahaan ini tugas saya membuat website bagi kebutuhan company profile, dan membuat backend untuk mengelola data perusahaan berbasis website, mengerjakan design produk untuk packaging dan juga membantu IT Support bagi keperluan pengelolaan sumber daya IT seperti jaringan internet, cctv dan server data dan printer dalam lingkup kantor.',
         'tiga': 'Di Persuhaan ini saya mengerjakan perawatan jaringan internet dalam skala RT/RW Net dan hotspot cafe, bagi client-client dan member yang terdaftar dalam administrasi jasa jaringan internet berbasis hotspot. Juga mendukung pekerjaan lainnya yang berhubungan dengan help desk dan IT Support'
+      },
+      educationSchool:{
+        'satu': 'Akademi Telekomunikasi Bogor',
+        'dua': 'Yayasan Qalbu Salim',
+        'tiga': 'SMA Pasundan 4'
+      },
+      educationFokus: {
+        'satu': 'Manajemen Informatika',
+        'dua': 'Web Design , Web Development Courses',
+        'tiga': 'Ilmu Pengetahuan Social'
+      },
+      educationDegre: {
+        'satu': 'Double Degre',
+        'dua': 'Junior Designer',
+        'tiga': 'Senior High School'
+      },
+      educationYear: {
+        'satu': '2012 - 2015',
+        'dua': '2008 - 2010',
+        'tiga': '2002 - 2005'
       }
   },
   plugins: [

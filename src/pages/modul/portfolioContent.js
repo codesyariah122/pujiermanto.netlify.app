@@ -49,5 +49,3 @@ const PortfolioContent = () => {
 }
 
 export default PortfolioContent
-
-document.querySelector('body').classList.add('w3-light-grey');
