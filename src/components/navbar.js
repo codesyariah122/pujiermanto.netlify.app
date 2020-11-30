@@ -9,17 +9,6 @@ const profileData = {
     'blog': '/blog',
 };
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-
 const Navigation = () => {
     return (
         <div className={Navbar.navbar} id="navbar">
