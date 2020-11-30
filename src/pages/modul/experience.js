@@ -9,21 +9,25 @@ const Experience = () => {
             site {
                 siteMetadata {
                     experienceCompany {
+                        myblog
                         satu
                         dua
                         tiga
                     },
                     experienceDivision {
+                        myblog
                         satu
                         dua
                         tiga
                     },
                     experienceYear {
+                        myblog
                         satu
                         dua
                         tiga
                     },
                     experienceJobdesk {
+                        myblog
                         satu
                         dua
                         tiga
