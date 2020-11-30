@@ -55,7 +55,7 @@ const Education = () => {
             <h5 class="w3-opacity"><b>{data.site.siteMetadata.educationFokus.tiga} | {data.site.siteMetadata.educationSchool.tiga}</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{data.site.siteMetadata.educationYear.tiga}</h6>
             <p>{data.site.siteMetadata.educationDegre.tiga}</p>
-            
+            <br/><br/>
             </div>
         </div>
     )

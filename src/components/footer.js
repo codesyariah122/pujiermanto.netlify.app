@@ -26,9 +26,10 @@ const Footer = () => {
         'github': `https://github.com/${data.site.siteMetadata.github}`,
         'dribbble': `https://dribbble.com/${data.site.siteMetadata.dribbble}`
     }
+
     return (
             <footer>
-                <Link to={profileData.home} target="_blank">
+                {/* <Link to={profileData.home}>
                     <i class="icon-home icons"></i>
                 </Link>
                 <Link to={profileData.portfolio} target="_blank">
@@ -39,7 +40,7 @@ const Footer = () => {
                 </Link>
                 <Link to={profileData.blog} target="_blank">
                     <i class="icon-book-open icons"></i>
-                </Link>
+                </Link> */}
                 <Link to={profileData.twitter} target="_blank">
                     <i class="icon-social-twitter icons"></i>
                 </Link>
