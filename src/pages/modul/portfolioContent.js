@@ -27,7 +27,7 @@ const PortfolioContent = () => {
             
               <div class="w3-white w3-text-grey w3-card-4">
                 <div class="w3-display-container">
-                  <img src="https://bitbucket.org/puji122/pujiermanto_backup/raw/a592e8f0c0ddbd4e25bdc50db1f64f6be91b91e7/bluetooth/uji/IMG_20200116_113112.jpg" width="305" height="370" className={contentStyles.avatarImg} alt="Avatar" />
+                  <img src="https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_new_gatsby/static/IMG_20200116_113112.jpg" width="305" height="370" className={contentStyles.avatarImg} alt="Avatar" />
                   <div class="w3-display-bottomleft w3-container w3-text-black">
                     <h2>{data.site.siteMetadata.author}</h2>
                   </div>
