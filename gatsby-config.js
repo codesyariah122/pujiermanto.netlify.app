@@ -34,7 +34,7 @@ module.exports = {
         'tiga': 'Network Technition | '
       },
       experienceYear: {
-        'myblog': 'now',
+        'myblog': 'Forever',
         'satu': 'Aug 2020',
         'dua': 'Aug 2018 - Aug 2020',
         'tiga': 'Mar 2015 - Jul 2018'
