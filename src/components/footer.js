@@ -11,6 +11,7 @@ const Footer = () => {
                     email
                     github
                     dribbble
+                    blog
                 }
             }
         }
@@ -21,7 +22,7 @@ const Footer = () => {
         'home': '/',
         'portfolio': '/portfolio',
         'contact': '/contact',
-        'blog': '/blog',
+        'blog': `https://${data.site.siteMetadata.blog}`,
         'twitter': `https://twitter.com/${data.site.siteMetadata.author}`,
         'github': `https://github.com/${data.site.siteMetadata.github}`,
         'dribbble': `https://dribbble.com/${data.site.siteMetadata.dribbble}`
@@ -41,6 +42,9 @@ const Footer = () => {
                 <Link to={profileData.blog} target="_blank">
                     <i class="icon-book-open icons"></i>
                 </Link> */}
+                <Link to={profileData.blog} target="_blank">
+                    <i class="icon-globe icons"></i>
+                </Link>
                 <Link to={profileData.twitter} target="_blank">
                     <i class="icon-social-twitter icons"></i>
                 </Link>
