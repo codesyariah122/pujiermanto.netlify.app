@@ -1,14 +1,17 @@
 import React from 'react'
 import { withPrefix } from 'gatsby' 
 import { Helmet } from 'react-helmet'
+import Navigation from './../components/navbar/navbar'
 import PortfolioContent from './portfolio/portfolioContent'
-import Footer from './portfolio/footerPortfolio'
+// import Footer from './portfolio/footerPortfolio'
 
 const PortfolioPage = () => {
     return (
         <div>
+            <></>
+            <Navigation/>
             <PortfolioContent/>
-             <Footer/>
+             {/* <Footer/> */}
             <Helmet>
                 <link href={withPrefix('https://www.w3schools.com/w3css/4/w3.css')} rel="stylesheet" type="text/css" />
                 <link rel='stylesheet' href={withPrefix('https://fonts.googleapis.com/css?family=Roboto')} />
