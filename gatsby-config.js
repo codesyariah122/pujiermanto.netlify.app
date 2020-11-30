@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
       title: "My Portfolio",
@@ -72,10 +74,26 @@ module.exports = {
         'satu': '2012 - 2015',
         'dua': '2008 - 2010',
         'tiga': '2002 - 2005'
+      },
+      menu:{
+        'home': '/',
+        'about': '/about',
+        'portfolio': '/portfolio',
+        'contact': '/contact'
       }
   },
+ 
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: path.join(__dirname, `src`, `images`),
+      }
+    }
   ],
 }

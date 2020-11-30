@@ -19,9 +19,6 @@ const Footer = () => {
     const date = new Date();
     const year = date.getFullYear();
     const profileData = {
-        'home': '/',
-        'portfolio': '/portfolio',
-        'contact': '/contact',
         'blog': `https://${data.site.siteMetadata.blog}`,
         'twitter': `https://twitter.com/${data.site.siteMetadata.author}`,
         'github': `https://github.com/${data.site.siteMetadata.github}`,

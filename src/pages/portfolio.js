@@ -1,8 +1,8 @@
 import React from 'react'
 import { withPrefix } from 'gatsby' 
 import { Helmet } from 'react-helmet'
-import PortfolioContent from './modul/portfolioContent'
-import Footer from './modul/footerPortfolio'
+import PortfolioContent from './portfolio/portfolioContent'
+import Footer from './portfolio/footerPortfolio'
 
 const PortfolioPage = () => {
     return (

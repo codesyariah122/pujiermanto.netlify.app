@@ -1,20 +1,29 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import Navbar from './module/layout.module.scss'
 
-const profileData = {
-    'home': '/',
-    'portfolio': '/portfolio',
-    'contact': '/contact',
-    'blog': '/blog',
-};
-
 const Navigation = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    menu {
+                        home
+                        about
+                        portfolio
+                        contact
+                    }
+                }
+            }
+        }
+    `);
+    
     return (
         <div className={Navbar.navbar} id="navbar">
-            <Link to={profileData.home}>Home</Link>
-            <Link to={profileData.portfolio} target="_blank">Portfolio</Link>
-            <Link to={profileData.contact} target="_blank">Contact</Link>
+            <Link to={data.site.siteMetadata.menu.home}>Home</Link>
+            <Link to={data.site.siteMetadata.menu.about}>About</Link>
+            <Link to={data.site.siteMetadata.menu.portfolio}>Portfolio</Link>
+            <Link to={data.site.siteMetadata.menu.contact}>Contact</Link>
         </div>
     )
 }

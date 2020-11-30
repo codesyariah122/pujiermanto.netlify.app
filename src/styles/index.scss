@@ -33,7 +33,7 @@ footer {
 	position: fixed;
 	top: 0;
 	right: 25px;
-	margin-top:2.9rem;
+	margin-top:3.9rem;
 	a {
 		text-decoration: none;
 		display: inline-block;
@@ -109,29 +109,31 @@ h1 {
 	grid: repeat(3, 1fr)/ repeat(3, 1fr);
 	background: yellow;
 	padding: 8em;
-	background: url(https://images.pexels.com/photos/4218883/pexels-photo-4218883.jpeg?cs=srgb&dl=pexels-paras-katwal-4218883.jpg&fm=jpg)
+	background: url(https://csharp-station.com/wp-content/uploads/2016/09/Using-the-Stopwatch-Class-to-Log-Time.jpeg)
         no-repeat center center / cover;
-	h1 {
-		font-family: 'SpringSakura';
-		position: absolute;
-		margin: auto;
-		left: 0;
-		right: 0;
-		top: 50%;
-		margin-top: -30px;
-		transition: 0.5s ease;
-		z-index: 0;
-		letter-spacing: 25px;
-	}
-	h2 {
-		text-align:center;
-		font-family: 'Poiret One', cursive;
-		width:70%;
-	}
-	span{
-		font-family: 'SpringSakura';
-		font-size: 21px;
-	}
+
+        h1 {
+            font-family: 'SpringSakura';
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 50%;
+            margin-top: -30px;
+            transition: 0.5s ease;
+            z-index: 0;
+            letter-spacing: 25px;
+        }
+        h2 {
+            text-align:center;
+            font-family: 'Poiret One', cursive;
+            width:70%;
+        }
+        span{
+            font-family: 'SpringSakura';
+            font-size: 21px;
+        }
+
 	.hover {
 		z-index: 1;
 	}
