@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
       title: "My Portfolio",
+      img: "https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_new_gatsby/static/IMG_20200116_113112.jpg",
       author: "pujiermanto",
       email: "pujiermanto@gmail.com",
       phone: "+62 882 2266 8778",
@@ -21,6 +22,13 @@ module.exports = {
         'lima': 'It Support',
         'enam': 'Library'
       },
+      skillValue: {
+        'satu': '90%',
+        'dua': '100%',
+        'tiga': '90%',
+        'empat': '95%',
+        'lima': '100%'
+      },
       experienceCompany: {
         'myblog': 'Codesyariah Blog',
         'satu': 'PT. Syoobe Inti Perdana ( Jakarta - Indonesia )',
@@ -40,7 +48,7 @@ module.exports = {
         'tiga': 'Mar 2015 - Jul 2018'
       },
       experienceJobdesk : {
-        'myblog': 'Saat ini saya aktif menulis dan mengelola konten di blog yang aku develop sendiri, secara berkala saya masih terus memperbarui konten kontent untuk blog',
+        'myblog': 'Saat ini saya aktif menulis dan mengelola konten di blog yang aku develop sendiri, secara berkala saya masih terus memperbarui konten kontent untuk blog, dengan tema yang lebih beragam dari mulai pembahasa tips and trick, keilmuan dan pengalaman dalam perjalanan kehidupan yang kulalui, untuk menjadi sebuah dokumentasi hidup. ',
         'satu': 'Disini saya bertugas mengelola content website, blog, membuat riset untuk konten yang akan di terbitkan, membuat konsep design untuk layout dalam skala client side. Mempersiapkan konten yang akan dirilis ke publik agar tetap terjaga originalitasnya sebelum dirilis ke publik.',
         'dua': 'Dalam perusahaan ini tugas saya membuat website bagi kebutuhan company profile, dan membuat backend untuk mengelola data perusahaan berbasis website, mengerjakan design produk untuk packaging dan juga membantu IT Support bagi keperluan pengelolaan sumber daya IT seperti jaringan internet, cctv dan server data dan printer dalam lingkup kantor.',
         'tiga': 'Di Persuhaan ini saya mengerjakan perawatan jaringan internet dalam skala RT/RW Net dan hotspot cafe, bagi client-client dan member yang terdaftar dalam administrasi jasa jaringan internet berbasis hotspot. Juga mendukung pekerjaan lainnya yang berhubungan dengan help desk dan IT Support'
@@ -67,6 +75,7 @@ module.exports = {
       }
   },
   plugins: [
-    'gatsby-plugin-sass'
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
   ],
 }

@@ -1,30 +1,20 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
+
 const Header = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                    author
-                    email
-                }
-            }
-        }
-    `);
     return (
         <div class="concept concept-one">
-          <div class="hover hover-1"></div>
-          <div class="hover hover-2"></div>
-          <div class="hover hover-3"></div>
-          <div class="hover hover-4"></div>
-          <div class="hover hover-5"></div>
-          <div class="hover hover-6"></div>
-          <div class="hover hover-7"></div>
-          <div class="hover hover-8"></div>
-          <div class="hover hover-9"></div>
-          <h1>Moshi moshi .. <br/> | &, | </h1>
+            <div class="hover hover-1"></div>
+            <div class="hover hover-2"></div>
+            <div class="hover hover-3"></div>
+            <div class="hover hover-4"></div>
+            <div class="hover hover-5"></div>
+            <div class="hover hover-6"></div>
+            <div class="hover hover-7"></div>
+            <div class="hover hover-8"></div>
+            <div class="hover hover-9"></div>
+                <h1>Moshi moshi .. <br/> | &, | </h1>
         </div>
     )
 }

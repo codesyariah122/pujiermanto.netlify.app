@@ -11,7 +11,6 @@ import { withPrefix, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 // import { Container } from 'react-bootstrap'
 
-
 const Layout = (props) => {
     return (
         <div>

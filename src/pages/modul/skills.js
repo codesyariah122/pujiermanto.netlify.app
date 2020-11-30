@@ -1,6 +1,6 @@
 import React from 'react'
 import contentStyles from './content.scss'
-import {Link, graphql, useStaticQuery} from 'gatsby'
+import { graphql, useStaticQuery} from 'gatsby'
 
 const Skills = () => {
     const data = useStaticQuery(graphql`
@@ -22,7 +22,13 @@ const Skills = () => {
                         tiga
                         empat
                         lima
-                        enam
+                    }
+                    skillValue {
+                      satu
+                      dua
+                      tiga
+                      empat
+                      lima
                     }
                 }
             }
@@ -41,29 +47,39 @@ const Skills = () => {
         <p><b>{data.site.siteMetadata.skill.satu}</b></p>
         <p>(PHP, NodeJS, Python, Ruby)</p>
         <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.backend}>90%</div>
+          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.backend}>
+            {data.site.siteMetadata.skillValue.satu}
+          </div>
         </div>
         <p><b>{data.site.siteMetadata.skill.dua}</b></p>
         <p>(HTML, CSS, Javascript, Sass)</p>
         <div class="w3-light-grey w3-round-xlarge w3-small">
           <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.frontend}>
-            <div class="w3-center w3-text-white">100%</div>
+            <div class="w3-center w3-text-white">
+              {data.site.siteMetadata.skillValue.dua}
+            </div>
           </div>
         </div>
         <p><b>{data.site.siteMetadata.skill.tiga}</b></p>
         <p>(Codeigniter, Laravel, Express, Django)</p>
         <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.framework}>90%</div>
+          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.framework}>
+            {data.site.siteMetadata.skillValue.tiga}
+          </div>
         </div>
         <p><b>{data.site.siteMetadata.skill.empat}</b></p>
         <p>(CorelDraw, Photoshop, Ilustrator, Figma)</p>
         <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.design}>95%</div>
+          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.design}>
+            {data.site.siteMetadata.skillValue.empat}
+          </div>
         </div>
         <p><b>{data.site.siteMetadata.skill.lima}</b></p>
         <p>(Linux OS, Windows OS, Windows Application, Router, Mikrotik, etc ... )</p>
         <div class="w3-light-grey w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.itSupport}>100%</div>
+          <div class="w3-container w3-center w3-round-xlarge w3-teal" className={contentStyles.itSupport}>
+            {data.site.siteMetadata.skillValue.lima}
+          </div>
         </div>
         <br/>
       </div>

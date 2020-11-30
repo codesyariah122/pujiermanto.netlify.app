@@ -1,5 +1,5 @@
 import React from 'react'
-import { withPrefix, Link } from 'gatsby' 
+import { withPrefix } from 'gatsby' 
 import { Helmet } from 'react-helmet'
 import PortfolioContent from './modul/portfolioContent'
 import Footer from './modul/footerPortfolio'
@@ -7,7 +7,7 @@ import Footer from './modul/footerPortfolio'
 const PortfolioPage = () => {
     return (
         <div>
-             <PortfolioContent/>
+            <PortfolioContent/>
              <Footer/>
             <Helmet>
                 <link href={withPrefix('https://www.w3schools.com/w3css/4/w3.css')} rel="stylesheet" type="text/css" />
