@@ -3,6 +3,7 @@ import { withPrefix } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Navigation from './../components/navbar/navbar'
 import PortfolioContent from './portfolio/portfolioContent'
+import './portfolio/content.scss'
 // import Footer from './portfolio/footerPortfolio'
 
 const PortfolioPage = () => {

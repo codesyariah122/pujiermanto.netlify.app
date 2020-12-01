@@ -1,6 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
+
+let navData = {
+    'about': 'About',
+    'portfolio': 'Portfolio',
+    'contact': 'Contact'
+}
 
 const NavItem = styled(Link)`
     text-decoration: none;
@@ -39,11 +46,27 @@ const NavItem = styled(Link)`
 `
 
 const NavbarLinks = () => {
+
+    const pageLink = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    menu {
+                        home
+                        about
+                        portfolio
+                        contact
+                    }
+                }
+            }
+        }
+    `)
+
     return (
         <>
-            <NavItem to="/about">About</NavItem>
-            <NavItem to="/portfolio">Portfolio</NavItem>
-            <NavItem to="/contact">Contact</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.about}>{navData.about}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.portfolio}>{navData.portfolio}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.contact}>{navData.contact}</NavItem>
         </>
     )
 }

@@ -3,11 +3,15 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
       title: "My Portfolio",
+      url: "https://pujiermanto.netlify.app",
       img: "https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_new_gatsby/static/IMG_20200116_113112.jpg",
+      image: "./src/images/brand3.png",
+      description: "Script Again Coffee Againt",
       author: "pujiermanto",
       email: "pujiermanto@gmail.com",
       phone: "+62 882 2266 8778",
       city: "Bandung - WestJava",
+      twitter: "pujiermanto",
       github: "codesyariah122",
       dribbble: "pujiermanto",
       blog: "codesyariah122.github.io",
@@ -94,6 +98,18 @@ module.exports = {
       options: {
         name: 'images',
         path: path.join(__dirname, `src`, `images`),
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/logo_puji.png`,
       }
     }
   ],

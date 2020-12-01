@@ -33,7 +33,7 @@ footer {
 	position: fixed;
 	top: 0;
 	right: 25px;
-	margin-top:3.9rem;
+	margin-top:7.9rem;
 	a {
 		text-decoration: none;
 		display: inline-block;
@@ -52,6 +52,19 @@ footer {
 			display: inline-block;
 			font-size: 20px;
 		}
+	}
+	@media (max-width: 768px) {
+		.hover{
+			font-size: 42px;
+			position: relative;
+			display: flex;
+			place-items: left;
+			left: -150px;
+		}
+		margin-top: 3rem;
+	}
+	@media (max-width: 368px){
+		margin-top: 7rem;
 	}
 }
 
@@ -170,8 +183,8 @@ h1 {
 	display: grid;
 	grid: 100% / repeat(7, 1fr);
 	padding: 5em 15em;
-	background: url('../images/homepage/bg2.jpg')
-		center center / cover;
+	// background: url('../images/homepage/bg2.jpg')
+	// 	center center / cover;
 	.hover {
 		position: relative;
 		display: grid;
@@ -189,6 +202,24 @@ h1 {
 		color: #fff;
 		-webkit-text-stroke: 2px transparent;
 		text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
+	@media (max-width: 768px) {
+		.hover{
+			font-size: 42px;
+			position: relative;
+			display: flex;
+			place-items: left;
+			left: -150px;
+		}
+	}
+	@media (max-width: 368px){
+		.hover {
+			position: relative;
+			display: flex;
+			place-items: left;
+			left: -220px;
+			top: 2rem;
+		}
 	}
 }
 
@@ -262,6 +293,7 @@ h1 {
 		align-items: center;
 		justify-content: center;
 		height: 80%;
+		letter-spacing: 15px;
 		&:hover {
 			.char:nth-child(even) {
 				top: 20px;
@@ -277,6 +309,27 @@ h1 {
 		display: inline-block;
 		top: 0;
 		transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+
+	@media (max-width: 768px) {
+		.word {
+			position: relative;
+			display: flex;
+			place-items: left;
+			left: -30px;
+			top: 2rem;
+			font-size:22px;
+		}
+	}
+	@media (max-width: 368px){
+		.word {
+			position: relative;
+			display: flex;
+			place-items: left;
+			left: -125px;
+			top: 2rem;
+			font-size:22px;
+		}
 	}
 }
 
@@ -324,14 +377,15 @@ h1 {
 }
 
 .concept-seven {
-	background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/fries.jpg)
+	background: url('../images/homepage/bg5.jpg')
 		top center / cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	h1 {
-		letter-spacing: 35px;
+		letter-spacing: 15px;
 		position: relative;
+		font-size:18px;
 		&:before {
 			content: "fries";
 			position: absolute;
@@ -348,6 +402,16 @@ h1 {
 		transition: 0.6s ease;
 		color: rgba(255, 255, 255, 0.8);
 		animation: jump-out 0.6s ease forwards;
+	}
+	@media (max-width: 768px) {
+		h1 {
+			margin-top: 1rem;
+		}
+	}
+	@media (max-width: 368px){
+		h1 {
+			margin-top: 7rem;
+		}
 	}
 }
 

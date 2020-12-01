@@ -8,9 +8,9 @@ import Avatar from './avatar'
 const Content = styled.div`
   max-width:1400px;
 `
-const AvatarImg = styled.img`
-width:100%;
-`
+// const AvatarImg = styled.img`
+// width:100%;
+// `
 
 const PortfolioContent = () => {
     const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const PortfolioContent = () => {
         }
     `);
     return (
-      <Content>
+      <Content css={{marginTop: '1.7rem'}}>
           <div class="w3-content w3-margin-top">
         
             <div class="w3-row-padding">

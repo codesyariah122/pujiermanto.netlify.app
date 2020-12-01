@@ -1,7 +1,7 @@
 import React from 'react'
-import {css} from '@emotion/core'
 
 const Header = () => {
+
     return (
         <div class="concept concept-one">
             <div class="hover hover-1"></div>
@@ -13,7 +13,7 @@ const Header = () => {
             <div class="hover hover-7"></div>
             <div class="hover hover-8"></div>
             <div class="hover hover-9"></div>
-                <h1 css={{fontFamily:'SpringSakura'}}>Moshi moshi .. <br/> | &, | </h1>
+                <h1 css={{fontFamily:'SpringSakura'}}>Moshi ~ moshi .. <br/> | , | </h1>
         </div>        
     )
 }

@@ -1,24 +1,47 @@
 import React from "react"
 import Layout from "../components/layout"
 import styled from 'styled-components'
-import { css } from "@emotion/core"
 import BackgroundImage from 'gatsby-background-image'
-import { graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
+import Author from './author'
 
 const IndexPage = (props) => {
-
     
   const BgImg2 = styled.div`
     display: flex;
     grid: 100% / repeat(7, 1fr);
     padding: 5em 15em;
+    @media (max-width: 768px) {
+      width: 600px;
+      height: 600px;
+      padding: 1rem 7rem;
+    }
+    @media(max-width: 368px) {
+      width: 300px;
+      height: 800px;
+      padding: 0rem 0rem;
+    }
   `
 
   const BgImg5 = styled.div`
     display: flex;
     grid: 100% / repeat(7, 1fr);
     padding: 5em 15em;
+    
+    @media (max-width: 768px) {
+      width: 700px;
+      height: 600px;
+      padding: 1rem 7rem;
+    }
+    @media(max-width: 368px) {
+      width: 500px;
+      height: 900px;
+      padding: 0rem 0rem;
+    }
   `
+
+
+
   return (
         <Layout>
           <BackgroundImage
@@ -52,11 +75,26 @@ const IndexPage = (props) => {
             </BackgroundImage>
 
           <BackgroundImage 
-            fluid={props.data.indexImage2.childImageSharp.fluid}>
+            fluid={props.data.indexImage2.childImageSharp.fluid}
+          >
+              <BgImg5>
               <div class="concept concept-five">
-                  <h1 class="word"><span class="char">I</span><span class="char">N</span><span class="char"></span><span class="char">M</span><span class="char">Y</span><span class="char">P</span><span class="char">O</span><span class="char">R</span><span class="char">T</span><span class="char">F</span><span class="char">O</span><span class="char">L</span><span class="char">I</span><span class="char">O</span>
-                    </h1>
+                  <h1 class="word">
+                    <span class="char">I</span><span class="char">N</span><span class="char"></span><span class="char">M</span><span class="char">Y</span><span class="char">P</span><span class="char">O</span><span class="char">R</span><span class="char">T</span><span class="char">F</span><span class="char">O</span><span class="char">L</span><span class="char">I</span><span class="char">O</span>
+                  </h1>
               </div>
+              </BgImg5>
+          </BackgroundImage>
+
+          {/* <div class="concept concept-six">
+            <h1 class="word"><span class="char">O</span><span class="char">C</span><span class="char">E</span><span class="char">A</span><span class="char">N</span>
+            </h1>
+          </div> */}
+
+          <BackgroundImage fluid={props.data.indexImage3.childImageSharp.fluid}>
+            <div class="concept concept-seven">
+                <Author/>
+            </div>
           </BackgroundImage>
 
         </Layout>
@@ -80,6 +118,13 @@ export const pageQuery = graphql`
           ...GatsbyImageSharpFluid
         }
       }
-    } 
+    },
+    indexImage3: file(relativePath: { eq: "homepage/bg5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
   }
 `;
