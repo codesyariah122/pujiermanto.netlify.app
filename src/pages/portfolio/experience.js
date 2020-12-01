@@ -39,13 +39,20 @@ const Experience = () => {
         }
     `);
 
+    const urlSite = {
+      'blog': `https://${data.site.siteMetadata.blog}`
+    }
+
     return (
         <div class="w3-twothird">
         
         <div class="w3-container w3-card w3-white w3-margin-bottom">
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
           <div class="w3-container">
-            <h5 class="w3-opacity"><b>{data.site.siteMetadata.experienceDivision.myblog} | <Link to={data.site.siteMetadata.blog}>{data.site.siteMetadata.experienceCompany.myblog}</Link></b></h5>
+            <h5 class="w3-opacity"><b>{data.site.siteMetadata.experienceDivision.myblog} | <Link to={urlSite.blog} style={{textDecoration: 'none', color: 'teal'}}>
+              {data.site.siteMetadata.experienceCompany.myblog}
+            </Link></b></h5>
+            
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{data.site.siteMetadata.experienceYear.myblog} <span class="w3-tag w3-teal w3-round">And Ever</span></h6>
             <p>{data.site.siteMetadata.experienceJobdesk.myblog}</p>
             

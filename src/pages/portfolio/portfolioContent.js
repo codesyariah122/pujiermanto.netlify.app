@@ -3,12 +3,12 @@ import {graphql, useStaticQuery} from 'gatsby'
 import Experience from './experience'
 import Skills from './skills'
 import styled from "styled-components"
-
+import Avatar from './avatar'
 
 const Content = styled.div`
   max-width:1400px;
 `
-const Avatar = styled.img`
+const AvatarImg = styled.img`
 width:100%;
 `
 
@@ -37,7 +37,9 @@ const PortfolioContent = () => {
                 <div class="w3-white w3-text-grey w3-card-4">
                   <div class="w3-display-container">
                     
-                    <Avatar src={data.site.siteMetadata.img} alt="Avatar" width="305" height="370"  />
+                    {/* <Avatar src={data.site.siteMetadata.img} alt="Avatar" width="305" height="370"  /> */}
+
+                    <Avatar/>
 
                     <div class="w3-display-bottomleft w3-container w3-text-black">
                       <h2>{data.site.siteMetadata.author}</h2>

@@ -109,11 +109,10 @@ h1 {
 	grid: repeat(3, 1fr)/ repeat(3, 1fr);
 	background: yellow;
 	padding: 8em;
-	background: url(https://csharp-station.com/wp-content/uploads/2016/09/Using-the-Stopwatch-Class-to-Log-Time.jpeg)
+	background: url('../images/homepage/bg1.jpeg')
         no-repeat center center / cover;
 
         h1 {
-            font-family: 'SpringSakura';
             position: absolute;
             margin: auto;
             left: 0;
@@ -171,7 +170,7 @@ h1 {
 	display: grid;
 	grid: 100% / repeat(7, 1fr);
 	padding: 5em 15em;
-	background: url(https://codesyariah122.github.io/assets/images/author12.jpg)
+	background: url('../images/homepage/bg2.jpg')
 		center center / cover;
 	.hover {
 		position: relative;
@@ -252,7 +251,7 @@ h1 {
 }
 
 .concept-five {
-	background: url(https://images.pexels.com/photos/2947337/pexels-photo-2947337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+	background: url('../images/homepage/bg3.jpeg')
 		center center / cover;
 	display: flex;
 	align-items: center;
@@ -280,6 +279,7 @@ h1 {
 		transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 	}
 }
+
 
 .concept-six {
 	display: flex;
