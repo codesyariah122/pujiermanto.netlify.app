@@ -39,11 +39,22 @@ const IndexPage = (props) => {
       padding: 0rem 0rem;
     }
   `
-
+  const ContainerBgImg5 = styled.div`
+  ${BackgroundImage}::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom:0;
+  }
+  `
 
 
   return (
         <Layout>
+          {/* part1 */}
             <div class="concept concept-one">
               <div class="hover hover-1"></div>
               <div class="hover hover-2"></div>
@@ -56,6 +67,8 @@ const IndexPage = (props) => {
               <div class="hover hover-9"></div>
                   <h1 css={{fontFamily:'SpringSakura'}}>Moshi ~ moshi .. <br/> | , | </h1>
             </div> 
+
+            {/* part2 */}
           <BackgroundImage
               fluid={props.data.indexImage1.childImageSharp.fluid}
             >
@@ -86,23 +99,22 @@ const IndexPage = (props) => {
                 </BgImg2>
             </BackgroundImage>
 
+          {/* part3 */}
           <BackgroundImage 
             fluid={props.data.indexImage2.childImageSharp.fluid}
           >
+            <ContainerBgImg5>
+            </ContainerBgImg5>
               <BgImg5>
-              <div class="concept concept-five">
-                  <h1 class="word">
-                    <span class="char">I</span><span class="char">N</span><span class="char"></span><span class="char">M</span><span class="char">Y</span><span class="char">P</span><span class="char">O</span><span class="char">R</span><span class="char">T</span><span class="char">F</span><span class="char">O</span><span class="char">L</span><span class="char">I</span><span class="char">O</span>
-                  </h1>
-              </div>
+                <div class="concept concept-five">
+                    <h1 class="word">
+                      <span class="char">I</span><span class="char">N</span><span class="char"></span><span class="char">M</span><span class="char">Y</span><span class="char">P</span><span class="char">O</span><span class="char">R</span><span class="char">T</span><span class="char">F</span><span class="char">O</span><span class="char">L</span><span class="char">I</span><span class="char">O</span>
+                    </h1>
+                </div>
               </BgImg5>
           </BackgroundImage>
 
-          {/* <div class="concept concept-six">
-            <h1 class="word"><span class="char">O</span><span class="char">C</span><span class="char">E</span><span class="char">A</span><span class="char">N</span>
-            </h1>
-          </div> */}
-
+          {/* part4 */}
           <BackgroundImage fluid={props.data.indexImage3.childImageSharp.fluid}>
             <div class="concept concept-seven">
                 <Author/>
