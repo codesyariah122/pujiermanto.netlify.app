@@ -1,6 +1,6 @@
 import React from 'react'
 // import 'bootstrap/dist/css/bootstrap.min.css'
-import 'jquery/dist/jquery.min.js'
+// import 'jquery/dist/jquery.min.js'
 // import 'bootstrap/dist/js/bootstrap.min.js'
 // import 'popper.js/dist/popper.min.js'
 // import { Container } from 'react-bootstrap'
@@ -17,15 +17,15 @@ const Layout = (props) => {
     return (
         <>
             <div>
-            <Navigation/>
-            <div class="main-content">
-                <Header/>
-                    {/* <Container> */}
-                    {props.children}
-                    {/* </Container> */}
-                <Footer/>
-            </div>
-               <SeoPage/>
+            <SeoPage/>
+                <Navigation/>
+                <div class="main-content">
+                    <Header/>
+                        {/* <Container> */}
+                        {props.children}
+                        {/* </Container> */}
+                    <Footer/>
+                </div>               
             </div>
         </>
     )

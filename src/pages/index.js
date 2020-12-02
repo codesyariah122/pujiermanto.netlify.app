@@ -2,8 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
-import { graphql, useStaticQuery } from 'gatsby'
-import Author from './author'
+import { graphql } from 'gatsby'
+import Author from './homepage/author'
 
 const IndexPage = (props) => {
     
@@ -44,6 +44,18 @@ const IndexPage = (props) => {
 
   return (
         <Layout>
+            <div class="concept concept-one">
+              <div class="hover hover-1"></div>
+              <div class="hover hover-2"></div>
+              <div class="hover hover-3"></div>
+              <div class="hover hover-4"></div>
+              <div class="hover hover-5"></div>
+              <div class="hover hover-6"></div>
+              <div class="hover hover-7"></div>
+              <div class="hover hover-8"></div>
+              <div class="hover hover-9"></div>
+                  <h1 css={{fontFamily:'SpringSakura'}}>Moshi ~ moshi .. <br/> | , | </h1>
+            </div> 
           <BackgroundImage
               fluid={props.data.indexImage1.childImageSharp.fluid}
             >

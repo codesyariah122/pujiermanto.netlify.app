@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
-import { withPrefix } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({ title, description, image}) => {
@@ -39,13 +38,7 @@ const SEO = ({ title, description, image}) => {
       {seo.description && (
         <meta name="twitter:description" content={seo.description} />
       )}
-      {seo.image && <meta name="twitter:image" content={seo.image} />}
-        
-        <link href={withPrefix('https://fonts.googleapis.com/css2?family=Poiret+One&family=Viga&display=swap')} rel="stylesheet" />
-        <link href={withPrefix('https://fonts.googleapis.com/css?family=Roboto')} rel="stylesheet" type="text/css" />
-        <link href={withPrefix('https://fonts.googleapis.com/css?family=Montserrat:900')} rel="stylesheet"></link>
-        <link href={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')} rel="stylesheet" type="text/css" />
-        <link href={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css')} rel="stylesheet" type="text/css" />
+      {seo.image && <meta name="twitter:image" content={seo.image} />}      
     </Helmet>
   )
 }

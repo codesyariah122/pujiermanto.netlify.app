@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
       title: "My Portfolio",
       url: "https://pujiermanto.netlify.app",
-      img: "https://raw.githubusercontent.com/codesyariah122/pujiermanto.netlify.app/with_new_gatsby/static/IMG_20200116_113112.jpg",
-      image: "./src/images/brand3.png",
+      img: "/src/images/portfolio/avatar1.jpg",
+      image: "/src/images/brand3.png",
       description: "Script Again Coffee Againt",
       author: "pujiermanto",
       email: "pujiermanto@gmail.com",

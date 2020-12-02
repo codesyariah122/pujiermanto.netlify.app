@@ -183,8 +183,8 @@ h1 {
 	display: grid;
 	grid: 100% / repeat(7, 1fr);
 	padding: 5em 15em;
-	// background: url('../images/homepage/bg2.jpg')
-	// 	center center / cover;
+	background: url('../images/homepage/bg2.jpg')
+		center center / cover;
 	.hover {
 		position: relative;
 		display: grid;
@@ -382,22 +382,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	h1 {
-		letter-spacing: 15px;
-		position: relative;
-		font-size:18px;
-		&:before {
-			content: "fries";
-			position: absolute;
-			margin: auto;
-			left: 0;
-			right: 0;
-			max-width: 400px;
-			color: transparent;
-			letter-spacing: 10px;
-			text-shadow: none;
-		}
-	}
+
 	&:hover h1:before {
 		transition: 0.6s ease;
 		color: rgba(255, 255, 255, 0.8);

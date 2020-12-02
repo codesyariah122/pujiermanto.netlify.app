@@ -1,20 +1,17 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+import { withPrefix } from 'gatsby'
 
 const Header = () => {
 
     return (
-        <div class="concept concept-one">
-            <div class="hover hover-1"></div>
-            <div class="hover hover-2"></div>
-            <div class="hover hover-3"></div>
-            <div class="hover hover-4"></div>
-            <div class="hover hover-5"></div>
-            <div class="hover hover-6"></div>
-            <div class="hover hover-7"></div>
-            <div class="hover hover-8"></div>
-            <div class="hover hover-9"></div>
-                <h1 css={{fontFamily:'SpringSakura'}}>Moshi ~ moshi .. <br/> | , | </h1>
-        </div>        
+            <Helmet>
+                <link href={withPrefix('https://fonts.googleapis.com/css2?family=Poiret+One&family=Viga&display=swap')} rel="stylesheet" />
+                <link href={withPrefix('https://fonts.googleapis.com/css?family=Roboto')} rel="stylesheet" type="text/css" />
+                <link href={withPrefix('https://fonts.googleapis.com/css?family=Montserrat:900')} rel="stylesheet"></link>
+                <link href={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')} rel="stylesheet" type="text/css" />
+                <link href={withPrefix('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css')} rel="stylesheet" type="text/css" />
+            </Helmet>          
     )
 }
 
