@@ -18,6 +18,7 @@ const Navigation = styled.nav`
     position: sticky;
     top: 0;
     width: 100%;
+    margin-top: -.5rem;
 
     @media (max-width: 768px) {
     position: sticky;

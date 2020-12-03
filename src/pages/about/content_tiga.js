@@ -7,19 +7,22 @@ const AboutSection = styled.div`
 padding: 50px;
 text-align: center;
 justify-content: center;
-margin-top: 12.5rem;
+margin-top: 1rem;
 `
 
 const Heading = styled.h1`
     font-family: 'SpringSakura';
     font-size: 56px;
-    color: #fff;
+    color: #000;
 `
 const HeadingTwo = styled.h1`
-    font-size: 26px;
-    margin-top: -2rem;
-    margin-bottom: 3rem;
+    font-size: 18px;
+    margin-left: 5rem;
+    margin-top:-2rem;
     font-family: 'Ubuntu', sans-serif;
+    color: #000;
+    font-weight: bold;
+    z-index: 1;
 `
 
 const ContentTiga = () => {
@@ -32,7 +35,7 @@ const ContentTiga = () => {
             </Heading>
             <HeadingTwo>
             Are you Need Developer <br/>
-            Please <Link to="/contact" css={{color: 'white', textDecoration:'none'}}>Contact Me</Link> 
+            Please <Link to="/contact" css={{color: 'blue', textDecoration:'none'}}>Contact Me</Link> 
             </HeadingTwo>
         </AboutSection>
     )

@@ -9,15 +9,15 @@ padding: 50px;
 text-align: center;
 justify-content: center;
 color: black;
-margin-top: 5.5rem;
+margin-top:-5rem;
 `
 
 const ContentDua = () => {
     const dataLogo = useStaticQuery(graphql`
     query {
-        file(relativePath: {eq: "puji.jpg"}) {
+        file(relativePath: {eq: "uji3.png"}) {
             childImageSharp {
-                fixed(width: 250, height: 250) {
+                fixed(width: 150, height: 150) {
                     ...GatsbyImageSharpFixed
                 }
             }
@@ -26,16 +26,12 @@ const ContentDua = () => {
 `)
 const styles = {
     borderRadius: "50%",
-    marginTop: "12rem",
-    zIndex: '1'
+    zIndex: '1',
 }
     return (
         <>
          <AboutSection>
              <Img style={styles} fixed={dataLogo.file.childImageSharp.fixed} />  
-             <h1 css={{color:'white'}}>
-                 I'am Developer | FullStack | FrontEnd
-             </h1>
          </AboutSection>
         </>
     )
