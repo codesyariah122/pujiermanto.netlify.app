@@ -97,6 +97,7 @@ const Navbar = () => {
 
     return (
         <Navigation>
+            
             <Logo/>
 
             <Toggle
@@ -106,7 +107,7 @@ const Navbar = () => {
                 </Toggle>
                 {navbarOpen ? (
                     <NavBox>
-                        <NavbarLinks/>
+                        <NavbarLinks />
                     </NavBox>
                 ) : (
                     <NavBox open>

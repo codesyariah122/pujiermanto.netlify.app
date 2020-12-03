@@ -1,12 +1,16 @@
 import React from 'react'
+
+
 import Navigation from './../components/navbar/navbar'
+import Header from './about/header'
 
 const AboutPage = () => {
     return (
         <div>
             <></>
             <Navigation/>
-            <h1>Hallo World</h1>
+            <Header/>
+            
         </div>
         
     )

@@ -12,7 +12,7 @@ const Content = styled.div`
 // width:100%;
 // `
 
-const PortfolioContent = () => {
+const MyCvContent = () => {
     const data = useStaticQuery(graphql`
         query {
             site{
@@ -62,4 +62,4 @@ const PortfolioContent = () => {
     )
 }
 
-export default PortfolioContent
+export default MyCvContent

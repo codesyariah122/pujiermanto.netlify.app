@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 let navData = {
     'about': 'About',
     'portfolio': 'Portfolio',
+    'mycv': 'MyCV',
     'contact': 'Contact'
 }
 
@@ -55,6 +56,7 @@ const NavbarLinks = () => {
                         home
                         about
                         portfolio
+                        mycv
                         contact
                     }
                 }
@@ -64,9 +66,10 @@ const NavbarLinks = () => {
 
     return (
         <>
-            <NavItem to={pageLink.site.siteMetadata.menu.about}>{navData.about}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.portfolio}>{navData.portfolio}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.contact}>{navData.contact}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.about} activeStyle={{color: 'tomato'}}>{navData.about}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.portfolio} activeStyle={{color: 'tomato'}}>{navData.portfolio}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.mycv} activeStyle={{color: 'tomato'}}>{navData.mycv}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.contact} activeStyle={{color: 'tomato'}}z>{navData.contact}</NavItem>
         </>
     )
 }
