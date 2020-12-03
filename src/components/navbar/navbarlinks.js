@@ -66,10 +66,10 @@ const NavbarLinks = () => {
 
     return (
         <>
-            <NavItem to={pageLink.site.siteMetadata.menu.about} activeStyle={{color: '#FFDEAD'}}>{navData.about}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.portfolio} activeStyle={{color: '#FFDEAD'}}>{navData.portfolio}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.mycv} activeStyle={{color: '#FFDEAD'}}>{navData.mycv}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.contact} activeStyle={{color: '#FFDEAD'}}z>{navData.contact}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.about} activeStyle={{color: '#808080'}}>{navData.about}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.portfolio} activeStyle={{color: '#808080'}}>{navData.portfolio}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.mycv} activeStyle={{color: '#808080'}}>{navData.mycv}</NavItem>
+            <NavItem to={pageLink.site.siteMetadata.menu.contact} activeStyle={{color: '#808080'}}z>{navData.contact}</NavItem>
         </>
     )
 }
