@@ -1,0 +1,19 @@
+{
+	"head": {
+		"title": "Unexpected Kernel Mode Trap"
+	},
+	"puji":{
+		"nama": {
+			"full": "Puji Ermanto",
+			"excerpt": "PUJI" 
+		},
+		"email": "pujiermanto@gmail.com",
+		"jobdesk": {
+			"satu": "Web Developer",
+			"dua": "Content Writer",
+			"tiga": "Penggiat Informasi Teknologi"
+		},
+		"telp": "6288222668778"		
+	}
+
+}
