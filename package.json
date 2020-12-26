@@ -1,13 +1,12 @@
 {
   "name": "my-website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "export": "next export",
-    "deploy": "npm run build && npm run export"
+    "export": "next export"
   },
   "dependencies": {
     "next": "10.0.4",
