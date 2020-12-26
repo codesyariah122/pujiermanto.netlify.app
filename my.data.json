@@ -2,18 +2,39 @@
 	"head": {
 		"title": "Unexpected Kernel Mode Trap"
 	},
-	"puji":{
-		"nama": {
-			"full": "Puji Ermanto",
-			"excerpt": "PUJI" 
+	"navItem": {
+		"home": {
+			"label": "Home",
+			"href": "/"
 		},
-		"email": "pujiermanto@gmail.com",
-		"jobdesk": {
-			"satu": "Web Developer",
-			"dua": "Content Writer",
-			"tiga": "Penggiat Informasi Teknologi"
+		"about": {
+			"label": "About",
+			"href": "/about"
 		},
-		"telp": "6288222668778"		
+		"contact": {
+			"label": "Contact",
+			"href": "/contact"
+		},
+		"resume": {
+			"label": "Resume",
+			"href": "/resume"
+		}
+	},
+
+	"dev":{
+		"puji":{
+			"nama": {
+				"full": "Puji Ermanto",
+				"excerpt": "PUJI" 
+			},
+			"email": "pujiermanto@gmail.com",
+			"jobdesk": {
+				"satu": "Web Developer, ",
+				"dua": "Content Writer dan",
+				"tiga": "Penggiat Informasi Teknologi"
+			},
+			"telp": "6288222668778"		
+		}
 	}
 
 }

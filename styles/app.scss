@@ -29,15 +29,34 @@ body{
 	}
 
 	.nav-links{
-		margin-top:7px;
+		margin-top:-.3rem;
 		display: flex;
 		margin-left: auto;
 		list-style: none;
 		a[href]{
+			position:relative;
 			display: inline-block;
 			margin-left:20px;
 			margin-right: 20px;
 			text-decoration: none;
+			transition: opacity .3s;
+
+			&.active {
+				font-weight: 700;
+
+				&:after{
+					content:'';
+					position: absolute;
+					bottom:-10px;
+					left:0;
+					width:40px;
+					height:2px;
+					background-color:#00C;
+				}
+			}
+			&:hover{
+				opacity: .5;
+			}
 		}
 	}
 }
@@ -71,6 +90,10 @@ body{
 			color:#fff;
 			text-decoration: none;
 			border-radius: 5px;
+			transition: transform .1s;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 
