@@ -1,15 +1,12 @@
 import Link from 'next/link'
-import Navbar from './partials/navbar'
-import Head from 'next/head'
+import Layout from './partials/layout'
 
 const About = () => {
 	return (
 		<>
-		<Head>
-			<title>About</title>
-		</Head>
-		<Navbar/>
+		<Layout title="About">
 			<h1>About Page</h1>
+		</Layout>
 		</>
 	)
 }

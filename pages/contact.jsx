@@ -1,16 +1,13 @@
 import Link from 'next/link'
-import Navbar from './partials/navbar'
-import Head from 'next/head'
+import Layout from './partials/layout'
 
 
 const Contact = () => {
 	return (
 		<>
-		<Head>
-			<title>Contact</title>
-		</Head>
-		<Navbar/>
+		<Layout title="Contact">
 			<h1>Contact Page</h1>
+		</Layout>
 		</>
 	)
 }

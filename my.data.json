@@ -24,16 +24,127 @@
 	"dev":{
 		"puji":{
 			"nama": {
+				"label": "Puji Ermanto",
+				"tags": "Coffee Again Script Again",
+				"avatar": "/pic/puji.jpg",
 				"full": "Puji Ermanto",
-				"excerpt": "PUJI" 
+				"excerpt": "PUJI",
+				"icon": "fa-user-circle"
 			},
-			"email": "pujiermanto@gmail.com",
+			"working": {
+				"label": "Web Developer",
+				"icon": "fa-briefcase"
+			},
+			"city": {
+				"label": "Cimahi - West Java",
+				"icon": "fa-home"
+			},
+			"email": {
+				"label": "pujiermanto@gmail.com",
+				"icon": "fa-envelope"
+			},
 			"jobdesk": {
-				"satu": "Web Developer, ",
-				"dua": "Content Writer dan",
-				"tiga": "Penggiat Informasi Teknologi"
+				"satu": "Web Developer",
+				"dua": ", Content Writer dan",
+				"tiga": "Penggiat Informasi Teknologi",
+				"icon": "fa-briefcase"
 			},
-			"telp": "6288222668778"		
+			"phone": {
+				"label": "+62 882 2266 8778",
+				"icon": "fa-phone"
+			}		
+		}
+	},
+
+	"education": {
+		"satu": {
+			"school": "Akademi Telekomunikasi Bogor",
+			"fokus": "Manajemen Informatik",
+			"degre": "Double Degre",
+			"year": "2012 - 2016"
+		},
+		"dua": {
+			"school": "Yayasan Qalbu Salim",
+			"fokus": "Web Design, Web Development Course",
+			"degre": "Junior Designer",
+			"year": "2008 - 2010"
+		},
+		"tiga": {
+			"school": "SMA Pasundan 4 Bandung",
+			"fokus": "Ilmu Pengetahuan Social",
+			"Degre": "Senior High School",
+			"year": "2002 - 2005"
+		}
+	},
+
+	"skills": {
+		"type": {
+			"satu": "Programming Language",
+			"dua": "Markup Language",
+			"tiga": "Framework Backend",
+			"empat": "Framework Frontend",
+			"lima": "Framework Javascript",
+			"enam": "Design Tools",
+			"tujuh": "It Support & Help Desk",
+			"delapan": "Library Tools",
+			"sembilan": "CMS & Static Site"
+		},
+		"webdev":{
+			"satu":{
+				"php":{
+					"name": "PHP Programming",
+					"value": "95%"
+				},
+				"node":{
+					"name": "Node.JS",
+					"value": "75%"
+				},
+				"python": {
+					"name": "Python Programming",
+					"value": "75%"
+				},
+				"ruby": {
+					"name": "Ruby Programming",
+					"value": "75%"
+				}
+			},
+			"dua": {
+				"markup":{
+					"name": "(HTML|HTML5, CSS|CSS3, Javascript)",
+					"value": "100%"
+				}
+			}
+		}
+	},
+
+	"experience": {
+		"satu": {
+			"company": "Codesyariah Blog ( Cimahi - Indonesia )",
+			"link": "https://codesyariah122.github.io",
+			"division": "Founder and Content Writer",
+			"year": "Forever And Ever",
+			"jobdesk": "Saat ini saya aktif menulis dan mengelola konten di blog yang saya develop sendiri. Secara rutin dan berkala saya masih terus memperbarui konten kontent untuk blog baik itu sekedar mengisi sebuah tulisan dengan rubrik yang sederhana maupun ilmiah. Membangun tema yang lebih beragam dari mulai pembahasa tips and trick, ide bisnis, peluang entrepreneur, keilmuan dan pengalaman dalam perjalanan kehidupan yang kulalui, untuk menjadi sebuah dokumentasi yang merekam jejak-jejak informasi digital dizamanku."
+		},
+		"dua": {
+			"company": "PT. Syoobe Inti Perdana ( Jakarta - Indonesia )",
+			"link": "https://syoobe.co.id/",
+			"division": "Frontend Webdeveloper",
+			"year": "Aug 2020",
+			"jobdesk": "Disini saya bertugas mengelola content website, blog, membuat riset Unexpectedtuk konten yang akan di terbitkan, membuat konsep design untuk layout dalam skala client side. Mempersiapkan konten yang akan dirilis ke publik agar tetap terjaga originalitasnya sebelum dirilis ke publik."
+		},
+		"tiga": {
+			"company": "PT. Gemilang Citrus Berjaya ( Sidoarjo - Indonesia )",
+			"link": "https://login.ourcitrus.id",
+			"division": "Fullstack Webdeveloper",
+			"year": "Aug 2018 - Aug 2020",
+			"jobdesk": "Di perusahaan ini tugas saya membuat website bagi kebutuhan company profile, dan membuat backend untuk mengelola data perusahaan berbasis website, mengerjakan design produk untuk packaging dan juga membantu IT Support bagi keperluan pengelolaan sumber daya IT seperti jaringan internet, cctv dan server data dan printer dalam lingkup kantor."
+		},
+		"empat": {
+			"company": "Hypster Network ( Bogor - Indonesia )",
+			"link": "https://topsetting.com",
+			"division": "Network Technition",
+			"year": "Mar 2015 - Jul 2018",
+			"jobdesk": "Di Persuhaan ini saya mengerjakan perawatan jaringan internet dalam skala RT/RW Net dan hotspot cafe, bagi client-client dan member yang terdaftar dalam administrasi jasa jaringan internet berbasis hotspot. Juga mendukung pekerjaan lainnya yang berhubungan dengan help desk dan IT Support"
 		}
 	}
 

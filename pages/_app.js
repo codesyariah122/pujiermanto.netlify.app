@@ -1,4 +1,6 @@
 import '../styles/app.scss'
+import './contents/resume/content.scss'
+import contentStyles from './contents/resume/content.scss'
 import Head from 'next/head'
 import Data from '../my.data'
 
