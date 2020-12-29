@@ -10,7 +10,6 @@ const Resume = () => {
     return (
         <Layout title="Resume Puji">
         <>
-            <Navigation/>
             <MyResumeContent/>
              {/* <Footer/> */}
             <Helmet>
