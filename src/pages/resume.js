@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from "../components/layout"
 import './resume/content.scss'
 import { withPrefix } from 'gatsby' 
 import { Helmet } from 'react-helmet'
@@ -8,7 +9,7 @@ import MyResumeContent from './resume/myresumecontent'
 const Resume = () => {
     return (
         <Layout title="Resume Puji">
-        <div>
+        <>
             <Navigation/>
             <MyResumeContent/>
              {/* <Footer/> */}
@@ -22,7 +23,7 @@ const Resume = () => {
                     document.querySelector('body').classList.add('w3-light-grey');
                 </script>
             </Helmet>
-        </div>
+        </>
         </Layout>
     )
 }

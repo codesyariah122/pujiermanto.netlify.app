@@ -1,6 +1,6 @@
 import React from "react"
-import '../styles/hero.scss'
 import Layout from "../components/layout"
+import '../styles/hero.scss'
 import Hero from './homepage/hero'
 import Author from './homepage/author'
 import styled from 'styled-components'
