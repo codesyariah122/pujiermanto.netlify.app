@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 @font-face {
     font-family: 'SpringSakura';
     font-style: normal;
@@ -21,10 +23,15 @@
 
 
 body {
+
+	font-family: 'Source Code Pro', monospace;
+
 	background: #fff;
-	font-family: "Comfortaa", sans-serif;
+	// font-family: "Comfortaa", sans-serif;
+	// font-family: 'Source Code Pro', monospace;
 	position: relative;
 }
+
 
 footer {
 	text-align: center;
@@ -41,11 +48,13 @@ footer {
 		height: 45px;
 		border-radius: 50%;
 		background: transparent;
-		border: 1px dashed #fff;
-		color: #fff;
-		margin: 5px;
+		border: 1px dashed #FFA07A;
+		color: #E9967A;
+		margin: 3px;
+		margin-left: 15px;
 		&:hover {
-			background: rgba(158, 93, 93, 0.3);
+			background: rgba(240, 128, 128, 0.5);
+			color: #fff;
 		}
 		.icons {
 			margin-top: 12px;
@@ -100,7 +109,7 @@ h1 {
 	padding: 5em;
 	height: 100vh;
 	overflow: hidden;
-	scroll-snap-align: center;
+	scroll-snap-align: end;
 	&:before {
 		content: "";
 		position: absolute;

@@ -12,16 +12,15 @@ const Content = styled.div`
 // width:100%;
 // `
 
-const MyCvContent = () => {
+const MyResumeContent = () => {
     const data = useStaticQuery(graphql`
         query {
             site{
                 siteMetadata {
                     img
-                    author
-                    email
-                    phone
-                    city
+                    author {
+                      full
+                    }
                 }
             }
         }
@@ -42,7 +41,7 @@ const MyCvContent = () => {
                     <Avatar/>
 
                     <div class="w3-display-bottomleft w3-container w3-text-black">
-                      <h2>{data.site.siteMetadata.author}</h2>
+                      <h2>{data.site.siteMetadata.author.full}</h2>
                     </div>
                   </div>
                   
@@ -62,4 +61,4 @@ const MyCvContent = () => {
     )
 }
 
-export default MyCvContent
+export default MyResumeContent

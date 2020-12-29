@@ -1,11 +1,10 @@
 import React from "react"
-import '../styles/hero.scss'
 import Layout from "../components/layout"
-import Hero from './homepage/hero'
-import Author from './homepage/author'
 import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import { graphql } from 'gatsby'
+import Author from './homepage/author'
+import SectionOne from './homepage/sectionone'
 
 const IndexPage = (props) => {
     
@@ -52,13 +51,14 @@ const IndexPage = (props) => {
     bottom:0;
   }
   `
+
+
   return (
-        <Layout title="Unexpected Kernel Mode">
-          <section className="hero">
-            <div className="container">
-              <Hero/>
-            </div>
-          </section>
+        <Layout>
+            {/* part1 */}
+            <SectionOne/>
+
+            {/* part2 */}
           <BackgroundImage
               fluid={props.data.indexImage1.childImageSharp.fluid}
             >
@@ -89,11 +89,28 @@ const IndexPage = (props) => {
                 </BgImg2>
             </BackgroundImage>
 
-            <BackgroundImage fluid={props.data.indexImage3.childImageSharp.fluid}>
+          {/* part3 */}
+          <BackgroundImage 
+            fluid={props.data.indexImage2.childImageSharp.fluid}
+          >
+            <ContainerBgImg5>
+            </ContainerBgImg5>
+              <BgImg5>
+                <div class="concept concept-five">
+                    <h1 class="word">
+                      <span class="char">I</span><span class="char">N</span><span class="char"></span><span class="char">M</span><span class="char">Y</span><span class="char">P</span><span class="char">O</span><span class="char">R</span><span class="char">T</span><span class="char">F</span><span class="char">O</span><span class="char">L</span><span class="char">I</span><span class="char">O</span>
+                    </h1>
+                </div>
+              </BgImg5>
+          </BackgroundImage>
+
+          {/* part4 */}
+          <BackgroundImage fluid={props.data.indexImage3.childImageSharp.fluid}>
             <div class="concept concept-seven">
                 <Author/>
             </div>
           </BackgroundImage>
+
         </Layout>
   )
 }
@@ -125,3 +142,20 @@ export const pageQuery = graphql`
     },
   }
 `;
+
+
+
+
+          <BackgroundImage 
+            fluid={props.data.indexImage2.childImageSharp.fluid}
+          >
+            <ContainerBgImg5>
+            </ContainerBgImg5>
+              <BgImg5>
+                <div class="concept concept-five">
+                    <h1 class="word">
+                      <span class="char">W</span><span class="char">E</span><span class="char">L</span><span class="char">C</span><span class="char">O</span><span class="char">M</span><span class="char">E</span>
+                    </h1>
+                </div>
+              </BgImg5>
+          </BackgroundImage>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+.hero{
+	padding-top: 87px;
+	scroll-snap-align: start;
+	// padding-bottom: 15px;
+	.container{
+		display: inline-flex;
+		align-item: center;
+		justify-content: safe center;
+		width:90%;
+	}
+	.text-wrapper{
+		width: 30%;
+		text-align: justify;
+
+		.title{
+			font-family: 'Poiret One', cursive;
+			color: #000;
+			font-size: 55px;
+			margin-top: 25px;
+			margin-bottom: 10px;
+		}
+
+		.description{
+			font-size:18px;
+			line-height: 40px;
+			font-family: 'Source Code Pro', monospace;
+		}
+		.cta{
+			display: inline-block;
+			padding: 15px 45px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			background: #000;
+			color:#fff;
+			text-decoration: none;
+			border-radius: 5px;
+			transition: transform .1s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.image-wrapper{
+		width: 50%;
+		margin-left:25px;
+		margin-top:-3rem;
+		text-align: right;
+	}
+}

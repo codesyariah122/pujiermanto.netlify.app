@@ -1,6 +1,7 @@
 import React from 'react'
+import './content_satu.scss'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import {Link, graphql, useStaticQuery} from 'gatsby'
 
 
 const AboutSection = styled.div`
@@ -11,14 +12,15 @@ margin-top: 1rem;
 `
 
 const Heading = styled.h1`
-    font-family: 'SpringSakura';
-    font-size: 56px;
+    font-family: 'Reey Regular';
+    font-size: 23px;
     color: #000;
+    margin-left:3rem;
 `
 const HeadingTwo = styled.h1`
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 5rem;
-    margin-top:-2rem;
+    margin-top:1rem;
     font-family: 'Ubuntu', sans-serif;
     color: #000;
     font-weight: bold;
@@ -28,6 +30,7 @@ const HeadingTwo = styled.h1`
 const ContentTiga = () => {
    
     return (
+
         <AboutSection>
             <Heading>
                 Halo Everyone... <br/> 

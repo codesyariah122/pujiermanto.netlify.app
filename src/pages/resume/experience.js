@@ -7,9 +7,10 @@ const Experience = () => {
         query {
             site {
                 siteMetadata {
+                    author {
+                        blog
 
-                  blog
-
+                    },
                     experienceCompany {
                         myblog
                         satu

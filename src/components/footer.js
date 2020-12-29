@@ -7,21 +7,22 @@ const Footer = () => {
         query {
             site {
                 siteMetadata {
-                    author
-                    email
-                    github
-                    dribbble
-                    blog
+                    author {
+                        blog
+                        twitter
+                        github
+                        dribbble
+                    }
                 }
             }
         }
     `);
     
     const profileData = {
-        'blog': `https://${data.site.siteMetadata.blog}`,
-        'twitter': `https://twitter.com/${data.site.siteMetadata.author}`,
-        'github': `https://github.com/${data.site.siteMetadata.github}`,
-        'dribbble': `https://dribbble.com/${data.site.siteMetadata.dribbble}`
+        'blog': `https://${data.site.siteMetadata.author.blog}`,
+        'twitter': `https://twitter.com/${data.site.siteMetadata.author.twitter}`,
+        'github': `https://github.com/${data.site.siteMetadata.author.github}`,
+        'dribbble': `https://dribbble.com/${data.site.siteMetadata.author.dribbble}`
     }
 
     return (

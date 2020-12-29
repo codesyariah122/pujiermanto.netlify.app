@@ -7,20 +7,18 @@ import React from 'react'
 
 import Header from './header'
 import Footer from './footer'
-import Navigation from './navbar/navbar'
 import '../styles/index.scss'
 
 import SeoPage from './seo'
 
 const Layout = (props) => {
-
+    
     return (
         <>
             <div>
-            <SeoPage/>
-                <Navigation/>
+            <SeoPage title={props.title}/>
+                <Header/>
                 <div class="main-content">
-                    <Header/>
                         {/* <Container> */}
                         {props.children}
                         {/* </Container> */}

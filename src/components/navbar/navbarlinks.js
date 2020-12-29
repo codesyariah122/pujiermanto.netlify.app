@@ -3,12 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { graphql, useStaticQuery } from 'gatsby'
 
-let navData = {
-    'about': 'About',
-    'portfolio': 'Portfolio',
-    'mycv': 'MyCV',
-    'contact': 'Contact'
-}
+
 
 const NavItem = styled(Link)`
     text-decoration: none;
@@ -18,6 +13,7 @@ const NavItem = styled(Link)`
     margin: 0 1vw;
     transition: all 200ms ease-in;
     position: relative;
+    font-family: 'Source Code Pro', monospace;
 
     :after {
     position: absolute;
@@ -32,10 +28,10 @@ const NavItem = styled(Link)`
     transition: all 0.4s ease-in;
     }
 
-    :hover {
+    &:hover {
     color: goldenrod;
-    ::after {
-        width: 100%;
+    &:after {
+        width: 75%;
     }
     }
 
@@ -43,8 +39,23 @@ const NavItem = styled(Link)`
     padding: 20px 0;
     font-size: 1.5rem;
     z-index: 6;
+    }   
+
+    &.active {
+        font-weight: 700;
+
+        &:after{
+            content:'';
+            position: absolute;
+            bottom:-5px;
+            left:0;
+            width:30px;
+            height:2px;
+            background-color:goldenrod;
+        }
     }
 `
+
 
 const NavbarLinks = () => {
 
@@ -53,23 +64,26 @@ const NavbarLinks = () => {
             site {
                 siteMetadata {
                     menu {
-                        home
-                        about
-                        portfolio
-                        mycv
+                        home 
+                        about 
+                        resume
                         contact
                     }
                 }
             }
         }
     `)
-
+    const NavData = [
+        {"href": pageLink.site.siteMetadata.menu.home, "label": "Home"},
+        {"href": pageLink.site.siteMetadata.menu.about, "label": "About"},
+        {"href": pageLink.site.siteMetadata.menu.contact, "label": "Contact"},
+        {"href": pageLink.site.siteMetadata.menu.resume, "label": "Resume"}
+    ]
     return (
         <>
-            <NavItem to={pageLink.site.siteMetadata.menu.about} activeStyle={{color: '#808080'}}>{navData.about}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.portfolio} activeStyle={{color: '#808080'}}>{navData.portfolio}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.mycv} activeStyle={{color: '#808080'}}>{navData.mycv}</NavItem>
-            <NavItem to={pageLink.site.siteMetadata.menu.contact} activeStyle={{color: '#808080'}}z>{navData.contact}</NavItem>
+        {NavData.map(nav => (
+            <NavItem to={nav.href} activeClassName="active"> {nav.label} </NavItem>
+        ))}
         </>
     )
 }

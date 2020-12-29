@@ -5,17 +5,18 @@ import styled from 'styled-components'
 
 
 const AboutSection = styled.div`
-padding: 50px;
-text-align: center;
-justify-content: center;
+padding: 100px;
+text-align: right;
+justify-content: right;
 color: black;
-margin-top:-5rem;
+margin-right: -6.3rem;
+margin-top:-13rem;
 `
 
 const ContentDua = () => {
     const dataLogo = useStaticQuery(graphql`
     query {
-        file(relativePath: {eq: "uji3.png"}) {
+        file(relativePath: {eq: "portfolio/uji3.png"}) {
             childImageSharp {
                 fixed(width: 150, height: 150) {
                     ...GatsbyImageSharpFixed

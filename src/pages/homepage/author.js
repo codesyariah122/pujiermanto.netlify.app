@@ -12,7 +12,10 @@ const Author = () => {
         query {
             site {
                 siteMetadata {
-                    author
+                    author {
+                        full 
+                        calls
+                    }
                 }
             }
         }
@@ -24,7 +27,7 @@ const Author = () => {
             position: relative;
             font-size:18px;
             &:before {
-                content: "${data.site.siteMetadata.author}";
+                content: "${data.site.siteMetadata.author.full}";
                 position: absolute;
                 margin: auto;
                 left: 0;
@@ -39,7 +42,7 @@ const Author = () => {
 
     return (
         <Effect>
-            <h1>{data.site.siteMetadata.author} &copy; {year}</h1>
+            <h1>{data.site.siteMetadata.author.full} &copy; {year}</h1>
         </Effect>
     )
 }

@@ -15,9 +15,9 @@ width:80%;
 const Logo = () => {
     const data = useStaticQuery(graphql`
         query {
-            file(name: {eq: "brand3"}, extension: {eq: "png"}) {
+            file(name: {eq: "anjing"}, extension: {eq: "png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 100, pngQuality: 100) {
+                    fluid(maxWidth: 1000, pngQuality: 100) {
                         ...GatsbyImageSharpFluid
                     }
                 }
@@ -27,7 +27,7 @@ const Logo = () => {
 
     return (
         <LogoWrap as={Link} to="/">
-            <Img fluid={data.file.childImageSharp.fluid} alt="logo" />
+            <Img fluid={data.file.childImageSharp.fluid} alt="logo" style={{width: "50px"}}/>
         </LogoWrap>
     )
 }

@@ -1,16 +1,16 @@
 import React from 'react'
-import './mycv/content.scss'
+import './resume/content.scss'
 import { withPrefix } from 'gatsby' 
 import { Helmet } from 'react-helmet'
 import Navigation from './../components/navbar/navbar'
-import MyCvContent from './mycv/mycvcontent'
+import MyResumeContent from './resume/myresumecontent'
 
-const MyCv = () => {
+const Resume = () => {
     return (
         <div>
             <></>
             <Navigation/>
-            <MyCvContent/>
+            <MyResumeContent/>
              {/* <Footer/> */}
             <Helmet>
                 <link href={withPrefix('https://www.w3schools.com/w3css/4/w3.css')} rel="stylesheet" type="text/css" />
@@ -27,4 +27,4 @@ const MyCv = () => {
     )
 }
 
-export default MyCv
+export default Resume

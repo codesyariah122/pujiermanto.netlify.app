@@ -1,17 +1,13 @@
 import React from 'react'
-import Navigation from './../components/navbar/navbar'
-import Header from './about/header'
+import Layout from "../components/layout"
 import ContentSatu from './about/content_satu'
 
 const AboutPage = () => {
-    const style = {
-        marginTop: '-5rem'
-    }
     return (
     <>
-    <Navigation/>
-        <Header/>
+    <Layout title="About Page">
         <ContentSatu/>
+    </Layout>
     </>
     )
 }
