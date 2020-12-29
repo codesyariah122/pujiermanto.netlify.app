@@ -10,11 +10,11 @@
 		display: inline-flex;
 		align-item: center;
 		justify-content: safe center;
-		width:80%;
+		width:90%;
 	}
 	.text-wrapper{
-		width: 70%;
-		text-align: left;
+		width: 30%;
+		text-align: justify;
 
 		.title{
 			font-family: 'Poiret One', cursive;
@@ -30,7 +30,7 @@
 			font-family: 'Source Code Pro', monospace;
 		}
 		.cta{
-			display: flex;
+			display: inline-block;
 			padding: 15px 45px;
 			margin-top: 10px;
 			margin-bottom: 20px;
@@ -46,49 +46,56 @@
 	}
 
 	.image-wrapper{
-		width: 70%;
+		width: 50%;
 		margin-left:25px;
-		margin-top:1rem;
+		margin-top:-3rem;
 		text-align: right;
 	}
 
+
 	@media (max-width: 768px) {
-		.text-wrapper {
-			width:  50%;
-			margin-top: -3rem;
-			.title {
-				font-size:75px
-			}
-			.description {
-				font-size: 16px;
-				line-height: 25px;
-			}
-		}
-		.cta{
+		.text-wrapper{
+			width: 40%;
 			margin-top: -7rem;
-			margin-left:-.1rem;
-		}			
-	}
-	@media (max-width: 368px){
-		.text-wrapper {
-			width: 50%;
-			margin-top: -3rem;
-			.title {
-				font-size:45px;
-			}
+
 			.description {
 				font-size: 14px;
-				line-height: 23px;
+				line-height: 21px;
+			}
+
+			.cta{
+				line-height: 18px;
+				font-size:16px;
+				margin-top: -.5rem;
+				padding: 15px 10px;
+				margin-bottom: 3rem;
 			}
 		}
+
 		.image-wrapper {
-			margin-top:2rem;
-			margin-left: -2.3rem;
+			margin-top: -7.5rem;
 		}
-		.cta {
-			margin-top: -3rem;
-			margin-left: .3rem;
-			width: 100%;
+	}
+
+	@media (max-width: 368px){
+		.text-wrapper{
+			width: 50%;
+
+			.description {
+				font-size: 14px;
+				line-height: 21px;
+			}
+
+			.cta{
+				line-height: 18px;
+				font-size:16px;
+				padding: 15px 10px;
+				margin-bottom: 3rem;
+			}
+		}
+
+		.image-wrapper {
+			margin-top: 3rem;
 		}
 	}
 }
