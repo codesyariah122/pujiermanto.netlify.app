@@ -35,7 +35,6 @@ const data = useStaticQuery(graphql`
 		{'text': data.site.siteMetadata.author.hoby.tiga, 'color': 'darksalmon'}
 	]
 
-console.log(hobys);
 
 	return (
 		<>
@@ -44,7 +43,7 @@ console.log(hobys);
 		          <p className="description">
 		          	Saya <span style={{color: 'crimson'}}>{dev.calls}</span> Lengkapnya <span style={{color: 'coral'}}>{dev.full}</span>. Saat ini saya aktif sebagai {hobys.map(hoby => (
 		          			<span style={{color:`${hoby.color}`}}>{hoby.text}</span>
-		          		))}. Selengkapnya mengenai saya dapat dilihat di resume berikut ...
+		          		))}. Selengkapnya ...
 		          </p>
 		          <Link to="/resume" className="cta">Resume Saya</Link>
 		        </div>

@@ -1,4 +1,3 @@
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 h2{
     color: #fff;
@@ -8,4 +7,23 @@ h2{
 }
 .avatarImg{
     width:100%;
+}
+
+
+.english {
+    height:24px;width:100%;
+}
+
+.spanish {
+    height:24px;width:55%;
+}
+
+.german {
+    height:24px;width:25%;
+}
+
+.static {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

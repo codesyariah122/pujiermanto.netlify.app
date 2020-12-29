@@ -83,7 +83,7 @@ footer {
 
 .main-content {
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	scroll-snap-type: y mandatory;
 	position: relative;
 	height: 100vh;
@@ -213,6 +213,7 @@ h1 {
 		text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	}
 	@media (max-width: 768px) {
+		h1 {font-size: 55px};
 		.hover{
 			font-size: 42px;
 			position: relative;
@@ -222,11 +223,12 @@ h1 {
 		}
 	}
 	@media (max-width: 368px){
+		h1 {font-size: 55px};
 		.hover {
 			position: relative;
 			display: flex;
 			place-items: left;
-			left: -220px;
+			left: -230px;
 			top: 2rem;
 		}
 	}
@@ -401,10 +403,12 @@ h1 {
 	@media (max-width: 768px) {
 		h1 {
 			margin-top: 1rem;
+			font-size:16px;
 		}
 	}
 	@media (max-width: 368px){
 		h1 {
+			font-size:16px;
 			margin-top: 7rem;
 		}
 	}
