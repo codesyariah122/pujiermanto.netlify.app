@@ -7,8 +7,8 @@ import MyResumeContent from './resume/myresumecontent'
 
 const Resume = () => {
     return (
+        <Layout title="Resume Puji">
         <div>
-            <></>
             <Navigation/>
             <MyResumeContent/>
              {/* <Footer/> */}
@@ -23,7 +23,7 @@ const Resume = () => {
                 </script>
             </Helmet>
         </div>
-        
+        </Layout>
     )
 }
 
