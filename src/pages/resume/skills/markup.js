@@ -15,10 +15,12 @@ const BackEnd = () => {
 		          markup {
 		            name
 		            value
+		            color
 		          }
 		          preprocessor {
 		          	name
 		          	value
+		          	color
 		          }
 		        }
 		      }
@@ -28,8 +30,9 @@ const BackEnd = () => {
 	`)
 
 	const fetchings = [
-		{"name":data.site.siteMetadata.webdev.dua.markup.name, "percent": data.site.siteMetadata.webdev.dua.markup.value},
-				{"name":data.site.siteMetadata.webdev.dua.preprocessor.name, "percent": data.site.siteMetadata.webdev.dua.preprocessor.value}
+		{ "name":data.site.siteMetadata.webdev.dua.markup.name, "percent": data.site.siteMetadata.webdev.dua.markup.value, "color": data.site.siteMetadata.webdev.dua.markup.color },
+		
+		{ "name":data.site.siteMetadata.webdev.dua.preprocessor.name, "percent": data.site.siteMetadata.webdev.dua.preprocessor.value, "color": data.site.siteMetadata.webdev.dua.preprocessor.color}
 	]
 
 	
@@ -43,8 +46,8 @@ const BackEnd = () => {
 						<li>
 							<b>{fetch.name}</b>
 							<div class="w3-light-grey w3-round-xlarge w3-small">
-							   	<div class="w3-container w3-center w3-round-xlarge w3-teal" style={{width: `${fetch.percent}`}}>
-							         {fetch.percent}
+							   	<div class={`w3-container w3-center w3-round-xlarge w3-${fetch.color}`} style={{width: `${fetch.percent}%`}}>
+							         {fetch.percent}%
 							    </div>
 							</div>
 						</li>

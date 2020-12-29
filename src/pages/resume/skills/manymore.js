@@ -1,28 +1,28 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 
-const FrameWorkJavascript = () => {
+const ManyMores = () => {
 
 	const data = useStaticQuery(graphql`
 		query {
 		  site {
 		    siteMetadata {
 		      skill {
-		        lima
+		        sepuluh
 		      }
 		      webdev {
-		        lima {
-		          react{
+		        sepuluh {
+		          git {
 		            name
 		            value
 		            color
 		          }
-		          vue {
+		          container {
 		            name
 		            value
 		            color
 		          }
-		          angular {
+		          composer {
 		            name
 		            value
 		            color
@@ -35,17 +35,17 @@ const FrameWorkJavascript = () => {
 	`)
 
 	const fetchings = [
-		{"name":data.site.siteMetadata.webdev.lima.react.name, "percent": data.site.siteMetadata.webdev.lima.react.value, "color": data.site.siteMetadata.webdev.lima.react.color },
+		{"name":data.site.siteMetadata.webdev.sepuluh.git.name, "percent": data.site.siteMetadata.webdev.sepuluh.git.value, "color": data.site.siteMetadata.webdev.sepuluh.git.color },
 
-		{ "name": data.site.siteMetadata.webdev.lima.vue.name, "percent": data.site.siteMetadata.webdev.lima.vue.value, "color": data.site.siteMetadata.webdev.lima.vue.color },
+		{ "name": data.site.siteMetadata.webdev.sepuluh.container.name, "percent": data.site.siteMetadata.webdev.sepuluh.container.value, "color": data.site.siteMetadata.webdev.sepuluh.container.color },
 
-		{ "name": data.site.siteMetadata.webdev.lima.angular.name, "percent": data.site.siteMetadata.webdev.lima.angular.value, "color": data.site.siteMetadata.webdev.lima.angular.color }
+		{ "name": data.site.siteMetadata.webdev.sepuluh.composername, "percent": data.site.siteMetadata.webdev.sepuluh.composervalue, "color": data.site.siteMetadata.webdev.sepuluh.composercolor }
 	]
 
 	
 	return (
 		<>
-		<p><b><u>{data.site.siteMetadata.skill.lima}</u></b></p>
+		<p><b><u>{data.site.siteMetadata.skill.sepuluh}</u></b></p>
 		{
 			fetchings.map(fetch => (
 				<>
@@ -66,4 +66,4 @@ const FrameWorkJavascript = () => {
 	)
 }
 
-export default FrameWorkJavascript
+export default ManyMores

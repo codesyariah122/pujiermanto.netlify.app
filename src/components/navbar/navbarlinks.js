@@ -49,7 +49,7 @@ const NavItem = styled(Link)`
             position: absolute;
             bottom:-5px;
             left:0;
-            width:30px;
+            width:15px;
             height:2px;
             background-color:goldenrod;
         }

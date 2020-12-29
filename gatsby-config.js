@@ -41,7 +41,8 @@ module.exports = {
         "enam": "Design Tools",
         "tujuh": "It Support & Help Desk",
         "delapan": "Library Tools",
-        "sembilan": "CMS & Static Site"
+        "sembilan": "CMS & Static Site",
+        "sepuluh": "Manymore Tools"
       },
 
       webdev:{
@@ -49,87 +50,221 @@ module.exports = {
         satu:{
           "php":{
             "name": "PHP Programming",
-            "value": "100%"
+            "value": 100,
+            "color": "red"
           },
           "node":{
             "name": "Node.JS",
-            "value": "80%"
+            "value": 80,
+            "color": "red"
           },
           "python": {
             "name": "Python Programming",
-            "value": "75%"
+            "value": 75,
+            "color": "blue"
           },
           "ruby": {
             "name": "Ruby Programming",
-            "value": "65%"
+            "value": 65,
+            "color": "blue"
           }
         },
         
         dua: {
           "markup":{
             "name": "(HTML|HTML5, CSS|CSS3, Javascript)",
-            "value": "100%"
+            "value": 100,
+            "color": "red"
           },
           "preprocessor": {
             "name": "SASS & SCSS",
-            "value": "95%"
+            "value": 95,
+            "color": "red"
           }
         },
         
         tiga: {
           "laravel": {
             "name": "Laravel",
-            "value": "95%"
+            "value": 95,
+            "color": "red"
           },
           "codeigniter": {
             "name": "Codeigniter",
-            "value": "100%"
+            "value": 100,
+            "color": "red"
           },
           "express": {
             "name": "Express.js",
-            "value": "75%"
+            "value": 75,
+            "color": "blue"
           },
           "django": {
             "name": "Django",
-            "value": "85%"
+            "value": 85,
+            "color": "red"
           },
           "rails": {
             "name": "Ruby on Rails",
-            "value": "65%"
+            "value": 65,
+            "color": "blue"
           }
         },
 
         empat: {
           "bootstrap": {
             "name": "Bootstrap",
-            "value": "100%"
+            "value": 100,
+            "color": "red"
           },
           "materialize": {
             "name": "Materialize",
-            "value": "100%"
+            "value": 100,
+            "color": "red"
           },
           "bulma": {
             "name": "Bulma",
-            "value": "55%"
+            "value": 55,
+            "color": "teal"
           },
           "foundation": {
             "name": "Foundation",
-            "value": "50%"
+            "value": 50,
+            "color": "teal"
           }
         },
 
         lima: {
           "react": {
             "name": "React.js",
-            "value": "85%"
+            "value": 85,
+            "color": "red"
           },
           "vue": {
             "name": "Vue.js",
-            "value": "95%"
+            "value": 95,
+            "color": "red"
           },
           "angular": {
             "name": "Angular",
-            "value": "55%"
+            "value": 55,
+            "color": "teal"
+          }
+        },
+
+        enam: {
+          "photoshop": {
+            "name": "Photoshop",
+            "value": 75,
+            "color": "blue"
+          },
+          "corel": {
+            "name": "Corel Draw",
+            "value": 60,
+            "color": "teal"
+          },
+          "figma": {
+            "name": "Figma",
+            "value": 75,
+            "color": "blue"
+          },
+          "adobexd": {
+            "name": "Adobe XD",
+            "value": 85,
+            "color": "blue"
+          }
+        },
+        tujuh: {
+          "linux": {
+            "name": "Linux OS (Advance Software & Tools Organization)",
+            "value": 95,
+            "color": "red"
+          },
+          "windows": {
+            "name": "Windows OS (Advance Software & Tools Organization)",
+            "value": 90,
+            "color": "red"
+          },
+          "networking": {
+            "name": "Mikrotik Router, Printer Server, File Server, Client Network",
+            "value": 90,
+            "color": "red"
+          }
+        },
+        delapan: {
+          "jquery": {
+            "name": "JQuery",
+            "value": 97,
+            "color": "red"
+          },
+          "chartjs": {
+            "name": "Chart.js",
+            "value": 95,
+            "color": "red"
+          },
+          "aos": {
+            "name": "AOS",
+            "value": 75,
+            "color": "blue"
+          },
+          "tailwind": {
+            "name": "Tailwind CSS",
+            "value": 50,
+            "color": "teal"
+          }
+        },
+        sembilan: {
+          "wordpress": {
+            "name": "Wordpress",
+            "value": 97,
+            "color": "red"
+          },
+          "drupal": {
+            "name": "Drupal",
+            "value": 40,
+            "color": "teal"
+          },
+          "presta": {
+            "name": "Prestashop",
+            "value": 65,
+            "color": "teal"
+          },
+          "woo": {
+            "name": "WooCommers",
+            "value": 50,
+            "color": "teal"
+          },
+          "gatsby": {
+            "name": "Gatsby.js",
+            "value": 95,
+            "color": "red"
+          },
+          "next": {
+            "name": "Next.js",
+            "value": 75,
+            "color": "red"
+          },
+          "jekyll": {
+            "name": "Jekyll",
+            "value": 100,
+            "color": "red"
+          }
+        },
+        sepuluh: {
+          "git": {
+            "name": "Version Controll (git, github, gitlab, bitbucket)",
+            "value": 100,
+            "color": "red"
+          },
+          "container": {
+            "name": "Docker (Container)",
+            "value": 65,
+            "color": "blue"
+          },
+          "composer": {
+            "name": "Composer",
+            "value": 50,
+            "color": "blue"
           }
         }
 

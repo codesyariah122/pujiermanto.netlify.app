@@ -15,18 +15,22 @@ const BackEnd = () => {
 		          php{
 		            name
 		            value
+		            color
 		          }
 		          node {
 		            name
 		            value
+		            color
 		          }
 		          python {
 		            name
 		            value
+		            color
 		          }
 		          ruby {
 		            name
 		            value
+		            color
 		          }
 		        }
 		      }
@@ -36,13 +40,13 @@ const BackEnd = () => {
 	`)
 
 	const fetchings = [
-		{"name":data.site.siteMetadata.webdev.satu.php.name, "percent": data.site.siteMetadata.webdev.satu.php.value},
+		{ "name":data.site.siteMetadata.webdev.satu.php.name, "percent": data.site.siteMetadata.webdev.satu.php.value, "color": data.site.siteMetadata.webdev.satu.php.color },
 
-		{ "name": data.site.siteMetadata.webdev.satu.node.name, "percent": data.site.siteMetadata.webdev.satu.node.value },
+		{ "name": data.site.siteMetadata.webdev.satu.node.name, "percent": data.site.siteMetadata.webdev.satu.node.value, "color": data.site.siteMetadata.webdev.satu.node.color },
 
-		{ "name": data.site.siteMetadata.webdev.satu.python.name, "percent": data.site.siteMetadata.webdev.satu.python.value },
+		{ "name": data.site.siteMetadata.webdev.satu.python.name, "percent": data.site.siteMetadata.webdev.satu.python.value, "color": data.site.siteMetadata.webdev.satu.python.color },
 		
-		{"name":data.site.siteMetadata.webdev.satu.ruby.name, "percent": data.site.siteMetadata.webdev.satu.ruby.value}
+		{"name":data.site.siteMetadata.webdev.satu.ruby.name, "percent": data.site.siteMetadata.webdev.satu.ruby.value, "color": data.site.siteMetadata.webdev.satu.ruby.color}
 	]
 
 	
@@ -56,8 +60,8 @@ const BackEnd = () => {
 						<li>
 							<b>{fetch.name}</b>
 							<div class="w3-light-grey w3-round-xlarge w3-small">
-							   	<div class="w3-container w3-center w3-round-xlarge w3-teal" style={{width:`${fetch.percent}`}}>
-							         {fetch.percent}
+							   	<div class={`w3-container w3-center w3-round-xlarge w3-${fetch.color}`} style={{width:`${fetch.percent}%`}}>
+							         {fetch.percent}%
 							    </div>
 							</div>
 						</li>

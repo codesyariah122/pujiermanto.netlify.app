@@ -15,18 +15,22 @@ const FrameWorkFrontEnd = () => {
 		          bootstrap{
 		            name
 		            value
+		            color
 		          }
 		          materialize {
 		            name
 		            value
+		            color
 		          }
 		          bulma {
 		            name
 		            value
+		            color
 		          }
 		          foundation {
 		            name
 		            value
+		            color
 		          }
 		        }
 		      }
@@ -36,13 +40,13 @@ const FrameWorkFrontEnd = () => {
 	`)
 
 	const fetchings = [
-		{"name":data.site.siteMetadata.webdev.empat.bootstrap.name, "percent": data.site.siteMetadata.webdev.empat.bootstrap.value},
+		{"name":data.site.siteMetadata.webdev.empat.bootstrap.name, "percent": data.site.siteMetadata.webdev.empat.bootstrap.value, "color": data.site.siteMetadata.webdev.empat.bootstrap.color },
 
-		{ "name": data.site.siteMetadata.webdev.empat.materialize.name, "percent": data.site.siteMetadata.webdev.empat.materialize.value },
+		{ "name": data.site.siteMetadata.webdev.empat.materialize.name, "percent": data.site.siteMetadata.webdev.empat.materialize.value, "color": data.site.siteMetadata.webdev.empat.materialize.color },
 
-		{ "name": data.site.siteMetadata.webdev.empat.bulma.name, "percent": data.site.siteMetadata.webdev.empat.bulma.value },
+		{ "name": data.site.siteMetadata.webdev.empat.bulma.name, "percent": data.site.siteMetadata.webdev.empat.bulma.value, "color": data.site.siteMetadata.webdev.empat.bulma.color },
 		
-		{"name":data.site.siteMetadata.webdev.empat.foundation.name, "percent": data.site.siteMetadata.webdev.empat.foundation.value}
+		{"name":data.site.siteMetadata.webdev.empat.foundation.name, "percent": data.site.siteMetadata.webdev.empat.foundation.value, "color": data.site.siteMetadata.webdev.empat.foundation.color }
 	]
 
 	
@@ -56,8 +60,8 @@ const FrameWorkFrontEnd = () => {
 						<li>
 							<b>{fetch.name}</b>
 							<div class="w3-light-grey w3-round-xlarge w3-small">
-							   	<div class="w3-container w3-center w3-round-xlarge w3-teal" style={{width: `${fetch.percent}`}}>
-							         {fetch.percent}
+							   	<div class={`w3-container w3-center w3-round-xlarge w3-${fetch.color}`} style={{width: `${fetch.percent}%`}}>
+							         {fetch.percent}%
 							    </div>
 							</div>
 						</li>

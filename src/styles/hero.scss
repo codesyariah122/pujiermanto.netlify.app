@@ -13,9 +13,9 @@
 		width:90%;
 	}
 	.text-wrapper{
-		width: 30%;
+		width: 50%;
 		text-align: justify;
-
+		margin-left:7rem;
 		.title{
 			font-family: 'Poiret One', cursive;
 			color: #000;
@@ -47,8 +47,7 @@
 
 	.image-wrapper{
 		width: 50%;
-		margin-left:25px;
-		margin-top:-3rem;
+		margin-top:-1.3rem;
 		text-align: right;
 	}
 
@@ -73,14 +72,15 @@
 		}
 
 		.image-wrapper {
-			margin-top: -7.5rem;
+			margin-top: -5.5rem;
 		}
 	}
 
 	@media (max-width: 368px){
 		.text-wrapper{
 			width: 50%;
-
+			margin-left: 1rem;
+			
 			.description {
 				font-size: 14px;
 				line-height: 21px;
@@ -90,7 +90,7 @@
 				line-height: 18px;
 				font-size:16px;
 				padding: 15px 10px;
-				margin-bottom: 3rem;
+				margin-bottom: 7.5rem;
 			}
 		}
 
