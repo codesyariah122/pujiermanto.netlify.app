@@ -1,7 +1,19 @@
 const path = require('path');
+// const MetaData = require('./src/data/config');
+
+// const dotenv = require('dotenv');
+// dotenv.config();
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+// const { githubApiQuery } = require('./github-api');
+
 
 module.exports = {
-  siteMetadata: {
+
+    siteMetadata: {
       title: "My Portfolio",
       url: "https://pujiermanto.netlify.app",
       img: "/src/images/portfolio/avatar1.jpg",
@@ -61,12 +73,12 @@ module.exports = {
           "python": {
             "name": "Python Programming",
             "value": 75,
-            "color": "blue"
+            "color": "orange"
           },
           "ruby": {
             "name": "Ruby Programming",
             "value": 65,
-            "color": "blue"
+            "color": "orange"
           }
         },
         
@@ -97,7 +109,7 @@ module.exports = {
           "express": {
             "name": "Express.js",
             "value": 75,
-            "color": "blue"
+            "color": "orange"
           },
           "django": {
             "name": "Django",
@@ -107,7 +119,7 @@ module.exports = {
           "rails": {
             "name": "Ruby on Rails",
             "value": 65,
-            "color": "blue"
+            "color": "orange"
           }
         },
 
@@ -156,7 +168,7 @@ module.exports = {
           "photoshop": {
             "name": "Photoshop",
             "value": 75,
-            "color": "blue"
+            "color": "orange"
           },
           "corel": {
             "name": "Corel Draw",
@@ -166,12 +178,12 @@ module.exports = {
           "figma": {
             "name": "Figma",
             "value": 75,
-            "color": "blue"
+            "color": "orange"
           },
           "adobexd": {
             "name": "Adobe XD",
             "value": 85,
-            "color": "blue"
+            "color": "orange"
           }
         },
         tujuh: {
@@ -205,7 +217,7 @@ module.exports = {
           "aos": {
             "name": "AOS",
             "value": 75,
-            "color": "blue"
+            "color": "orange"
           },
           "tailwind": {
             "name": "Tailwind CSS",
@@ -259,12 +271,17 @@ module.exports = {
           "container": {
             "name": "Docker (Container)",
             "value": 65,
-            "color": "blue"
+            "color": "orange"
           },
           "composer": {
             "name": "Composer",
             "value": 50,
-            "color": "blue"
+            "color": "orange"
+          },
+          "aws": {
+            "name": "AWS (Web Service, Cloud Server)",
+            "value": 65,
+            "color": "orange"
           }
         }
 
@@ -347,6 +364,61 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/logo_puji.png`,
       }
-    }
+    },
+    // {
+    //    resolve: 'gatsby-source-github',
+    //          options: {
+    //            headers: {
+    //              Authorization: `Bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+    //            },
+    //            queries: [
+    //              `{ viewer {                 
+    //                pinnedItems(first: 6, types: REPOSITORY){
+    //                 nodes {
+    //                   ... on Repository {
+    //                  id
+    //                  name
+    //                  url
+    //                  description
+    //                  homepageUrl
+    //                }
+    //               }
+    //              }}
+    //            }`,
+    //         ],
+    //      },
+    // },
+
+    //  {
+    //   resolve: `gatsby-source-github-api`,
+    //   options: {
+    //     url: "https://api.github.com/graphql", // default Github GraphQL v4 API endpoint
+
+    //     // token: required by the GitHub API
+    //     token: process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN,
+
+    //     // GraphQLquery: defaults to a search query
+    //     graphQLQuery: githubApiQuery,
+
+    //     // variables: defaults to variables needed for a search query
+    //     variables: {
+    //       github_login: process.env.GITHUB_LOGIN
+    //     }
+    //   }
+    // },
+
+     {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GitHub',
+        fieldName: 'github',
+        url: 'https://api.github.com/graphql',
+        headers: {
+          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+        },
+        fetchOptions: {},
+      },
+    },
+
   ],
 }

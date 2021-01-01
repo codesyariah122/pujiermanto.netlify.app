@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { withPrefix } from 'gatsby'
-import Navigation from './navbar/navbar'
+import Navigation from '../navbar/navbar'
 
 const Header = () => {
 

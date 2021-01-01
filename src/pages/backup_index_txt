@@ -159,3 +159,43 @@ export const pageQuery = graphql`
                 </div>
               </BgImg5>
           </BackgroundImage>
+
+
+
+
+
+          <BackgroundImage
+              fluid={props.data.indexImage1.childImageSharp.fluid}
+            >
+              <BgImg2>
+                <div class="concept concept-two">
+                    <div class="hover">
+                      <h1>W</h1>
+                    </div>
+                    <div class="hover">
+                      <h1>E</h1>
+                    </div>
+                    <div class="hover">
+                      <h1>L</h1>
+                    </div>
+                    <div class="hover">
+                      <h1>C</h1>
+                    </div>
+                    <div class="hover">
+                      <h1>O</h1>
+                    </div>
+                    <div class="hover">
+                      <h1>M</h1>
+                    </div>
+                    <div class="hover">
+                      <h1>E</h1>
+                    </div>
+                  </div>
+                </BgImg2>
+            </BackgroundImage>
+
+            <BackgroundImage fluid={props.data.indexImage3.childImageSharp.fluid}>
+            <div class="concept concept-seven">
+                <Author/>
+            </div>
+          </BackgroundImage>

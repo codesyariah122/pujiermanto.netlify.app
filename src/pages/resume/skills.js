@@ -1,5 +1,4 @@
 import React from 'react'
-import contentStyles from './content.scss'
 import { graphql, useStaticQuery} from 'gatsby'
 import BeckEnd from './skills/backend'
 import MarkUp from './skills/markup'

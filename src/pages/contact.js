@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import styled from 'styled-components'
+import {Link} from 'gatsby'
+import Layout from "../components/layouts/layout"
+import ContactPage from './contact/contactpage'
 
-import Layout from '../components/layout'
-
-const ContactPage = () => {
+const Contact = () => {
+   
     return (
-        <Layout title="Contact Page">
-            <h1>Contact Me</h1>
-            <p>The best way to reacth me on via <Link to="https://twitter.com/pujiermanto" target="_blank">pujiermanto</Link></p>
+    	<Layout title="Contact Page">
+    		<ContactPage/>
         </Layout>
     )
 }
-
-export default ContactPage
+export default Contact

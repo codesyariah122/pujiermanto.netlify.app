@@ -26,6 +26,11 @@ const ManyMores = () => {
 		            name
 		            value
 		            color
+		          },
+		          aws {
+		          	name
+		          	value
+		          	color
 		          }
 		        }
 		      }
@@ -39,7 +44,9 @@ const ManyMores = () => {
 
 		{ "name": data.site.siteMetadata.webdev.sepuluh.container.name, "percent": data.site.siteMetadata.webdev.sepuluh.container.value, "color": data.site.siteMetadata.webdev.sepuluh.container.color },
 
-		{ "name": data.site.siteMetadata.webdev.sepuluh.composername, "percent": data.site.siteMetadata.webdev.sepuluh.composervalue, "color": data.site.siteMetadata.webdev.sepuluh.composercolor }
+		{ "name": data.site.siteMetadata.webdev.sepuluh.composer.name, "percent": data.site.siteMetadata.webdev.sepuluh.composer.value, "color": data.site.siteMetadata.webdev.sepuluh.composer.color },
+
+		{ "name": data.site.siteMetadata.webdev.sepuluh.aws.name, "percent": data.site.siteMetadata.webdev.sepuluh.aws.value, "color": data.site.siteMetadata.webdev.sepuluh.aws.color }
 	]
 
 	

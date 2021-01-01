@@ -1,5 +1,5 @@
 import React from 'react'
-import './content_satu.scss'
+import './index.scss'
 import ContentDua from './content_dua'
 import ContentTiga from './content_tiga'
 import styled from 'styled-components'
@@ -18,7 +18,7 @@ margin-left: -1500px;
 `
 
 
-const ContentSatu = () => {
+const ContactPages = () => {
     return (
     <>
         <Parallax>    
@@ -51,4 +51,4 @@ const ContentSatu = () => {
     )
 }
 
-export default ContentSatu
+export default ContactPages

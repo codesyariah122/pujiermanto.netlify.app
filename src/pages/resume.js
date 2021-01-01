@@ -1,9 +1,8 @@
 import React from 'react'
-import Layout from "../components/layout"
+import Layout from "../components/layouts/layout"
 import './resume/content.scss'
 import { withPrefix } from 'gatsby' 
 import { Helmet } from 'react-helmet'
-import Navigation from './../components/navbar/navbar'
 import MyResumeContent from './resume/myresumecontent'
 
 const Resume = () => {

@@ -1,7 +1,6 @@
 import React from 'react'
 import Artwork from './artwork'
 import {graphql, useStaticQuery, Link} from 'gatsby'
-import styled from 'styled-components'
 
 const Hero = () => {
 

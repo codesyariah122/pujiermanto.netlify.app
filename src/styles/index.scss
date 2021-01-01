@@ -89,6 +89,15 @@ footer {
 	height: 100vh;
 	overflow-y: scroll;
 }
+.project{
+	position: absolute;
+	padding: 5em;
+	height: 250vh;
+	overflow: hidden;
+	scroll-snap-align: start;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
 
 .hover,
 .word,

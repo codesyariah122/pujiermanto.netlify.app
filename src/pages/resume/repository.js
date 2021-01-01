@@ -1,7 +1,7 @@
 import React from 'react'
 import{graphql, useStaticQuery} from 'gatsby'
 
-const Education = () => {
+const Repository = () => {
     const data = useStaticQuery(graphql`
         query {
             site {
@@ -54,9 +54,9 @@ const Education = () => {
     ]
 
     return (
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <div class="w3-container w3-card w3-white">
 
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-github-alt fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Github Project</h2>
             
             <div class="w3-container">
                 <h5 class="w3-opacity"><b>Web Development Study | <span style={{textDecoration: 'none', color: 'teal'}}>W3Schools.com</span></b></h5>
@@ -79,4 +79,4 @@ const Education = () => {
     )
 }
 
-export default Education
+export default Repository

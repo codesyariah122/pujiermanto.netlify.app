@@ -1,7 +1,7 @@
 import React from 'react'
-import './content_satu.scss'
+import './index.scss'
 import styled from 'styled-components'
-import {Link, graphql, useStaticQuery} from 'gatsby'
+import {Link} from 'gatsby'
 
 
 const AboutSection = styled.div`
