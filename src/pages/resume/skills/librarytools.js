@@ -17,6 +17,11 @@ const LibraryTools = () => {
 		            value
 		            color
 		          }
+		          ajax {
+		          	name
+		          	value
+		          	color
+		          }
 		          chartjs {
 		            name
 		            value
@@ -41,6 +46,8 @@ const LibraryTools = () => {
 
 	const fetchings = [
 		{"name":data.site.siteMetadata.webdev.delapan.jquery.name, "percent": data.site.siteMetadata.webdev.delapan.jquery.value, "color": data.site.siteMetadata.webdev.delapan.jquery.color },
+
+		{"name":data.site.siteMetadata.webdev.delapan.ajax.name, "percent": data.site.siteMetadata.webdev.delapan.ajax.value, "color": data.site.siteMetadata.webdev.delapan.ajax.color },
 
 		{ "name": data.site.siteMetadata.webdev.delapan.chartjs.name, "percent": data.site.siteMetadata.webdev.delapan.chartjs.value, "color": data.site.siteMetadata.webdev.delapan.chartjs.color },
 

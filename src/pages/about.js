@@ -1,6 +1,5 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import PropTypes from "prop-types"
 import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import Layout from '../components/layouts/layout'

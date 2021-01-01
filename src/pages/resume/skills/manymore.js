@@ -26,8 +26,13 @@ const ManyMores = () => {
 		            name
 		            value
 		            color
-		          },
+		          }
 		          aws {
+		          	name
+		          	value
+		          	color
+		          }
+		          graphql {
 		          	name
 		          	value
 		          	color
@@ -46,7 +51,9 @@ const ManyMores = () => {
 
 		{ "name": data.site.siteMetadata.webdev.sepuluh.composer.name, "percent": data.site.siteMetadata.webdev.sepuluh.composer.value, "color": data.site.siteMetadata.webdev.sepuluh.composer.color },
 
-		{ "name": data.site.siteMetadata.webdev.sepuluh.aws.name, "percent": data.site.siteMetadata.webdev.sepuluh.aws.value, "color": data.site.siteMetadata.webdev.sepuluh.aws.color }
+		{ "name": data.site.siteMetadata.webdev.sepuluh.aws.name, "percent": data.site.siteMetadata.webdev.sepuluh.aws.value, "color": data.site.siteMetadata.webdev.sepuluh.aws.color },
+
+		{ "name": data.site.siteMetadata.webdev.sepuluh.graphql.name, "percent": data.site.siteMetadata.webdev.sepuluh.graphql.value, "color": data.site.siteMetadata.webdev.sepuluh.graphql.color }
 	]
 
 	

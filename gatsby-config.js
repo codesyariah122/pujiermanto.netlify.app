@@ -54,7 +54,8 @@ module.exports = {
         "tujuh": "It Support & Help Desk",
         "delapan": "Library Tools",
         "sembilan": "CMS & Static Site",
-        "sepuluh": "Manymore Tools"
+        "sepuluh": "Manymore Tools",
+        "sebelas": "Database"
       },
 
       webdev:{
@@ -209,6 +210,11 @@ module.exports = {
             "value": 97,
             "color": "red"
           },
+          "ajax": {
+            "name": "Ajax",
+            "value": 90,
+            "color": "red"
+          },
           "chartjs": {
             "name": "Chart.js",
             "value": 95,
@@ -281,6 +287,33 @@ module.exports = {
           "aws": {
             "name": "AWS (Web Service, Cloud Server)",
             "value": 65,
+            "color": "orange"
+          },
+          "graphql": {
+            "name": "GraphQl",
+            "value": 85,
+            "color": "red"
+          },
+          "restapi": {
+            "name": "Rest API",
+            "value": 90,
+            "color": "red"
+          }
+        },
+        sebelas: {
+          "mysql": {
+            "name": "MysQl Database | Maria DB",
+            "value": 100,
+            "color": "red"
+          },
+          "mongodb": {
+            "name": "Mongo DB",
+            "value": 55,
+            "color": "orange"
+          },
+          "nosql": {
+            "name": "NosQl DB",
+            "value": 55,
             "color": "orange"
           }
         }
@@ -390,23 +423,23 @@ module.exports = {
     //      },
     // },
 
-     {
-      resolve: `gatsby-source-github-api`,
-      options: {
-        url: "https://api.github.com/graphql", // default Github GraphQL v4 API endpoint
+    //  {
+    //   resolve: `gatsby-source-github-api`,
+    //   options: {
+    //     url: "https://api.github.com/graphql", // default Github GraphQL v4 API endpoint
 
-        // token: required by the GitHub API
-        token: process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN,
+    //     // token: required by the GitHub API
+    //     token: process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN,
 
-        // GraphQLquery: defaults to a search query
-        graphQLQuery: githubApiQuery,
+    //     // GraphQLquery: defaults to a search query
+    //     graphQLQuery: githubApiQuery,
 
-        // variables: defaults to variables needed for a search query
-        variables: {
-          github_login: process.env.GITHUB_LOGIN
-        }
-      }
-    },
+    //     // variables: defaults to variables needed for a search query
+    //     variables: {
+    //       github_login: process.env.GITHUB_LOGIN
+    //     }
+    //   }
+    // },
 
      {
       resolve: 'gatsby-source-graphql',

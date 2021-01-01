@@ -5,6 +5,7 @@ import MarkUp from './skills/markup'
 import FrameWorkBackEnd from './skills/frameworkbackend'
 import FrameWorkFrontEnd from './skills/frameworkfrontend'
 import FrameWorkJavascript from './skills/frameworkjavascript'
+import Databases from './skills/database'
 import DesignTools from './skills/designtools'
 import ItSupport from './skills/itsupport'
 import LibraryTools from './skills/librarytools'
@@ -58,6 +59,8 @@ const Skills = () => {
         <FrameWorkFrontEnd/>
 
         <FrameWorkJavascript/>
+
+        <Databases/>
 
         <LibraryTools/>
 
