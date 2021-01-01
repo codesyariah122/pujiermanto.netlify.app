@@ -18,12 +18,24 @@ const Footer = () => {
         }
     `);
     
-    const profileData = {
-        'blog': `https://${data.site.siteMetadata.author.blog}`,
-        'twitter': `https://twitter.com/${data.site.siteMetadata.author.twitter}`,
-        'github': `https://github.com/${data.site.siteMetadata.author.github}`,
-        'dribbble': `https://dribbble.com/${data.site.siteMetadata.author.dribbble}`
-    }
+    const Links = [
+        {
+            'url': `https://${data.site.siteMetadata.author.blog}`,
+            'icon': 'icon-globe'
+        },
+        {
+            'url': `https://twitter.com/${data.site.siteMetadata.author.twitter}`,
+            'icon': 'icon-social-twitter'
+        },
+        {
+            'url': `https://github.com/${data.site.siteMetadata.author.github}`,
+            'icon': 'icon-social-github'
+        },
+        {
+            'url': `https://dribbble.com/${data.site.siteMetadata.author.dribbble}`,
+            'icon': 'icon-social-dribbble'
+        }
+    ]
 
     return (
             <footer>
@@ -39,20 +51,16 @@ const Footer = () => {
                 <Link to={profileData.blog} target="_blank">
                     <i class="icon-book-open icons"></i>
                 </Link> */}
-                <Link to={profileData.blog} target="_blank">
-                    <i class="icon-globe icons"></i>
-                </Link>
-                <Link to={profileData.twitter} target="_blank">
-                    <i class="icon-social-twitter icons"></i>
-                </Link>
+                {
+                    Links.map(link => (
+                        <>
+                        <Link to={link.url} target="_blank">
+                            <i class={`${link.icon} icons`}></i>
+                        </Link>
+                        </>
+                    ))
+                }
 
-                <Link to={profileData.github} target="_blank">
-                    <i class="icon-social-github icons"></i>
-                </Link>
-
-                <Link to={profileData.dribbble} target="_blank">
-                    <i class="icon-social-dribbble icons"></i>
-                </Link>
             </footer>
     )
 }

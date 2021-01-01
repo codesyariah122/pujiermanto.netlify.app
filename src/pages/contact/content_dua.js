@@ -9,8 +9,8 @@ padding: 100px;
 text-align: right;
 justify-content: right;
 color: black;
-margin-right: -6.3rem;
-margin-top:-13rem;
+margin-right: -7rem;
+margin-top:-5rem;
 `
 
 const ContentDua = () => {

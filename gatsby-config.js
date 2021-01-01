@@ -8,7 +8,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-// const { githubApiQuery } = require('./github-api');
+const { githubApiQuery } = require('./github-api');
 
 
 module.exports = {
@@ -365,6 +365,7 @@ module.exports = {
         icon: `src/images/logo_puji.png`,
       }
     },
+
     // {
     //    resolve: 'gatsby-source-github',
     //          options: {
@@ -389,23 +390,23 @@ module.exports = {
     //      },
     // },
 
-    //  {
-    //   resolve: `gatsby-source-github-api`,
-    //   options: {
-    //     url: "https://api.github.com/graphql", // default Github GraphQL v4 API endpoint
+     {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        url: "https://api.github.com/graphql", // default Github GraphQL v4 API endpoint
 
-    //     // token: required by the GitHub API
-    //     token: process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN,
+        // token: required by the GitHub API
+        token: process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN,
 
-    //     // GraphQLquery: defaults to a search query
-    //     graphQLQuery: githubApiQuery,
+        // GraphQLquery: defaults to a search query
+        graphQLQuery: githubApiQuery,
 
-    //     // variables: defaults to variables needed for a search query
-    //     variables: {
-    //       github_login: process.env.GITHUB_LOGIN
-    //     }
-    //   }
-    // },
+        // variables: defaults to variables needed for a search query
+        variables: {
+          github_login: process.env.GITHUB_LOGIN
+        }
+      }
+    },
 
      {
       resolve: 'gatsby-source-graphql',

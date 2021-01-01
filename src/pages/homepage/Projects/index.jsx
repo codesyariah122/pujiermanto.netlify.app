@@ -48,7 +48,7 @@ const {
 return (
     <Wrapper as={Container} id="projects">
       <h1 style={{color: '#000', textAlign: 'justify'}}>My Projects</h1>
-      <p>Ini merupakan bagian project atau pekerjaan yang sempat saya kerjakan beberapa waktu sebelumnya, dan juga sebagai documentasi modul dalam mempelajari dan memperluas khazanah dalam dunia programming saya.</p>
+      <p style={{textIndent: '25px', lineHeight: '35px', fontSize: '21px', textAlign: 'justify'}}>Ini merupakan dokumentasi dan rekam jejak pribadi saya dalam proses mengerjakan dan mengembangkan sebuah project yang saya kerjakan beberapa waktu sebelumnya, juga sebagai media dokumentasi dan modul-modul dalam mempelajari dan memperluas khazanah saya pribadi dalam mengembangkan minat saya dalam  dunia IT dan Pemrograman.</p>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer">

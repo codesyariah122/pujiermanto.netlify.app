@@ -8,7 +8,7 @@ const AboutSection = styled.div`
 padding: 50px;
 text-align: center;
 justify-content: center;
-margin-top: 1rem;
+margin-top: 2rem;
 `
 
 const Heading = styled.h1`
@@ -24,7 +24,7 @@ const HeadingTwo = styled.h1`
     font-family: 'Ubuntu', sans-serif;
     color: #000;
     font-weight: bold;
-    z-index: 1;
+    z-index: -1;
 `
 
 const ContentTiga = () => {

@@ -65,7 +65,7 @@ const FrameWorkBackEnd = () => {
 				<>
 					<ul style={{listStyle: 'none'}}>
 						<li>
-							<b>{fetch.name}</b>
+							{fetch.name}
 							<div class="w3-light-grey w3-round-xlarge w3-small">
 							   	<div class={`w3-container w3-center w3-round-xlarge w3-${fetch.color}`} style={{width: `${fetch.percent}%`}}>
 							         {fetch.percent}%
