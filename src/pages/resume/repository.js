@@ -116,6 +116,16 @@ const Repository = () => {
                             <i class="fa fa-star-o fa-fw w3-margin-right" style={{fontSize: '23px', color: 'goldenrod'}}></i><span style={{fontSize:'12px', marginLeft:'-10px', marginRight:'15px'}}>{node.stargazers.totalCount}</span>
                         </Link>
                         </li>
+
+                        {
+                            node.languages.nodes.map(({ id, name }) => (
+                            <li style={{marginLeft: '2rem', marginTop: '.3rem', color: 'dodgerblue'}}>
+                                <Link to={node.url} style={{textDecoration:'none'}}>
+                                <span style={{fontSize:'12px', marginLeft:'-10px', marginRight:'15px'}}>{name}</span>
+                                </Link>
+                            </li>
+                        ))
+                    }
                     </ul>
                     </div>
                     <hr/>

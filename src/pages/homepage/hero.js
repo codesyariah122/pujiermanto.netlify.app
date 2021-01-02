@@ -41,7 +41,7 @@ const data = useStaticQuery(graphql`
 		          <h1 className="title">hellouw, </h1>
 		          <p className="description">
 		          	Saya <span style={{color: 'crimson'}}>{dev.calls}</span> Lengkapnya <span style={{color: 'coral'}}>{dev.full}</span>. Saat ini saya aktif sebagai {hobys.map(hoby => (
-		          			<span style={{color:`${hoby.color}`}}>{hoby.text}</span>
+		          			<span>{hoby.text}</span>
 		          		))}. Selengkapnya ...
 		          </p>
 		          <Link to="/resume" className="cta">Resume Saya</Link>

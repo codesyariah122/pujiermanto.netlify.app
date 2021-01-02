@@ -1,0 +1,49 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { githubApiQuery } = require('./github-api');
+
+
+
+// resolve
+    {
+       resolve: 'gatsby-source-github',
+             options: {
+               headers: {
+                 Authorization: `Bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+               },
+               queries: [
+                 `{ viewer {                 
+                   pinnedItems(first: 6, types: REPOSITORY){
+                    nodes {
+                      ... on Repository {
+                     id
+                     name
+                     url
+                     description
+                     homepageUrl
+                   }
+                  }
+                 }}
+               }`,
+            ],
+         },
+    },
+
+     {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        url: "https://api.github.com/graphql", // default Github GraphQL v4 API endpoint
+
+        // token: required by the GitHub API
+        token: process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN,
+
+        // GraphQLquery: defaults to a search query
+        graphQLQuery: githubApiQuery,
+
+        // variables: defaults to variables needed for a search query
+        variables: {
+          github_login: process.env.GITHUB_LOGIN
+        }
+      }
+    },

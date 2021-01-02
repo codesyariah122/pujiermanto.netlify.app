@@ -7,24 +7,32 @@ const Education = () => {
             site {
                 siteMetadata {
                     educationSchool {
-                        satu
-                        dua
-                        tiga
+                        school {
+                            satu
+                            dua
+                            tiga
+                        }
                     }
                     educationFokus {
-                        satu
-                        dua
-                        tiga
+                        fokus {
+                            satu
+                            dua
+                            tiga
+                        }
                     }
                     educationDegre {
-                        satu
-                        dua
-                        tiga
+                        degre {
+                            satu
+                            dua
+                            tiga
+                        }
                     }
                     educationYear {
-                        satu
-                        dua
-                        tiga
+                        schoolYear {
+                            satu
+                            dua
+                            tiga
+                        }
                     }
                 }
             }
@@ -33,22 +41,22 @@ const Education = () => {
 
     const Edus = [
         {
-            "school": data.site.siteMetadata.educationSchool.satu,
-            "fokus": data.site.siteMetadata.educationFokus.satu,
-            "degre": data.site.siteMetadata.educationDegre.satu,
-            "year": data.site.siteMetadata.educationYear.satu,
+            "school": data.site.siteMetadata.educationSchool.school.satu,
+            "fokus": data.site.siteMetadata.educationFokus.fokus.satu,
+            "degre": data.site.siteMetadata.educationDegre.degre.satu,
+            "year": data.site.siteMetadata.educationYear.schoolYear.satu,
         },
         {
-            "school": data.site.siteMetadata.educationSchool.dua,
-            "fokus": data.site.siteMetadata.educationFokus.dua,
-            "degre": data.site.siteMetadata.educationDegre.dua,
-            "year": data.site.siteMetadata.educationYear.dua,
+            "school": data.site.siteMetadata.educationSchool.school.dua,
+            "fokus": data.site.siteMetadata.educationFokus.fokus.dua,
+            "degre": data.site.siteMetadata.educationDegre.degre.dua,
+            "year": data.site.siteMetadata.educationYear.schoolYear.dua,
         },
         {
-            "school": data.site.siteMetadata.educationSchool.tiga,
-            "fokus": data.site.siteMetadata.educationFokus.tiga,
-            "degre": data.site.siteMetadata.educationDegre.tiga,
-            "year": data.site.siteMetadata.educationYear.tiga,
+            "school": data.site.siteMetadata.educationSchool.school.tiga,
+            "fokus": data.site.siteMetadata.educationFokus.fokus.tiga,
+            "degre": data.site.siteMetadata.educationDegre.degre.tiga,
+            "year": data.site.siteMetadata.educationYear.schoolYear.tiga,
         },
 
     ]

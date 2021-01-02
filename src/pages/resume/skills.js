@@ -21,11 +21,11 @@ const Skills = () => {
                     email
                     phone
                     city
-                  }
-                  working {
-                    satu
-                    dua
-                    tiga
+                    working {
+                        satu
+                        dua
+                        tiga
+                    }
                   }
                    
                 }
@@ -34,7 +34,7 @@ const Skills = () => {
     `);
 
     const devs = [
-      {"text": data.site.siteMetadata.working.dua, "icon": "fa-briefcase"},
+      {"text": data.site.siteMetadata.author.working.dua, "icon": "fa-briefcase"},
       {"text": data.site.siteMetadata.author.city, "icon": "fa-home"},
       {"text": data.site.siteMetadata.author.email, "icon": "fa-envelope"},
       {"text": data.site.siteMetadata.author.phone, "icon": "fa-phone"}

@@ -34,6 +34,7 @@ const Projects = () => {
     height: 100%;
     overflow: hidden;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+    text-decoration:none;
 
     h4 {
       color: '#212121';
@@ -47,6 +48,9 @@ const Projects = () => {
   const Content = styled.div`
     padding: 1rem 0;
     min-height: 160px;
+    &:hover{
+      color: salmon;
+    }
   `;
 
   const Stats = styled.div`
@@ -78,6 +82,7 @@ const Projects = () => {
     opacity: 0.5;
     font-size: 14px;
   `;
+
 const {
     github: {
       viewer: {

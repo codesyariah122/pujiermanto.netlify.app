@@ -13,28 +13,38 @@ const Experience = () => {
 
                     },
                     experienceCompany {
-                        myblog
-                        satu
-                        dua
-                        tiga
+                        company {
+                            myblog
+                            satu
+                            dua
+                            tiga                            
+                        }
+
                     },
                     experienceDivision {
-                        myblog
-                        satu
-                        dua
-                        tiga
+                        division {
+                            myblog
+                            satu
+                            dua
+                            tiga                            
+                        }
+
                     },
                     experienceYear {
-                        myblog
-                        satu
-                        dua
-                        tiga
+                        workYear {
+                            myblog
+                            satu
+                            dua
+                            tiga
+                        }
                     },
                     experienceJobdesk {
-                        myblog
-                        satu
-                        dua
-                        tiga
+                        jobdesk {
+                            myblog
+                            satu
+                            dua
+                            tiga
+                        }
                     }
                 }
             }
@@ -47,34 +57,34 @@ const Experience = () => {
 
     const Experiences = [
         {
-            "div": data.site.siteMetadata.experienceDivision.myblog, 
+            "div": data.site.siteMetadata.experienceDivision.division.myblog, 
             "teal": "w3-teal",
             "tealLabel": "And Until Now",
             "url": urlSite.blog,
-            "com": data.site.siteMetadata.experienceCompany.myblog,
-            "year": data.site.siteMetadata.experienceYear.myblog,
-            "jobdesk": data.site.siteMetadata.experienceJobdesk.myblog
+            "com": data.site.siteMetadata.experienceCompany.company.myblog,
+            "year": data.site.siteMetadata.experienceYear.workYear.myblog,
+            "jobdesk": data.site.siteMetadata.experienceJobdesk.jobdesk.myblog
         },
 
         {
-            "div": data.site.siteMetadata.experienceDivision.satu, 
-            "com": data.site.siteMetadata.experienceCompany.satu,
-            "year": data.site.siteMetadata.experienceYear.satu,
-            "jobdesk": data.site.siteMetadata.experienceJobdesk.satu
+            "div": data.site.siteMetadata.experienceDivision.division.satu, 
+            "com": data.site.siteMetadata.experienceCompany.company.satu,
+            "year": data.site.siteMetadata.experienceYear.workYear.satu,
+            "jobdesk": data.site.siteMetadata.experienceJobdesk.jobdesk.satu
         },
 
         {
-            "div": data.site.siteMetadata.experienceDivision.dua, 
-            "com": data.site.siteMetadata.experienceCompany.dua,
-            "year": data.site.siteMetadata.experienceYear.dua,
-            "jobdesk": data.site.siteMetadata.experienceJobdesk.dua
+            "div": data.site.siteMetadata.experienceDivision.division.dua, 
+            "com": data.site.siteMetadata.experienceCompany.company.dua,
+            "year": data.site.siteMetadata.experienceYear.workYear.dua,
+            "jobdesk": data.site.siteMetadata.experienceJobdesk.jobdesk.dua
         },
 
         {
-            "div": data.site.siteMetadata.experienceDivision.tiga, 
-            "com": data.site.siteMetadata.experienceCompany.tiga,
-            "year": data.site.siteMetadata.experienceYear.tiga,
-            "jobdesk": data.site.siteMetadata.experienceJobdesk.tiga
+            "div": data.site.siteMetadata.experienceDivision.division.tiga, 
+            "com": data.site.siteMetadata.experienceCompany.company.tiga,
+            "year": data.site.siteMetadata.experienceYear.workYear.tiga,
+            "jobdesk": data.site.siteMetadata.experienceJobdesk.jobdesk.tiga
         },
     ]
 

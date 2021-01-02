@@ -64,20 +64,22 @@ const NavbarLinks = () => {
             site {
                 siteMetadata {
                     menu {
-                        home 
-                        about 
-                        resume
-                        contact
+                        dataMenu {
+                            home 
+                            about 
+                            resume
+                            contact
+                        }
                     }
                 }
             }
         }
     `)
     const NavData = [
-        {"href": pageLink.site.siteMetadata.menu.home, "label": "Home"},
-        {"href": pageLink.site.siteMetadata.menu.about, "label": "About"},
-        {"href": pageLink.site.siteMetadata.menu.contact, "label": "Contact"},
-        {"href": pageLink.site.siteMetadata.menu.resume, "label": "Resume"}
+        {"href": pageLink.site.siteMetadata.menu.dataMenu.home, "label": "Home"},
+        {"href": pageLink.site.siteMetadata.menu.dataMenu.about, "label": "About"},
+        {"href": pageLink.site.siteMetadata.menu.dataMenu.contact, "label": "Contact"},
+        {"href": pageLink.site.siteMetadata.menu.dataMenu.resume, "label": "Resume"}
     ]
     return (
         <>
