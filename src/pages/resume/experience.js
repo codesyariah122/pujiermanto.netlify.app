@@ -3,7 +3,6 @@ import {Link, graphql, useStaticQuery} from 'gatsby'
 import Education from './education'
 import Repository from './repository'
 
-
 const Experience = () => {
     const data = useStaticQuery(graphql`
         query {

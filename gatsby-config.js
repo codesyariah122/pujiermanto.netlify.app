@@ -8,7 +8,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const { githubApiQuery } = require('./github-api');
+// const { githubApiQuery } = require('./github-api');
 
 // source my module
 

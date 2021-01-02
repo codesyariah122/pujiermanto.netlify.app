@@ -54,12 +54,6 @@ const Repository = () => {
           {
             github {
               viewer {
-                login
-                name
-                avatarUrl
-                followers{
-                    totalCount
-                }
                 repositories(last: 15, orderBy: { field: STARGAZERS, direction: ASC}) {
                   edges {
                     node {
