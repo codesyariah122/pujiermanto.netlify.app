@@ -16,7 +16,7 @@
     $ git clone -b with_new_gatsby https://github.com/codesyariah122/pujiermanto.netlify.app.git
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
     Using npm or yarn
 
     ```shell
@@ -25,8 +25,24 @@
     $ npm install or yarn
     $ npm start or yarn start
     ```
+3.  Using environment  
+    for development : 
+    ```
+    $ touch .env.development
+    ```
+    and adding the environment : 
+    ```shell
+    GATSBY_GRAPHQL_IDE=playground
+    GITHUB_LOGIN=your_username_login_github
+    GATSBY_PORTFOLIO_GITHUB_TOKEN=your_personal_tokens_github
+    ```  
 
-1.  **Open the source code and start editing!**
+4.  **Open the source code and start editing!**
+
+    running development at your local : 
+    ```
+    $ npm start
+    ```
 
     Your site is now running at `http://localhost:8000`!
 
