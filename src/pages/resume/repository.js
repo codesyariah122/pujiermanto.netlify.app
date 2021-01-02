@@ -51,7 +51,7 @@ const Repository = () => {
         },
       } = useStaticQuery(
         graphql`
-          {
+          query {
             github {
               viewer {
                 repositories(last: 15, orderBy: { field: STARGAZERS, direction: ASC}) {
