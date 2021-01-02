@@ -32,7 +32,7 @@ const ProfileGithub = () => {
 			<div class="w3-light-grey">
 				<ul style={{listStyle:'none', display: 'flex'}}>
 					<li style={{marginTop: '1rem', marginBottom: '1rem'}}>
-						<img src={data.github.viewer.avatarUrl} width="200" height="200" style={{borderRadius: '50%'}}/>
+						<img src={data.github.viewer.avatarUrl} width="200" height="200" style={{borderRadius: '50%'}} alt="profile_img"/>
 					</li>
 					<li style={{marginLeft:'1rem', color:'darkgrey'}}>
 						<p>{data.github.viewer.login}</p>
