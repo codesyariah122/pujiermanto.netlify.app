@@ -80,4 +80,4 @@ const FrameWorkBackEnd = () => {
 	)
 }
 
-export {FrameWorkBackEnd}
+export default FrameWorkBackEnd

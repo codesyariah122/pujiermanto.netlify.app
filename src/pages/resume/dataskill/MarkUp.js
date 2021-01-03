@@ -59,4 +59,4 @@ const MarkUp = () => {
 	)
 }
 
-export {MarkUp}
+export default MarkUp

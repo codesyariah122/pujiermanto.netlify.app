@@ -80,4 +80,4 @@ const ManyMores = () => {
 	)
 }
 
-export {ManyMores}
+export default ManyMores 

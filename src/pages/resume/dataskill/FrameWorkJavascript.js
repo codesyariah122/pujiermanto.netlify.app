@@ -1,28 +1,28 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 
-const ItSupport = () => {
+const FrameWorkJavascript = () => {
 
 	const data = useStaticQuery(graphql`
 		query {
 		  site {
 		    siteMetadata {
 		      skill {
-		        tujuh
+		        lima
 		      }
 		      webdev {
-		        tujuh {
-		          linux {
+		        lima {
+		          react{
 		            name
 		            value
 		            color
 		          }
-		          windows {
+		          vue {
 		            name
 		            value
 		            color
 		          }
-		          networking {
+		          angular {
 		            name
 		            value
 		            color
@@ -35,17 +35,17 @@ const ItSupport = () => {
 	`)
 
 	const fetchings = [
-		{"name":data.site.siteMetadata.webdev.tujuh.linux.name, "percent": data.site.siteMetadata.webdev.tujuh.linux.value, "color": data.site.siteMetadata.webdev.tujuh.linux.color },
+		{"name":data.site.siteMetadata.webdev.lima.react.name, "percent": data.site.siteMetadata.webdev.lima.react.value, "color": data.site.siteMetadata.webdev.lima.react.color },
 
-		{ "name": data.site.siteMetadata.webdev.tujuh.windows.name, "percent": data.site.siteMetadata.webdev.tujuh.windows.value, "color": data.site.siteMetadata.webdev.tujuh.windows.color },
+		{ "name": data.site.siteMetadata.webdev.lima.vue.name, "percent": data.site.siteMetadata.webdev.lima.vue.value, "color": data.site.siteMetadata.webdev.lima.vue.color },
 
-		{ "name": data.site.siteMetadata.webdev.tujuh.networking.name, "percent": data.site.siteMetadata.webdev.tujuh.networking.value, "color": data.site.siteMetadata.webdev.tujuh.networking.color }
+		{ "name": data.site.siteMetadata.webdev.lima.angular.name, "percent": data.site.siteMetadata.webdev.lima.angular.value, "color": data.site.siteMetadata.webdev.lima.angular.color }
 	]
 
 	
 	return (
 		<>
-		<p><b><u>{data.site.siteMetadata.skill.tujuh}</u></b></p>
+		<p><b><u>{data.site.siteMetadata.skill.lima}</u></b></p>
 		{
 			fetchings.map(fetch => (
 				<>
@@ -66,4 +66,4 @@ const ItSupport = () => {
 	)
 }
 
-export {ItSupport}
+export default FrameWorkJavascript

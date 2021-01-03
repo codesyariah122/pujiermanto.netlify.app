@@ -80,4 +80,4 @@ const LibraryTools = () => {
 	)
 }
 
-export {LibraryTools}
+export default LibraryTools

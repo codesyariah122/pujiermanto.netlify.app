@@ -73,4 +73,4 @@ const BackEnd = () => {
 	)
 }
 
-export { BackEnd }
+export default BackEnd

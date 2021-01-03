@@ -73,4 +73,4 @@ const FrameWorkFrontEnd = () => {
 	)
 }
 
-export {FrameWorkFrontEnd}
+export default FrameWorkFrontEnd
