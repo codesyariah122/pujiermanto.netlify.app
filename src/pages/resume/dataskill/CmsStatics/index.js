@@ -92,4 +92,4 @@ const CmsStatics = () => {
 	)
 }
 
-export default CmsStatics
+export {CmsStatics}

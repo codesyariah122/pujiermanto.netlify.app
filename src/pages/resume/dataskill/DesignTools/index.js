@@ -73,4 +73,4 @@ const DesignTools = () => {
 	)
 }
 
-export default DesignTools
+export {DesignTools}

@@ -1,16 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery} from 'gatsby'
-import BeckEnd from './skills/backend'
-import MarkUp from './skills/markup'
-import FrameWorkBackEnd from './skills/frameworkbackend'
-import FrameWorkFrontEnd from './skills/frameworkfrontend'
-import FrameWorkJavascript from './skills/frameworkjavascript'
-import Databases from './skills/database'
-import DesignTools from './skills/designtools'
-import ItSupport from './skills/itsupport'
-import LibraryTools from './skills/librarytools'
-import CmsStatics from './skills/cmsstatic'
-import ManyMores from './skills/manymore'
+import { BackEnd, CmsStatics, FrameWorkBackEnd, FrameWorkFrontEnd, FrameWorkJavascript, DesignTools, Databases, ItSupport, LibraryTools, ManyMores, MarkUp } from './dataskill' 
 
 const Skills = () => {
     const data = useStaticQuery(graphql`
@@ -50,7 +40,7 @@ const Skills = () => {
 
         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
 
-        <BeckEnd/>
+        <BackEnd/>
 
         <MarkUp/>
 

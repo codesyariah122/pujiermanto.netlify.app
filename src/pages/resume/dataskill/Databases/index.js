@@ -66,4 +66,4 @@ const Databases = () => {
 	)
 }
 
-export default Databases
+export { Databases }

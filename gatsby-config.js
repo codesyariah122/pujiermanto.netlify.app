@@ -27,11 +27,11 @@ module.exports = {
         dataMenu
       },
 
-      title: "My Portfolio",
-      url: "https://pujiermanto.netlify.app",
-      img: "/src/images/portfolio/avatar1.jpg",
-      image: "/src/images/brand/myVector.png",
-      description: "Script Again Coffee Againt",
+      title: config.title,
+      url: config.url,
+      img: config.img,
+      image: config.image,
+      description: config.description,
       author: {
           "full": "Puji Ermanto",
           "calls": "Uji",

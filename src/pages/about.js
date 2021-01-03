@@ -60,6 +60,7 @@ const imgFile = {
                 </BgImg2>
             </BackgroundImage>
 
+
             <BackgroundImage fluid={imgFile.dua}>
             <div class="concept concept-seven">
 

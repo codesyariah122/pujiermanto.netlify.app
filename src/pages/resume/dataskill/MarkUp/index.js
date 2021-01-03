@@ -1,7 +1,7 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 
-const BackEnd = () => {
+const MarkUp = () => {
 
 	const data = useStaticQuery(graphql`
 		query {
@@ -59,4 +59,4 @@ const BackEnd = () => {
 	)
 }
 
-export default BackEnd
+export {MarkUp}
