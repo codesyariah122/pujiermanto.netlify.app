@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 @font-face {
     font-family: 'SpringSakura';
@@ -92,7 +93,7 @@ footer {
 .project{
 	position: absolute;
 	padding: 5em;
-	height: 400vh;
+	height: auto;
 	overflow: hidden;
 	scroll-snap-align: start;
 	margin-top: 5rem;

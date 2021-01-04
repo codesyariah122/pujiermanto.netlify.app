@@ -1,54 +1,22 @@
 import React from 'react'
-import './index.scss'
-import ContentDua from './content_dua'
-import ContentTiga from './content_tiga'
-import styled from 'styled-components'
-
-const Parallax = styled.div`
-perspective: 100px;
-height: 100vh;
-overflow-x: hidden;
-overflow-y: auto;
-position: absolute;
-top: 0;
-left: 30%;
-right: 0;
-bottom: 0;
-margin-left: -1500px;
-`
-
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
+import {ContainerStyle, HeadingStyle} from './style'
 
 const ContactPages = () => {
-    return (
-    <>
-        <Parallax>    
-                <div class="parallax__layer parallax__layer__0">
-                    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true" alt="layer_img"/>
-                </div>
-                <div class="parallax__layer parallax__layer__1">
-                    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_1.png?raw=true" alt="layer_img"/>
-                </div>
-                <div class="parallax__layer parallax__layer__2">
-                    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_2.png?raw=true" alt="layer_img"/>
-                </div>
-                <div class="parallax__layer parallax__layer__3">
-                    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_3.png?raw=true" alt="layer_img"/>
-                </div>
-                <div class="parallax__layer parallax__layer__4">
-                    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_4.png?raw=true" alt="layer_img"/>
-                </div>
-                <div class="parallax__layer parallax__layer__5">
-                    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_5.png?raw=true" alt="layer_img"/>
-                    <ContentTiga/>
-                    <ContentDua/>
-                </div>
-                <div class="parallax__layer parallax__layer__6">
-                    <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true" alt="layer_img"/>
-                </div>
-                <div class="parallax__cover"></div>
-        </Parallax>
-    </>
-    )
+	return (
+		<ContainerStyle>
+			<Container>
+			<HeadingStyle>Hallo Everybody</HeadingStyle>
+			<p>Are You Need Developer, Please Contact Me ... </p>
+			    <Button variant="contained" color="primary">
+			    	Contact Pages
+			    </Button>
+			</Container>
+		</ContainerStyle>
+	)
 }
 
 export default ContactPages

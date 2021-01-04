@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components';
 
 export const Card = styled.div`
@@ -11,3 +12,4 @@ export const TitleWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `;
+

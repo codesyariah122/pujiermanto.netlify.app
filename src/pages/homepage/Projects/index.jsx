@@ -1,6 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby';
-import { Container, Card, TitleWrap } from '../../../components/common';
+import { Container, TitleWrap } from '../../../components/common';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 import Star from '../../../components/common/icons/Star'
 import Fork from '../../../components/common/icons/Fork'
 // import {Wrapper, Grid, Item, Content, Stats, Languages} from './styles'
@@ -11,9 +13,11 @@ const Projects = () => {
 
   const Wrapper = styled.div`
     color: #000;
+    margin-bottom: 2rem;
   `;
 
   const Grid = styled.div`
+    margin-top: 2rem;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
@@ -45,13 +49,13 @@ const Projects = () => {
     }
   `;
 
-  const Content = styled.div`
-    padding: 1rem 0;
-    min-height: 160px;
-    &:hover{
-      color: salmon;
-    }
-  `;
+  // const Content = styled.div`
+  //   padding: 1rem 0;
+  //   min-height: 160px;
+  //   &:hover{
+  //     color: salmon;
+  //   }
+  // `;
 
   const Stats = styled.div`
     display: flex;
@@ -124,16 +128,15 @@ const {
 return (
     <Wrapper as={Container} id="projects">
       <h1 style={{color: '#000', textAlign: 'justify'}}>My Projects</h1>
-      <p style={{textIndent: '25px', lineHeight: '35px', fontSize: '21px', textAlign: 'justify'}}>Ini merupakan dokumentasi dan rekam jejak pribadi saya dalam proses mengerjakan dan mengembangkan sebuah project yang saya kerjakan beberapa waktu sebelumnya, juga sebagai media dokumentasi dan modul-modul dalam mempelajari dan memperluas khazanah saya pribadi dalam mengembangkan minat saya dalam  dunia IT dan Pemrograman.</p>
+      <p style={{textIndent: '25px', lineHeight: '27px', fontSize: '18px', textAlign: 'justify'}}>Ini merupakan dokumentasi dan rekam jejak pribadi saya dalam proses mengerjakan dan mengembangkan sebuah project yang saya kerjakan beberapa waktu sebelumnya, juga sebagai media dokumentasi dan modul-modul dalam mempelajari dan memperluas khazanah saya pribadi dalam mengembangkan minat saya dalam  dunia IT dan Pemrograman.</p>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer">
             <Card>
-              <Content>
+              <CardContent>
                 <h4>{node.name}</h4>
-                <p>{node.description}</p>
-              </Content>
-              <TitleWrap>
+                <p style={{fontSize: "14px"}}>{node.description}</p>
+  
                 <Stats>
                   <div>
                     <Star color="#000" />
@@ -155,7 +158,8 @@ return (
                     }
                   </Languages>
                 </Stats>
-              </TitleWrap>
+
+              </CardContent>
             </Card>
           </Item>
         ))}

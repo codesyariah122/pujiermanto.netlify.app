@@ -93,6 +93,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-emotion`,
     {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
