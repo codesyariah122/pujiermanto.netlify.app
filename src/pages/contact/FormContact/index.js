@@ -6,4 +6,4 @@ const FormContact = () => {
 	)
 }
 
-export {FormContact}
+export default FormContact
