@@ -4,9 +4,9 @@ import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
 import { Button, Input } from '../../../components/common';
-import { Error, Center, InputField } from './style';
 
 export default () => (
+  
   const Error = styled.span`
     color: #ff4136;
   `;
@@ -22,7 +22,7 @@ export default () => (
     position: relative;
     margin-bottom: 1rem;
   `;
-  
+
   <Formik
     initialValues={{
       name: '',
