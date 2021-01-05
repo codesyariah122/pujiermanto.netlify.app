@@ -6,8 +6,6 @@ import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
 import { Button, Input } from '../../../components/common';
 
-export default () => (
-  
   const Error = styled.span`
     color: #ff4136;
   `;
@@ -23,6 +21,8 @@ export default () => (
     position: relative;
     margin-bottom: 1rem;
   `;
+  
+export default () => (
 
   <Formik
     initialValues={{
