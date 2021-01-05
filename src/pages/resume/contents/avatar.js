@@ -3,15 +3,14 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 
-const AvatarWrap = styled.div`
-margin: auto 0;
-flex: 0 1 36px;
-@media (max-width: 768px) and (orientation: landscape) {
-    flex: 0 1 25px;
-}
-`
+export const Avatar = () => {
+    const AvatarWrap = styled.div`
+        margin: auto 0;
+        flex: 0 1 36px;
+        @media (max-width: 768px) and (orientation: landscape) {
+            flex: 0 1 25px;
+    }`
 
-const Avatar = () => {
     const data = useStaticQuery(graphql`
         query {
             file: file(relativePath: { eq: "portfolio/avatar1.jpg" }) {
@@ -31,4 +30,3 @@ const Avatar = () => {
     )
 }
 
-export default Avatar

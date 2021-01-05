@@ -1,12 +1,12 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import Experience from './experience'
-import Skills from './skills'
-import styled from "styled-components"
-import Avatar from './avatar'
+import {Experience, Skills, Avatar} from './contents'
+import styled from 'styled-components'
 
 const Content = styled.div`
-  max-width:1400px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 `
 // const AvatarImg = styled.img`
 // width:100%;

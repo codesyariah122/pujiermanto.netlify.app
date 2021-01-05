@@ -1,10 +1,10 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby';
-import { Container, TitleWrap } from '../../../components/common';
+import { Container } from '../../../components/common';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Star from '../../../components/common/icons/Star'
-import Fork from '../../../components/common/icons/Fork'
+import Star from '../../../components/common/Icons/Star'
+import Fork from '../../../components/common/Icons/Fork'
 // import {Wrapper, Grid, Item, Content, Stats, Languages} from './styles'
 import styled from 'styled-components';
 

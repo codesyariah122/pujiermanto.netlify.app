@@ -3,7 +3,7 @@ import {Link, graphql, useStaticQuery} from 'gatsby'
 import Education from './education'
 import Repository from './repository'
 
-const Experience = () => {
+export const Experience = () => {
     const data = useStaticQuery(graphql`
         query {
             site {
@@ -97,7 +97,6 @@ const Experience = () => {
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
 {
     Experiences.map(exp => (
-        <>
          <div class="w3-container">
             <h5 class="w3-opacity">
             <b>{exp.div} <Link to={exp.url} style={{textDecoration: 'none', color: 'teal'}}> {exp.com}
@@ -110,7 +109,6 @@ const Experience = () => {
             </h6>
             <p>{exp.jobdesk}</p>
           </div>
-        </>
     ))
 }
          
@@ -124,4 +122,3 @@ const Experience = () => {
       </div>
     )
 }
-export default Experience

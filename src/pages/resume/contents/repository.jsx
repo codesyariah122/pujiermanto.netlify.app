@@ -1,7 +1,7 @@
 import React from 'react'
 import{Link, graphql, useStaticQuery} from 'gatsby'
 import styled from 'styled-components'
-import ProfileGithub from './profile'
+import ProfileGithub from './profilegithub'
 
 
 const Repository = () => {

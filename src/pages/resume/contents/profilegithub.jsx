@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
-
-
 const ProfileGithub = () => {
 
 	const data = useStaticQuery(graphql`
