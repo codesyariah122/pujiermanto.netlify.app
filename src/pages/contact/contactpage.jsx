@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import {graphql, useStaticQuery} from 'gatsby'
 import { Container } from '../../components/common';
 import contact from '../../images/animated/contactpage.gif';
-import { Wrapper, Details, Thumbnail } from './style';
 import ContactForm from './ContactForm';
 
 
