@@ -7,6 +7,22 @@ import { Button, Input } from '../../../components/common';
 import { Error, Center, InputField } from './style';
 
 export default () => (
+  const Error = styled.span`
+    color: #ff4136;
+  `;
+
+  const Center = styled.div`
+    text-align: left;
+    h4 {
+      font-weight: normal;
+    }
+  `;
+
+  const InputField = styled.div`
+    position: relative;
+    margin-bottom: 1rem;
+  `;
+  
   <Formik
     initialValues={{
       name: '',
