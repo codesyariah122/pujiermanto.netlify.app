@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
 
-export const Avatar = () => {
+const Avatar = () => {
     const AvatarWrap = styled.div`
         margin: auto 0;
         flex: 0 1 36px;
@@ -30,3 +30,4 @@ export const Avatar = () => {
     )
 }
 
+export default Avatar

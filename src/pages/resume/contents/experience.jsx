@@ -3,7 +3,7 @@ import {Link, graphql, useStaticQuery} from 'gatsby'
 import Education from './education'
 import Repository from './repository'
 
-export const Experience = () => {
+const Experience = () => {
     const data = useStaticQuery(graphql`
         query {
             site {
@@ -122,3 +122,5 @@ export const Experience = () => {
       </div>
     )
 }
+
+export default Experiences

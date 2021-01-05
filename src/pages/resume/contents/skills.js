@@ -12,7 +12,7 @@ import LibraryTools from '../dataskill/LibraryTools'
 import ManyMores from '../dataskill/ManyMores'
 import MarkUp from '../dataskill/MarkUp' 
 
-export const Skills = () => {
+const Skills = () => {
     const data = useStaticQuery(graphql`
         query {
             site {
@@ -76,3 +76,5 @@ export const Skills = () => {
       </div>
     )
 }
+
+export default Skills

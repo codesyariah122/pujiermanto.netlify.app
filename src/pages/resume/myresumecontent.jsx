@@ -1,6 +1,8 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import {Experience, Skills, Avatar} from './contents'
+import Experience from './contents/experience'
+import Skills from './contents/skills'
+import Avatar from './contents/avatar'
 import styled from 'styled-components'
 
 const Content = styled.div`
