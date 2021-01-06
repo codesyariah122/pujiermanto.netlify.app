@@ -15,27 +15,6 @@ export const pageQuery = graphql`
         }
       }
     },
-    indexImageanjing: file(relativePath: { eq: "homepage/gobloganjing.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    indexImage2: file(relativePath: { eq: "homepage/gobloganjing.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    indexImage3: file(relativePath: { eq: "homepage/bg5.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
   }
 `;
 
@@ -43,10 +22,9 @@ const AboutPage = (props) => {
 
 const imgFile = {
   "satu": props.data.indexImage1.childImageSharp.fluid,
-  "dua": props.data.indexImage2.childImageSharp.fluid,
-  "tiga": props.data.indexImageanjing.childImageSharp.fluid
 }
-	const BgImg2 = styled.div`
+
+const BgImg2 = styled.div`
     display: flex;
     grid: 100% / repeat(7, 1fr);
     padding: 5em 15em;
@@ -60,7 +38,7 @@ const imgFile = {
       height: 800px;
       padding: 0rem 0rem;
     }
-  `
+`
 
 	return (
 	<>
@@ -96,17 +74,15 @@ const imgFile = {
                 </BgImg2>
             </BackgroundImage>
 
-            <BackgroundImage fluid={imgFile.tiga}>
-                <div class="concept concept-nine">
-                    <Blog/>
-                </div>
-            </BackgroundImage>
+            <div class="concept blog">
+              <div class="content">
+                  <Blog/>
+              </div>
+            </div>
 
-            <BackgroundImage fluid={imgFile.dua}>
             <div class="concept concept-seven">
                 <Author/>
             </div>
-       	</BackgroundImage>
     </Layout>   	
     </>
 	)
