@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
 import axios from 'axios';
-import { graphql, useStaticQuery } from 'gatsby'
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
@@ -23,17 +22,6 @@ import { Button, Input } from '../../../components/common';
     margin-bottom: 1rem;
   `;
 
-  const data = useStaticQuery(graphql`
-      query {
-        site {
-          siteMetadata {
-            author {
-              full
-            }
-          }
-        }
-      }
-  `)
   
 export default () => (
 
@@ -132,7 +120,7 @@ export default () => (
         {values.success && (
           <InputField>
             <Center>
-              <h4>Pesanmu sudah di kirim ke bro {data.site.siteMetadata.author.full}</h4>
+              <h4>Pesanmu sudah di kirim ke email admin</h4>
             </Center>
           </InputField>
         )}
