@@ -10,6 +10,12 @@
 
 ## 🚀 Quick start
 
+# Prerequisites  
+1. Create account <a href="https://dashboard.formium.io/signup">Formik</a> account for form component
+2. Grab a google recaptcha key from <a href="https://www.google.com/recaptcha/admin/">Google Recaptcha</a>. and please create V2 recaptcha  
+3. Grab your github token from <a href="https://github.com/settings/tokens/new?scopes=repo&description=gatsby-token">Github personal token</a>
+
+
 1.  **Clone this repository.**
 
     ```shell
@@ -33,8 +39,10 @@
     and adding the environment : 
     ```shell
     GATSBY_GRAPHQL_IDE=playground
-    GITHUB_LOGIN=your_username_login_github
+    GITHUB_LOGIN=your_username_login_github (optional)
     GATSBY_PORTFOLIO_GITHUB_TOKEN=your_personal_tokens_github
+    GATSBY_PORTFOLIO_FORMIK_ENDPOINT=your_formium_Api_REST_Endpoint
+    GATSBY_PORTFOLIO_RECAPTCHA_KEY=your_google_recaptcha_key
     ```  
 
 4.  **Open the source code and start editing!**
