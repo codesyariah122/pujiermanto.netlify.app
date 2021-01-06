@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import axios from 'axios';
+import { graphql, useStaticQuery } from 'gatsby'
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
@@ -21,6 +22,18 @@ import { Button, Input } from '../../../components/common';
     position: relative;
     margin-bottom: 1rem;
   `;
+
+  const data = useStaticQuery(graphql`
+      query {
+        site {
+          siteMetadata {
+            author {
+              full
+            }
+          }
+        }
+      }
+  `)
   
 export default () => (
 
@@ -33,12 +46,12 @@ export default () => (
       success: false,
     }}
     validationSchema={Yup.object().shape({
-      name: Yup.string().required('Full name field is required'),
+      name: Yup.string().required('Nama lengkap harus di isi bro ! '),
       email: Yup.string()
-        .email('Invalid email')
-        .required('Email field is required'),
-      message: Yup.string().required('Message field is required'),
-      recaptcha: Yup.string().required('Robots are not welcome yet!'),
+        .email('Emailnya gak valid bro ! ')
+        .required('Email harus disi yahh Bro ! '),
+      message: Yup.string().required('isi pesan anda apa ? ini juga bro harus di isi biar gak menimbulkan kerancuan !'),
+      recaptcha: Yup.string().required('Are you a robot ? So tell me what are you'),
     })}
     onSubmit={async ({ name, email, message }, { setSubmitting, resetForm, setFieldValue }) => {
       try {
@@ -60,7 +73,7 @@ export default () => (
       } catch (err) {
         setSubmitting(false);
         setFieldValue('success', false);
-				alert('Something went wrong, please try again!') // eslint-disable-line
+				alert('Ada kesalahan kayanya bro, some on like you kayanya!') // eslint-disable-line
       }
     }}
   >
@@ -73,7 +86,7 @@ export default () => (
             name="name"
             component="input"
             aria-label="name"
-            placeholder="Full name*"
+            placeholder="Nama Lengkap*"
             error={touched.name && errors.name}
           />
           <ErrorMessage component={Error} name="name" />
@@ -86,7 +99,7 @@ export default () => (
             as={FastField}
             type="email"
             name="email"
-            placeholder="Email*"
+            placeholder="Alamat Email*"
             error={touched.email && errors.email}
           />
           <ErrorMessage component={Error} name="email" />
@@ -100,7 +113,7 @@ export default () => (
             rows="8"
             type="text"
             name="message"
-            placeholder="Message*"
+            placeholder="Isi pesan*"
             error={touched.message && errors.message}
           />
           <ErrorMessage component={Error} name="message" />
@@ -119,7 +132,7 @@ export default () => (
         {values.success && (
           <InputField>
             <Center>
-              <h4>Your message has been successfully sent, I will get back to you ASAP!</h4>
+              <h4>Pesanmu sudah di kirim ke bro {data.site.siteMetadata.author.full}</h4>
             </Center>
           </InputField>
         )}
