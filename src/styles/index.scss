@@ -484,6 +484,46 @@ h1 {
 	}
 }
 
+.concept-nine {
+	background: url('../images/homepage/gobloganjing.jpg')
+		top center / cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:hover h1:before {
+		transition: 0.6s ease;
+		color: rgba(255, 255, 255, 0.8);
+		animation: jump-out 0.6s ease forwards;
+	}
+	@media (max-width: 768px) {
+		h1 {
+			margin-top: 1rem;
+			font-size:16px;
+		}
+	}
+	@media (max-width: 368px){
+		h1 {
+			font-size:16px;
+			margin-top: 7rem;
+		}
+	}
+}
+
+@keyframes jump-out {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}
+
 @keyframes falls {
 	0% {
 		opacity: 0;

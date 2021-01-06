@@ -4,12 +4,47 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import Layout from '../components/layouts/layout'
 import Author from './about/author'
+import Blog from './about/blog'
+
+export const pageQuery = graphql`
+  query {
+    indexImage1: file(relativePath: { eq: "homepage/bg2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    indexImageanjing: file(relativePath: { eq: "homepage/gobloganjing.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    indexImage2: file(relativePath: { eq: "homepage/gobloganjing.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    indexImage3: file(relativePath: { eq: "homepage/bg5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+  }
+`;
 
 const AboutPage = (props) => {
 
 const imgFile = {
   "satu": props.data.indexImage1.childImageSharp.fluid,
-  "dua": props.data.indexImage3.childImageSharp.fluid
+  "dua": props.data.indexImage2.childImageSharp.fluid,
+  "tiga": props.data.indexImageanjing.childImageSharp.fluid
 }
 	const BgImg2 = styled.div`
     display: flex;
@@ -30,6 +65,7 @@ const imgFile = {
 	return (
 	<>
 	<Layout title="About Page">
+  
         <BackgroundImage
               fluid={imgFile.satu}
             >
@@ -60,12 +96,15 @@ const imgFile = {
                 </BgImg2>
             </BackgroundImage>
 
+            <BackgroundImage fluid={imgFile.tiga}>
+                <div class="concept concept-nine">
+                    <Blog/>
+                </div>
+            </BackgroundImage>
 
             <BackgroundImage fluid={imgFile.dua}>
             <div class="concept concept-seven">
-
                 <Author/>
-                
             </div>
        	</BackgroundImage>
     </Layout>   	
@@ -74,29 +113,3 @@ const imgFile = {
 }
 
 export default AboutPage
-
-export const pageQuery = graphql`
-  query {
-    indexImage1: file(relativePath: { eq: "homepage/bg2.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    indexImage2: file(relativePath: { eq: "homepage/bg3.jpeg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    indexImage3: file(relativePath: { eq: "homepage/bg5.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-  }
-`;

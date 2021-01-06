@@ -11,14 +11,13 @@ const IndexPage = () => {
         <Layout title="Unexpected Kernel Mode">
           <section className="hero">
             <div className="container">
-              <Hero/>
+              <Hero id="hero"/>
             </div>
           </section>
           
           <section className="project">
               <Projects/>
           </section>
-
         </Layout>
     </>
   )

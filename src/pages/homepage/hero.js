@@ -2,6 +2,7 @@ import React from 'react'
 import Artwork from './artwork'
 import {graphql, useStaticQuery, Link} from 'gatsby'
 
+
 const Hero = () => {
 
 const data = useStaticQuery(graphql`

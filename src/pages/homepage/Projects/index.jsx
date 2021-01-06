@@ -1,61 +1,38 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby';
-import { Container } from '../../../components/common';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
+import styled from 'styled-components'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import Card from '@material-ui/core/Card'
+import CardHeader from '@material-ui/core/CardHeader'
+import CardContent from '@material-ui/core/CardContent'
+import CardActions from '@material-ui/core/CardActions'
+import Typography from '@material-ui/core/Typography'
 import Star from '../../../components/common/Icons/Star'
 import Fork from '../../../components/common/Icons/Fork'
-// import {Wrapper, Grid, Item, Content, Stats, Languages} from './styles'
-import styled from 'styled-components';
 
 
 const Projects = () => {
 
-  const Wrapper = styled.div`
-    color: #000;
-    margin-bottom: 2rem;
-  `;
-
-  const Grid = styled.div`
-    margin-top: 2rem;
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 8fr;
-    gap: 1.2rem 1.2rem;
-
-    @media (max-width: 960px) {
-      grid-template-columns: repeat(2, 1fr);
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      marginTop: '5.5rem',
+      flexGrow: 1,
+      display: 'grid',
+      width: '100%'
+    },
+    card: {
+      maxWidth: 345,
+      height: '100%'
+    },
+    heading: {
+      fontSize: '18px'
     }
+  }));
 
-    @media (max-width: 680px) {
-      grid-template-columns: 1fr;
-    }
-  `;
+  const [spacing, setSpacing] = React.useState(2);
+  const classes = useStyles();
 
-  const Item = styled.div`
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
-    text-decoration:none;
-
-    h4 {
-      color: '#212121';
-    }
-
-    p {
-      color: '#707070';
-    }
-  `;
-
-  // const Content = styled.div`
-  //   padding: 1rem 0;
-  //   min-height: 160px;
-  //   &:hover{
-  //     color: salmon;
-  //   }
-  // `;
 
   const Stats = styled.div`
     display: flex;
@@ -105,6 +82,7 @@ const {
                   name
                   url
                   description
+                  createdAt
                   stargazers {
                     totalCount
                   }
@@ -125,47 +103,56 @@ const {
   );
 
 
-return (
-    <Wrapper as={Container} id="projects">
-      <h1 style={{color: '#000', textAlign: 'justify'}}>My Projects</h1>
-      <p style={{textIndent: '25px', lineHeight: '27px', fontSize: '18px', textAlign: 'justify'}}>Ini merupakan dokumentasi dan rekam jejak pribadi saya dalam proses mengerjakan dan mengembangkan sebuah project yang saya kerjakan beberapa waktu sebelumnya, juga sebagai media dokumentasi dan modul-modul dalam mempelajari dan memperluas khazanah saya pribadi dalam mengembangkan minat saya dalam  dunia IT dan Pemrograman.</p>
-      <Grid>
-        {edges.map(({ node }) => (
-          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer">
-            <Card>
-              <CardContent>
-                <h4>{node.name}</h4>
-                <p style={{fontSize: "14px"}}>{node.description}</p>
-  
-                <Stats>
-                  <div>
-                    <Star color="#000" />
-                    <span>{node.stargazers.totalCount}</span>
-                  </div>
-                  <div>
-                    <Fork color="light"/>
-                    <span>{node.forkCount}</span>
-                  </div>
-                </Stats>
-                <Stats>
-                  <Languages>
-                    {
-                      node.languages.nodes.map(({ id, name }) => (
-                        <span key={id}>
-                          {name}
-                        </span>
-                      ))
-                    }
-                  </Languages>
-                </Stats>
+  return (
+      <Grid fixed className={classes.root} spacing={3}>
+        <Grid item md={12}>
+          <Grid container justify="left" spacing={spacing}>
+          <h1 style={{color: '#000', textAlign: 'justify'}}>My Projects</h1>
+          <p style={{textIndent: '25px', fontSize: '15px', lineHeight: '37px', textAlign: 'justify', width:'100%'}}>Ini merupakan dokumentasi dan rekam jejak pribadi saya dalam proses mengerjakan dan mengembangkan sebuah project yang saya kerjakan beberapa waktu sebelumnya, juga sebagai media dokumentasi dan modul-modul dalam mempelajari dan memperluas khazanah saya pribadi dalam mengembangkan minat saya dalam  dunia IT dan Pemrograman.</p>
 
-              </CardContent>
-            </Card>
-          </Item>
-        ))}
+            {edges.map(({ node }) => (
+              <Grid key={node.id} item>
+              <Link to={node.url} target="_blank" style={{textDecoration: 'none'}}>
+                <Card className={classes.card}>
+                  <CardHeader
+                    title={node.name}
+                    subheader={node.createdAt}
+                  />
+                    <CardContent>
+                      <Typography variant="body2" color="textSecondary" component="p"> {node.description}
+                      </Typography>
+
+                        <Stats>
+                          <div>
+                            <Star color="#000" />
+                            <span>{node.stargazers.totalCount}</span>
+                          </div>
+                          <div>
+                            <Fork color="light"/>
+                            <span>{node.forkCount}</span>
+                          </div>
+                        </Stats>
+                        <Stats>
+                        <Languages>
+                          {
+                            node.languages.nodes.map(({ id, name }) => (
+                              <span key={id}>
+                                {name}
+                              </span>
+                            ))
+                          }
+                        </Languages>
+                      </Stats>
+
+                    </CardContent>
+                  </Card>
+                </Link>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
       </Grid>
-    </Wrapper>
-  );
+  )
 
 }
 
