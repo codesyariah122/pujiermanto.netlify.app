@@ -8,6 +8,10 @@
   My Costume Gatsby's hello-world starter
 </h1>
 
+### Preview Deploy  
+- Netlify : <a href="https://pujiermanto.netlify.app">Netlify</a>
+- Vercel : <a href="https://pujiermanto.vercel.app">Vercel</a>
+
 ## 🚀 Quick start
 
 # Prerequisites  
