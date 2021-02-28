@@ -55,14 +55,24 @@ const BlogList = () => {
 
 	const data = useStaticQuery(graphql`
 			query{
-			   allMarkdownRemark{
+			   allMarkdownRemark(
+          sort: {
+            fields:[frontmatter___date]
+            order: DESC
+          }
+        ){
 			    edges{
 			      node{
 					frontmatter{
 			          title
-			          date
+			          date(formatString:"MMMM D YYYY")
 			          published
 			          author
+			          images{
+			          	name
+			            relativePath
+			            ext
+			          }
 			        }
 			        html
 			        excerpt(pruneLength: 50)
@@ -78,19 +88,21 @@ const BlogList = () => {
 	return (
 		<>
 		 <Wrapper as={Container} id="projects">
-		 	<h2 style={{color: '#000', textAlign: 'justify'}}>Welcome in My Blog</h2>
-		 	<p style={{textIndent: '21px', fontSize: '18px', lineHeight: '37px', textAlign: 'justify', width:'100%'}}>
+		 	<h2 style={{color: '#000', textAlign: 'justify'}}>The Articles</h2>
+		 	{/*<p style={{textIndent: '21px', fontSize: '18px', lineHeight: '37px', textAlign: 'justify', width:'100%'}}>
 		 		Catatan dokumentasi perjalanan hidup yang dikemas dengan alur yang tak berarah dengan maksud menambah khazanah intelektualitas bagi kualitas khalayak umat. <br/> 
 		 		<span style={{color: 'DodgerBlue'}}>sebuah dedikasi bagi kehidupan pribadi ...
 		 		</span>
-		 	</p>
+		 	</p>*/}
 		 	<Grid>
 			{data.allMarkdownRemark.edges.map(edge => (
 				<>
 				<Item key={edge.node.frontmatter.author} as="a" href={`/about/${edge.node.fields.slug}`} rel="noopener noreferrer">
 					<Card>
 						<Content>
-						
+
+						{/*<img src={`./${edge.node.frontmatter.images.name}${edge.node.frontmatter.images.ext}`} />*/}
+
 						<h3 style={{color: '#000', textAlign: 'left'}}>{edge.node.frontmatter.title}</h3>
 						<p style={{color: 'grey'}}>{edge.node.excerpt}</p>
 						<TitleWrap>

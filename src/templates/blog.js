@@ -10,7 +10,7 @@ export const query = graphql`
 		markdownRemark(fields: {slug: { eq: $slug } }) {
 			frontmatter {
 				title
-				date
+				date(formatString:"MMMM D YYYY")
 				author
 			}
 			html
@@ -26,8 +26,9 @@ const Blog = (props) => {
 		<Layout title="Post Page | Unexpected Kernel Mode">
 			<section className="post">
 
-				<h2 style={{color: '#000', textAlign: 'justify'}}>{props.data.markdownRemark.frontmatter.title}</h2>
+				<h2 style={{color: 'rgba(0, 0, 0, 0.7)', textAlign: 'justify'}}>{props.data.markdownRemark.frontmatter.title}</h2>
 				<p>{props.data.markdownRemark.frontmatter.date}</p>
+
 
 				<div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
 

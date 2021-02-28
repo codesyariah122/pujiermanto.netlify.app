@@ -55,7 +55,7 @@ module.exports = {
           },
           "about": {
               "welcome": "Tulisanku",
-              "print": "Halaman ini merupakan arsip tulisan pribadiku, yang kurang lebih nya mohon dimaafkan karena faktor penulisan yang di pelajari secara otodidak, semoga masih bisa bermanfaat, selamat membaca ..."
+              "print": "Halaman ini merupakan arsip tulisan pribadiku, yang kurang lebih nya mohon dimaafkan karena faktor penulisan yang di pelajari secara otodidak, semoga masih bisa bermanfaat,"
           }
         },
 
@@ -94,20 +94,42 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-emotion`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: 'src',
-        path: `${__dirname}/src/`
+      resolve: `gatsby-plugin-build-date`,
+       options: {
+        formatAsDateString: true, 
+        formatting: {
+          format: 'dddd D MMMM YYYY', // string, defaults to "MM/DD/YYYY" - pass in any acceptable date-and-time format
+          utc: false, // boolean, defaults to false - output time as UTC or not, following date-and-time API
+        },
+        locale: 'fr', // string, defaults to null, which date-and-time defaults as "en" - whether to localize the date or not, can use any available date-and-time localization
       }
     },
-    
+
+    {
+      resolve: `gatsby-source-filesystem`,
+        options: {
+          name: 'src',
+          path: `${__dirname}/src/`
+        }
+    },
+    `gatsby-plugin-sharp`,  
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
+        plugins: [
+        `gatsby-remark-relative-images`,
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 750,
+            linkImagesToOriginal: false
+          }
+        },
+
+        {
           resolve: `gatsby-remark-prismjs`,
           options: {
             classPrefix: "language-",

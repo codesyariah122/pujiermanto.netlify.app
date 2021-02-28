@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+// import Img from 'gatsby-image'
+import { Link } from 'gatsby'
+// import { Link, useStaticQuery, graphql } from 'gatsby'
+import ImgLogo from '../../images/anjing.png'
+
 
 const LogoWrap = styled.div`
 margin: auto 0;
@@ -13,21 +16,23 @@ width:80%;
 `
 
 const Logo = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            file(name: {eq: "anjing"}, extension: {eq: "png"}) {
-                childImageSharp {
-                    fluid(maxWidth: 1000, pngQuality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         file(name: {eq: "anjing"}, extension: {eq: "png"}) {
+    //             childImageSharp {
+    //                 fluid(maxWidth: 1000, pngQuality: 100) {
+    //                     ...GatsbyImageSharpFluid
+    //                 }
+    //             }
+    //         }
+    //     }
+    // `)
 
     return (
         <LogoWrap as={Link} to="/">
-            <Img fluid={data.file.childImageSharp.fluid} alt="logo" style={{width: "50px"}}/>
+            {/*<Img src={`anjing.png`} alt="logo" style={{width: "50px"}}/>*/}
+            {/*<ImageLogo/>*/}
+            <img src={ImgLogo} with="100" height="70" alt="logos"/>
         </LogoWrap>
     )
 }

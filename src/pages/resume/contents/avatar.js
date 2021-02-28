@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img from 'gatsby-image'
-import { graphql, useStaticQuery } from 'gatsby'
+// import Img from 'gatsby-image'
+import AvatarImg from '../../../images/portfolio/avatar1.jpg'
+// import { graphql, useStaticQuery } from 'gatsby'
 
 const Avatar = () => {
     const AvatarWrap = styled.div`
@@ -11,21 +12,21 @@ const Avatar = () => {
             flex: 0 1 25px;
     }`
 
-    const data = useStaticQuery(graphql`
-        query {
-            file: file(relativePath: { eq: "images/portfolio/avatar1.jpg" }) {
-                childImageSharp {
-                    fluid(maxWidth: 400, maxHeight: 500) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         file: file(relativePath: { eq: "images/portfolio/avatar1.jpg" }) {
+    //             childImageSharp {
+    //                 fluid(maxWidth: 400, maxHeight: 500) {
+    //                 ...GatsbyImageSharpFluid
+    //                 }
+    //             }
+    //         }
+    //     }
+    // `)
 
     return (
         <AvatarWrap>
-            <Img fluid={data.file.childImageSharp.fluid} alt="avatar"/>
+            <img src={AvatarImg} alt="avatar" width="305" height="400"/>
         </AvatarWrap>
     )
 }

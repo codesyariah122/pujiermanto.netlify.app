@@ -23,8 +23,11 @@ const data = useStaticQuery(graphql`
         <>
             <div class="text-wrapper">
                   <h1 className="title">{data.site.siteMetadata.author.about.welcome}, </h1>
-                  <p className="description"> 
+                  <p style={{textIndent: '21px', fontSize: '18px', lineHeight: '37px', textAlign: 'justify', width:'100%'}} className="description"> 
                     <span>{data.site.siteMetadata.author.about.print}</span>
+                     &nbsp; Dalam menambah khazanah intelektualitas bagi segenap khalayak umat. <br/> 
+                    <span style={{color: 'DodgerBlue', marginTop:'1rem'}}>Selamat baca ...
+                    </span>
                   </p>
             </div>
 

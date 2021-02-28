@@ -1,9 +1,13 @@
 ---
 title: "Javascript Promise"
-date: 02-11-2020
+date: 2020-11-02
 published: true
 author: "puji"
----
+images: 'then.jpeg'
+---  
+
+![ajax](./promise.jpg)  
+
 Assalamuallaaikum,  
 Hallo sobat-sobat coders semua, apa kabarnya ? semoga kalian semua dalam keadaan sehat-sehat dan selalu diberikan dan di tunjukan kebaikan dalam segala hal dalam kehidupan kalian.  
 

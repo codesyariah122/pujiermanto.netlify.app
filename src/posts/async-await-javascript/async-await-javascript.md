@@ -1,9 +1,12 @@
 ---
 title: "Async Await Javascript"
-date: 28-11-2020
+date: 2020-11-28
 published: true
 author: "puji"
+images: 'post2.jpg'
 ---  
+
+![ajax](./coffee.jpg)  
 
 Dalam judul ini gout akan membahas sedikit mengenai paradigma asynchronous javascript, yah boleh dibilang javascript ini merupkan bahasa pemrograman tingkat tinggi yang mempunyai karakter yang unik.  
 

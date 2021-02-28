@@ -1,9 +1,12 @@
 ---
 title: "Ajax Request Using Fetch"
-date: 25-11-2020
+date: 2020-11-25
 published: true
 author: "puji"
+images: 'post1.jpg'
 ---  
+
+![ajax](./write_book.jpg)
 
 Seperti yang telah kita singgung didalam proses promise kita bisa melakukan request ajax didalamnya, dan Penggunaan fetch jadi mempersingkat penulisan code dalam menjalankan ajax request, fetch merupakan sebuah librari dari javascript untuk menjalankan request ajax bandingkan dengan menggunakan vanilla javascript, kalo kalian akrab dengan penggunaan ajax di jquery, kurang lebih ringkasnya sama dengan jquery, dan di artikel-artikel gout sebelumnya gout banyak menggunakan jquery sebagai library javascript, karena tuntutan pekerjaan yang mengharuskan proses development dengan cepat.  
 
