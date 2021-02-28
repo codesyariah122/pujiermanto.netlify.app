@@ -100,6 +100,25 @@ footer {
 	margin-bottom: 2rem;
 }
 
+.post{
+	margin-left: 1.5rem;
+	width: 90%;
+	position: absolute;
+	padding: 0.3em;
+	height: auto;
+	overflow: hidden;
+	scroll-snap-align: start;
+	margin-top: 0.7rem;
+	margin-bottom: 1.5rem;
+	h2{
+		margin-left:1rem;
+	}
+	p{
+		text-align: justify;
+		padding: 21px;
+	}
+}
+
 .hover,
 .word,
 h1 {

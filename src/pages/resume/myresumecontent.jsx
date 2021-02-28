@@ -29,20 +29,20 @@ const MyResumeContent = () => {
     `);
     return (
       <Content css={{marginTop: '1.7rem'}}>
-          <div class="w3-content w3-margin-top">
+          <div className="w3-content w3-margin-top">
         
-            <div class="w3-row-padding">
+            <div className="w3-row-padding">
             
-              <div class="w3-third">
+              <div className="w3-third">
               
-                <div class="w3-white w3-text-grey w3-card-4">
-                  <div class="w3-display-container">
+                <div className="w3-white w3-text-grey w3-card-4">
+                  <div className="w3-display-container">
                     
                     {/* <Avatar src={data.site.siteMetadata.img} alt="Avatar" width="305" height="370"  /> */}
 
                     <Avatar/>
 
-                    <div class="w3-display-bottomleft w3-container w3-text-black">
+                    <div className="w3-display-bottomleft w3-container w3-text-black">
                       <h2>{data.site.siteMetadata.author.full}</h2>
                     </div>
                   </div>

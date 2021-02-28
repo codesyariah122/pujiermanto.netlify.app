@@ -15,7 +15,6 @@ const Layout = (props) => {
     
     return (
         <>
-            <div>
             <SeoPage title={props.title}/>
                 <Header/>
                 <div class="main-content">
@@ -24,7 +23,6 @@ const Layout = (props) => {
                         {/* </Container> */}
                     <Footer/>
                 </div>               
-            </div>
         </>
     )
 }

@@ -48,11 +48,15 @@ module.exports = {
             "dua": "Web Developer dan ",
             "tiga": "Penggiat Informasi Teknologi"
           },
-            working: {
+          "working": {
               'satu': 'Full Stack Developer',
               'dua': 'FrontEnd Developer',
               'tiga': 'Web Design'
-            },
+          },
+          "about": {
+              "welcome": "Tulisanku",
+              "print": "Halaman ini merupakan arsip tulisan pribadiku, yang kurang lebih nya mohon dimaafkan karena faktor penulisan yang di pelajari secara otodidak, semoga masih bisa bermanfaat, selamat membaca ..."
+          }
         },
 
       skill,
@@ -93,6 +97,50 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-emotion`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    },
+    
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [{
+          resolve: `gatsby-remark-prismjs`,
+          options: {
+            classPrefix: "language-",
+            inlineCodeMarker: null,
+            aliases: {},
+            showLineNumbers: false,
+            noInlineHighlight: false,
+            languageExtensions: [
+              {
+                language: "superscript",
+                extend: "javascript",
+                // definition: {
+                //   superscript_types: /(SuperType)/,
+                // },
+                insertBefore: {
+                  function: {
+                    superscript_keywords: /(superif|superelse)/,
+                  },
+                },
+              },
+            ],
+            prompt: {
+              user: "root",
+              host: "localhost",
+              global: false,
+            },
+            escapeEntities: {},
+          }
+        }]
+      }
+    },
+
+    {
       resolve: `gatsby-plugin-material-ui`,
       options: {
         stylesProvider: {
@@ -100,13 +148,14 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: path.join(__dirname, `src`, `images`),
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: path.join(__dirname, `src`, `images`),
+    //   }
+    // },
+
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

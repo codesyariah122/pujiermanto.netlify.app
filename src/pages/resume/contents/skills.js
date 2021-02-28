@@ -41,14 +41,14 @@ const Skills = () => {
     ]
 
     return (
-        <div class="w3-container">
+        <div className="w3-container">
         {devs.map(dev => (
-            <p><i class={`fa ${dev.icon} fa-fw w3-margin-right w3-large w3-text-teal`}></i>{dev.text}</p>
+            <p><i className={`fa ${dev.icon} fa-fw w3-margin-right w3-large w3-text-teal`}></i>{dev.text}</p>
         ))}
         
         <br/>
 
-        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+        <p className="w3-large"><b><i className="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
 
         <BackEnd/>
 

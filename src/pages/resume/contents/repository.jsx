@@ -51,10 +51,12 @@ const Repository = () => {
         },
       } = useStaticQuery(
         graphql`
-          query {
+         query {
             github {
               viewer {
-                repositories(last: 15, orderBy: { field: STARGAZERS, direction: ASC}) {
+                repositories(last: 7, orderBy: { 
+                  field: UPDATED_AT, direction: ASC
+                }) {
                   edges {
                     node {
                         openGraphImageUrl
@@ -83,11 +85,11 @@ const Repository = () => {
 
 
     return (
-        <div class="w3-container w3-card w3-white">
+        <div className="w3-container w3-card w3-white">
 
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-github-alt fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Github Project</h2>
+            <h2 className="w3-text-grey w3-padding-16"><i className="fa fa-github-alt fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Github Story</h2>
                 
-            <div class="w3-container">
+            <div className="w3-container">
                 <p style={{textDecoration: 'none', color: 'teal'}}>Dokumentasi Web Development | Frontend Developer | Backend Developer
                 </p>
 
@@ -98,29 +100,29 @@ const Repository = () => {
             {
                 edges.map(({ node }) => (
                 <>
-                    <div class="w3-container">
-                    <h3 class="w3-text">
+                    <div className="w3-container">
+                    <h3 className="w3-text">
                     <LinkStyle to={node.url}>{node.name}</LinkStyle>
                     </h3>
-                    <Link to={node.url} style={{textDecoration:'none'}}>
-                        <p class="w3-opacity">
+                    <Link to={node.url} style={{textDecoration:'none'}} target="_blank">
+                        <p className="w3-opacity">
                         <b>Desc:</b> {node.description}</p>
                     </Link>
                     <ul style={{listStyleType:'none', display:'flex'}}>
                         <li>
-                            <Link to={node.url} style={{textDecoration:'none'}}><i class="fa fa-code-fork fa-fw w3-margin-right" style={{fontSize: '23px', color: 'blue'}}></i><span style={{fontSize:'12px', marginLeft:'-20px', marginRight:'25px'}}>{node.forkCount}</span>
+                            <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank"><i className="fa fa-code-fork fa-fw w3-margin-right" style={{fontSize: '23px', color: 'blue'}}></i><span style={{fontSize:'12px', marginLeft:'-20px', marginRight:'25px'}}>{node.forkCount}</span>
                             </Link>
                         </li>
                         <li>
-                        <Link to={node.url} style={{textDecoration:'none'}}>
-                            <i class="fa fa-star-o fa-fw w3-margin-right" style={{fontSize: '23px', color: 'goldenrod'}}></i><span style={{fontSize:'12px', marginLeft:'-10px', marginRight:'15px'}}>{node.stargazers.totalCount}</span>
+                        <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank">
+                            <i className="fa fa-star-o fa-fw w3-margin-right" style={{fontSize: '23px', color: 'goldenrod'}}></i><span style={{fontSize:'12px', marginLeft:'-10px', marginRight:'15px'}}>{node.stargazers.totalCount}</span>
                         </Link>
                         </li>
 
                         {
                             node.languages.nodes.map(({ id, name }) => (
                             <li style={{marginLeft: '2rem', marginTop: '.3rem', color: 'dodgerblue'}}>
-                                <Link to={node.url} style={{textDecoration:'none'}}>
+                                <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank">
                                 <span style={{fontSize:'12px', marginLeft:'-10px', marginRight:'15px'}}>{name}</span>
                                 </Link>
                             </li>
@@ -132,7 +134,7 @@ const Repository = () => {
                 </>
                 ))
             }
-            
+            <br/><br/>    
         </div>
     )
 }
