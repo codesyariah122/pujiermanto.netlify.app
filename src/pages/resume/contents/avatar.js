@@ -11,7 +11,7 @@ const Avatar = () => {
         img{
             height: 407px;
         }
-        @media (max-width: 768px) and (orientation: landscape) {
+    @media (max-width: 768px) and (orientation: landscape) {
             flex: 0 1 25px;
             img{
                 width: 225px;

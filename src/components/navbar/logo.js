@@ -7,8 +7,7 @@ import ImgLogo from '../../images/anjing.png'
 
 
 const LogoWrap = styled.div`
-margin: auto 0;
-flex: 0 1 36px;
+margin: auto 0;k
 width:80%;
 @media (max-width: 768px) and (orientation: landscape) {
     flex: 0 1 25px;
