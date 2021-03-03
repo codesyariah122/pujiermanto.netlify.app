@@ -8,6 +8,7 @@ const BlogList = () => {
 
 	const Wrapper = styled.div`
     color: #000;
+    width: 1;
     margin-bottom: 2rem;
     margin-top: 5rem;
   `;

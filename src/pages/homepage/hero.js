@@ -38,8 +38,8 @@ const data = useStaticQuery(graphql`
 
 	return (
 		<>
-			<div class="text-wrapper">
-		          <h1 className="title">hellouw, </h1>
+			<div className="text-wrapper">
+		          <h1 className="title">Salam.. </h1>
 		          <p className="description">
 		          	Saya <span style={{color: 'crimson'}}>{dev.calls}</span> Lengkapnya <span style={{color: 'coral'}}>{dev.full}</span>. Saat ini saya aktif sebagai {hobys.map(hoby => (
 		          			<span>{hoby.text}</span>

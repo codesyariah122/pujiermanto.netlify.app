@@ -1,16 +1,34 @@
 import React from 'react'
-import './animate.scss'
+import styled from 'styled-components'
+
+const Wrap = styled.div`
+	margin-left:1rem;
+	svg{
+		width: "360.000000pt"; 
+		height: "360.000000pt";
+	}
+	@media (max-width: 768px) and (orientation: landscape) {
+       svg{
+		width: "360.000000pt"; 
+		height: "360.000000pt";
+       }
+    }
+
+    @media (max-width: 360px) {
+        svg {
+       		width: 100%;
+       		height: 30vh;
+        } 
+    }
+`
 
 const Artwork = () => {
 	return (
 		<>
-			<svg id="coffee-cup" version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="360.000000pt" height="360.000000pt" viewBox="0 0 360.000000 360.000000"
+		<Wrap>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360.000000 360.000000"
  preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.16, written by Peter Selinger 2001-2019
-</metadata>
-<g transform="translate(0.000000,360.000000) scale(0.100000,-0.100000)"
+				<g transform="translate(0.000000,360.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
 <path className="animate" d="M2242 3074 c-12 -8 -32 -34 -45 -57 -19 -37 -22 -58 -24 -176 -1
 -111 -5 -142 -23 -183 -41 -96 -26 -168 60 -277 35 -44 43 -64 56 -134 19
@@ -57,7 +75,7 @@ c30 -26 114 -78 187 -117z m-430 54 c14 -27 16 -43 8 -67 -11 -40 -98 -164
 -108 163 -61 205 12 11 31 25 42 31 29 16 111 15 144 -2z"/>
 </g>
 </svg>
-
+</Wrap>
 		</>
 	)
 }

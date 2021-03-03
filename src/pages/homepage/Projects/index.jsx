@@ -16,6 +16,7 @@ const Projects = () => {
   const Grid = styled.div`
     margin-top: 2rem;
     display: grid;
+    width: 100%;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 8fr;
@@ -48,6 +49,7 @@ const Projects = () => {
 
   const Content = styled.div`
     padding: 1rem 0;
+    width: 100%;
     min-height: 160px;
     &:hover{
       color: black;

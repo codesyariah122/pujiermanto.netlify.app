@@ -12,7 +12,11 @@ flex: 0 1 36px;
 width:80%;
 @media (max-width: 768px) and (orientation: landscape) {
     flex: 0 1 25px;
+    img {
+        height: 12vh;
+    }
 }
+
 `
 
 const Logo = () => {

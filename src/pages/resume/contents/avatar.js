@@ -8,9 +8,23 @@ const Avatar = () => {
     const AvatarWrap = styled.div`
         margin: auto 0;
         flex: 0 1 36px;
+        img{
+            height: 407px;
+        }
         @media (max-width: 768px) and (orientation: landscape) {
             flex: 0 1 25px;
-    }`
+            img{
+                width: 225px;
+            }
+    }
+
+    @media (max-width: 360px) {
+            img{
+                width: 327.5px;
+            }
+    }
+
+    `
 
     // const data = useStaticQuery(graphql`
     //     query {
@@ -26,7 +40,7 @@ const Avatar = () => {
 
     return (
         <AvatarWrap>
-            <img src={AvatarImg} alt="avatar" width="305" height="400"/>
+            <img src={AvatarImg} alt="avatar" height="400"/>
         </AvatarWrap>
     )
 }
