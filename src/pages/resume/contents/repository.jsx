@@ -68,7 +68,7 @@ const Repository = () => {
                             totalCount
                         }
                         forkCount
-                      languages(first: 3) {
+                      languages(first: 2) {
                         nodes {
                           id,
                           name

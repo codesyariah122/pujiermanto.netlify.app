@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrap = styled.div`
-	margin-left:1rem;
+	margin-left:-1.8rem;
 	svg{
 		width: "360.000000pt"; 
 		height: "360.000000pt";
@@ -11,6 +11,8 @@ const Wrap = styled.div`
        svg{
 		width: "360.000000pt"; 
 		height: "360.000000pt";
+		margin-left:.8rem;
+		margin-top: -2rem;
        }
     }
 

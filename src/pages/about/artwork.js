@@ -2,7 +2,24 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrap = styled.div`
-	margin-left:1rem;
+	margin-left:-1.5rem;
+	@media (max-width: 768px) and (orientation: landscape) {
+       svg{
+		width: "360.000000pt"; 
+		height: "360.000000pt";
+		margin-left:.8rem;
+		margin-top: -12rem;
+       }
+    }
+
+    @media (max-width: 360px) {
+        svg {
+       		width: 100%;
+       		height: 20vh;
+       		margin-left:-12rem;
+			margin-top: 2rem;
+        } 
+    }
 `
 
 const Artwork = () => {

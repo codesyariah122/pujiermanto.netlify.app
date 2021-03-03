@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
+
 const ProfileGithub = () => {
 
 	const data = useStaticQuery(graphql`
@@ -45,14 +46,21 @@ const ProfileGithub = () => {
 					</li>
 				</ul>
 				<hr/>
-				<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/0-profile-details.svg" alt="profile-card" width="450"/>
+				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/0-profile-details.svg"  target="_blank">
+					<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/0-profile-details.svg" alt="profile-card" className="responsive"/>
+				</a>
 				<br/>
 				<br/>
-				<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/1-repos-per-language.svg" alt="profile-language"/>
 
+				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/1-repos-per-language.svg" target="_blank">
+					<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/1-repos-per-language.svg" alt="profile-language" className="responsive"/>
+				</a>
 				<br/>
 				<br/>
-				<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/3-stats.svg" alt="profile-stats"/>
+
+				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/3-stats.svg" target="_blank">
+					<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/3-stats.svg" alt="profile-stats" className="responsive"/>
+				</a>
 				<br/>
 				<br/>
 
