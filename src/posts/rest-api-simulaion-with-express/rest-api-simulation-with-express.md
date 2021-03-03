@@ -6,7 +6,7 @@ author: "puji"
 images: 'post3.jpg'
 ---  
 
-![ajax](./post3.jpg)
+![rest-api](./rest-api.jpg)
 
 Assalamualaikum, sobat digital dimanapun berada, salam baca. Semoga kalian semua selalu dalam keadaan sehat selalu, kali ini gout mau sedikit berbagi, yaitu berupa tips trick dan tutorial, kali ini gout akan membahas mengenai proses pembuatan rest api menggunakan framework express js.  
 

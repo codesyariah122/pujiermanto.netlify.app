@@ -6,7 +6,7 @@ author: "puji"
 images: 'rest-api-express.png'
 ---  
 
-![ajax](./drink.jpg)
+![rest-full](./drink.jpg)
 
 Assalamualaikum, sobat digital dimanapun berada, salam baca. Semoga kalian semua selalu dalam keadaan sehat selalu, kali ini gout mau sedikit berbagi, yaitu berupa tips trick dan tutorial, kali ini gout akan membahas mengenai proses pembuatan rest full api menggunakan framework ExpressJS dan database MongoDB.   
 
@@ -364,7 +364,7 @@ export default router
 ```  
 difile router lah semua request client ke sever kita akan dijalankan, selanjutnya kita bisa melakukan uji coba bagi tiap-tiap routes nya menggunakan aplikasi ```postman``` atau menggunakan ```curl``` di terminal kita.  
 
-![rest-full-api]('./rest-full-server.png') 
+![rest-full-api](./rest-full-server.png) 
 
 #### Curl GET  
 ```bash
@@ -386,7 +386,7 @@ root@debian:/home/puji122# curl -d "judul='La Grande Borne'&penulis='Nh. Dini'&g
 {"judul":"'La Grande Borne'","penulis":"'Nh. Dini'","genre":"'Novel Drama Roman'","penerbit":"'PT Gramedia Pustaka Utama'","id":"60391e78c764371f10e6e50b"}root@debian:/home/puji122# 
 ```  
 
-![rest-full-api]('./curl_PUT.png')
+![rest-full-api](./curl_PUT.png)
 
 #### Curl DELETE  
 
@@ -395,7 +395,7 @@ root@debian:/home/puji122# curl -X DELETE http://localhost:8081/api/data/delete/
 {"message":"Deleted Bookdata successfully"}
 root@debian:/home/puji122# 
 ```  
-![rest-full-api]('./curl_DELETE.png')  
+![rest-full-api](./curl_DELETE.png)  
 
 Untuk percobaan dari sisi client atau frontend bisa menggunakan framework ```ReactJS``` ```VueJS``` ataupun ```Angular```, atau mungkin bisa juga secara native. Untuk pemanfaatan dari sisi client atau RestClient nanti akan gout bahas di artikel terpisah.
 

@@ -6,7 +6,7 @@ author: "puji"
 images: 'es6.jpeg'
 ---  
 
-![ajax](./es6.jpeg)  
+![es6](./es6.jpg)  
 
 Assalamualaikum, sobat digital dimanapun berada, salam baca. Semoga kalian semua selalu dalam keadaan sehat selalu, kali ini gout mau sedikit berbagi, yaitu berupa tips trick dan tutorial, kali ini gout akan membahas mengenai Syntax Module EcmaScript6(ES6) Di NodeJS.  
 
@@ -52,7 +52,7 @@ Untuk menggunakannya dalam package aplikasi, kalian bisa menambahkan key tersebu
 ```  
 field ```fileaplikasikalian.js``` bisa diganti dengan nama file utama kalian, biasanya file utama itu adalah : ```index.js``` ```app.js``` atau ```server.js```  
 
-![promise]('./es6.png')  
+![es6](./es6.png)  
 
 ok sekian dulu dari saya untuk artikel kali ini, nanti kita lanjutkan lagi artikel mengenai tips and trick seputar pemrogramman khususnya web programming  
 ... see the next articles 

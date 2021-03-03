@@ -26,7 +26,7 @@ const Blog = (props) => {
 		<Layout title="Post Page | Unexpected Kernel Mode">
 			<section className="post">
 
-				<h2 style={{color: 'rgba(0, 0, 0, 0.7)', textAlign: 'justify'}}>{props.data.markdownRemark.frontmatter.title}</h2>
+				<h3 style={{color: 'rgba(0, 0, 0, 0.7)', textAlign: 'left', marginTop: '3.5rem', marginLeft: '-.1rem'}}>{props.data.markdownRemark.frontmatter.title}</h3>
 				<p>{props.data.markdownRemark.frontmatter.date}</p>
 
 

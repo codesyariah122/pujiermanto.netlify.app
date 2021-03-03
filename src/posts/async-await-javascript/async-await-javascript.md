@@ -6,7 +6,7 @@ author: "puji"
 images: 'post2.jpg'
 ---  
 
-![ajax](./coffee.jpg)  
+![async](./coffee.jpg)  
 
 Dalam judul ini gout akan membahas sedikit mengenai paradigma asynchronous javascript, yah boleh dibilang javascript ini merupkan bahasa pemrograman tingkat tinggi yang mempunyai karakter yang unik.  
 

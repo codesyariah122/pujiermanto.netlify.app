@@ -5,12 +5,27 @@
 .hero{
 	padding-top: 87px;
 	scroll-snap-align: start;
+	width: 100%;
+	// @media (max-width: 960px) {
+ //      width: 100%;
+ //    }
+
+ //    @media (max-width: 680px) {
+ //      width: 100%;
+ //    }
 	// padding-bottom: 15px;
 	.container{
 		display: inline-flex;
 		align-item: center;
 		justify-content: safe center;
-		width:90%;
+		// width:100vw;
+		// @media (max-width: 960px) {
+	 //      width: 100vw;
+	 //    }
+
+	 //    @media (max-width: 680px) {
+	 //      width: 100vw;
+	 //    }
 	}
 	.text-wrapper{
 		width: 50%;
