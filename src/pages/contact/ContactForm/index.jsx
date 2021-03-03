@@ -25,7 +25,7 @@ import { Button, Input } from '../../../components/common';
   
 export default () => (
 
-  console.log(process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY)
+  // console.log(process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY)
 
   <Formik
     initialValues={{
