@@ -27,7 +27,7 @@ Media digital yang sedang trend saat itu menjadi media gout dalam mempelajari du
 
 ![ajax](./fs.jpg)  
 
-![ajax](./fs.jpg)  
+![ajax](./jadul.jpg)  
 
 
 ### &#128591; &#128164;&#128164;  
