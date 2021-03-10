@@ -13,7 +13,7 @@ width:80%;
 @media (max-width: 768px) and (orientation: landscape) {
     flex: 0 1 25px;
     img {
-        height: 12vh;
+        height: 11vh;
     }
 }
 
@@ -36,7 +36,7 @@ const Logo = () => {
         <LogoWrap as={Link} to="/">
             {/*<Img src={`anjing.png`} alt="logo" style={{width: "50px"}}/>*/}
             {/*<ImageLogo/>*/}
-            <img src={ImgLogo} with="100" height="70" alt="logos"/>
+            <img src={ImgLogo} with="100" height="60" alt="logos"/>
         </LogoWrap>
     )
 }
