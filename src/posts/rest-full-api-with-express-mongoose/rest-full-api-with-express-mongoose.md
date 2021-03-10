@@ -346,7 +346,7 @@ export const deletedBooks = async(req, res) => {
 
 terdapat beberapa method diatas yang di fungsikan untuk menjalankan metode request HTTP nantinya di file ```src/router.js```.  
 
-Ok Selanjutnya kita ubah code lagi di file ```src/router.js```, ubah menjadi seperti ini :  
+Ok Selanjutnya kita ubah lagi code di file ```src/router.js```, ubah menjadi seperti ini :  
 
 ```javascript
 import Router from 'express'
