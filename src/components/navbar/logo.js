@@ -36,7 +36,7 @@ const Logo = () => {
         <LogoWrap as={Link} to="/">
             {/*<Img src={`anjing.png`} alt="logo" style={{width: "50px"}}/>*/}
             {/*<ImageLogo/>*/}
-            <img src={ImgLogo} with="100" height="63" alt="logos"/>
+            <img src={ImgLogo} with="90" height="60" alt="logos"/>
         </LogoWrap>
     )
 }
