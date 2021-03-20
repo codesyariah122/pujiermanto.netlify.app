@@ -3,7 +3,7 @@ title: "Restclient With ReactJS"
 date: 2021-03-19
 published: true
 author: "puji"
-images: 'artwork-react.jpeg'
+images: 'react-artwork.jpg'
 ---  
 
 ![rest-client](./MERN.gif)  
