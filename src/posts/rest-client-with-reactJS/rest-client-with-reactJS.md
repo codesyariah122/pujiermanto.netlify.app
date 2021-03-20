@@ -6,7 +6,7 @@ author: "puji"
 images: 'react-artwork.jpg'
 ---  
 
-![rest-client](./MERN.gif)  
+![rest-client](./react-artwork.jpg)  
 
 #### Consuming Rest Api with ReactJS  
 Asalamualaikum ...  
