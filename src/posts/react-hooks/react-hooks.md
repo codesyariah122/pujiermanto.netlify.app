@@ -1,6 +1,6 @@
 ---
 title: "Berbicara Hooks dan Lifecycle"
-date: 2020-17-03
+date: 2021-03-17
 published: true
 author: "puji"
 images: 'react-hooks.png'
