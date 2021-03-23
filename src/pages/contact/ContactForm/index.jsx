@@ -25,6 +25,7 @@ import { Button, Input } from '../../../components/common';
   
 export default () => (
 
+
   <Formik
     initialValues={{
       name: '',

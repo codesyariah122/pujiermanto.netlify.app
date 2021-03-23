@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import {graphql, useStaticQuery} from 'gatsby'
 import { Container } from '../../components/common';
-import contact from '../../images/animated/contactpage.gif';
+// import contact from '../../images/animated/contactpage.gif';
+import Artwork from './Artwork'
 import ContactForm from './ContactForm';
 
 
@@ -68,14 +69,17 @@ const ContactPages = () => {
 	`)
 
 	return (
-		<Wrapper as={Container} id="contact">
-		    <Details>
-		      <ContactForm />
-		    </Details>
-		    <Thumbnail>
-		      <img src={contact} alt={`Hallo I'am ${data.site.siteMetadata.author.full} & I'am a ${data.site.siteMetadata.author.hoby.dua}`} />
-		    </Thumbnail>
-		  </Wrapper>
+		<Fragment>
+			<Wrapper as={Container} id="contact">
+				<Details>
+					<ContactForm />
+				</Details>
+				    {/*<Thumbnail>
+				      <img src={contact} alt={`Hallo I'am ${data.site.siteMetadata.author.full} & I'am a ${data.site.siteMetadata.author.hoby.dua}`} />
+				  </Thumbnail>*/}
+			</Wrapper>
+			<Artwork/>
+		</Fragment>
 	)
 }
 
