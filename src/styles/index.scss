@@ -93,9 +93,10 @@ footer {
 .contact{
 	position: absolute;
 	padding: 5em;
-	width:80%;
+	width:100%;
 	align-items: center;
-	left:8.5%;
+	margin-left: .1rem;
+	// left:8.5%;
 	height: auto;
 	overflow: hidden;
 	scroll-snap-align: start;

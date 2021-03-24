@@ -104,17 +104,17 @@ const Repository = () => {
                     <h3 className="w3-text">
                     <LinkStyle to={node.url}>{node.name}</LinkStyle>
                     </h3>
-                    <Link to={node.url} style={{textDecoration:'none'}} target="_blank">
+                    <Link to={node.url} style={{textDecoration:'none'}} target="_blank" rel="noreferrer">
                         <p className="w3-opacity">
                         <b>Desc:</b> {node.description}</p>
                     </Link>
                     <ul style={{listStyleType:'none', display:'flex'}}>
                         <li>
-                            <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank"><i className="fa fa-code-fork fa-fw w3-margin-right" style={{fontSize: '23px', color: 'blue'}}></i><span style={{fontSize:'12px', marginLeft:'-20px', marginRight:'25px'}}>{node.forkCount}</span>
+                            <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank" rel="noreferrer"><i className="fa fa-code-fork fa-fw w3-margin-right" style={{fontSize: '23px', color: 'blue'}}></i><span style={{fontSize:'12px', marginLeft:'-20px', marginRight:'25px'}}>{node.forkCount}</span>
                             </Link>
                         </li>
                         <li>
-                        <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank">
+                        <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank" rel="noreferrer">
                             <i className="fa fa-star-o fa-fw w3-margin-right" style={{fontSize: '23px', color: 'goldenrod'}}></i><span style={{fontSize:'12px', marginLeft:'-10px', marginRight:'15px'}}>{node.stargazers.totalCount}</span>
                         </Link>
                         </li>
@@ -122,7 +122,7 @@ const Repository = () => {
                         {
                             node.languages.nodes.map(({ id, name }) => (
                             <li style={{marginLeft: '2rem', marginTop: '.3rem', color: 'dodgerblue'}}>
-                                <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank">
+                                <Link as="a" to={node.url} style={{textDecoration:'none'}} target="_blank" rel="noreferrer">
                                 <span style={{fontSize:'12px', marginLeft:'-10px', marginRight:'15px'}}>{name}</span>
                                 </Link>
                             </li>

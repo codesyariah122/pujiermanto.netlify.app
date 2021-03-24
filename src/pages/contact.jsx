@@ -14,7 +14,7 @@ const Contact = () => {
                 </div>
             </section>
             <section className="contact">
-                <h5>Kirim pesan melalui contact form</h5>
+                <h5>Kirim pesan kamu disini, melalui kolom contact form dibawah ini</h5>
               <ContactForm/>
           </section>
         </Layout>

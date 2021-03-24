@@ -8,7 +8,7 @@ const Wrap = styled.div`
 		width: "360.000000pt"; 
 		height: "360.000000pt";
 		margin-left:.8rem;
-		margin-top: -12rem;
+		margin-top: -5rem;
        }
     }
 
