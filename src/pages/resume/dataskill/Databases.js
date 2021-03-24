@@ -22,7 +22,7 @@ const Databases = () => {
 		            value
 		            color
 		          }
-		          nosql {
+		          postgresql {
 		            name
 		            value
 		            color
@@ -39,7 +39,7 @@ const Databases = () => {
 
 		{ "name": data.site.siteMetadata.webdev.sebelas.mongodb.name, "percent": data.site.siteMetadata.webdev.sebelas.mongodb.value, "color": data.site.siteMetadata.webdev.sebelas.mongodb.color },
 
-		{ "name": data.site.siteMetadata.webdev.sebelas.nosql.name, "percent": data.site.siteMetadata.webdev.sebelas.nosql.value, "color": data.site.siteMetadata.webdev.sebelas.nosql.color },
+		{ "name": data.site.siteMetadata.webdev.sebelas.postgresql.name, "percent": data.site.siteMetadata.webdev.sebelas.postgresql.value, "color": data.site.siteMetadata.webdev.sebelas.postgresql.color },
 	]
 
 	

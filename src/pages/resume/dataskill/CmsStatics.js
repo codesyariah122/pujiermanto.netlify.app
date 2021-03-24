@@ -65,7 +65,8 @@ const CmsStatics = () => {
 
 		{ "name": data.site.siteMetadata.webdev.sembilan.gatsby.name, "percent": data.site.siteMetadata.webdev.sembilan.gatsby.value, "color": data.site.siteMetadata.webdev.sembilan.gatsby.color },
 
-		{ "name": data.site.siteMetadata.webdev.sembilan.next.name, "percent": data.site.siteMetadata.webdev.sembilan.next.value, "color": data.site.siteMetadata.webdev.sembilan.next.color }
+		{ "name": data.site.siteMetadata.webdev.sembilan.next.name, "percent": data.site.siteMetadata.webdev.sembilan.next.value, "color": data.site.siteMetadata.webdev.sembilan.next.color },
+		{ "name": data.site.siteMetadata.webdev.sembilan.jekyll.name, "percent": data.site.siteMetadata.webdev.sembilan.jekyll.value, "color": data.site.siteMetadata.webdev.sembilan.jekyll.color }
 	]
 
 	

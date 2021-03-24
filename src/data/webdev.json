@@ -259,7 +259,7 @@
     "color": "red"
   },
   "postgresql": {
-    "name": "Postgre sQl",
+    "name": "Postgre Sql",
     "value": 80,
     "color": "red"
   }
