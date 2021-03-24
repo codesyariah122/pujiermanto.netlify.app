@@ -1,6 +1,6 @@
 import React from 'react'
 import {graphql, useStaticQuery } from 'gatsby'
-import Artwork from './artwork'
+import Artwork from './Artwork'
 
 const Hero = () => {
 

@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layouts/layout"
 import '../styles/hero.scss'
-import Hero from './about/hero'
-import BlogList from './about/bloglist'
+import Hero from './about/Hero'
+import BlogList from './about/BlogList'
 
 const AboutPage = () => {
 
@@ -18,6 +18,7 @@ const AboutPage = () => {
           <section className="project">
               <BlogList/>
           </section>
+
         </Layout>
     </>
   )

@@ -46,19 +46,19 @@ const ProfileGithub = () => {
 					</li>
 				</ul>
 				<hr/>
-				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/0-profile-details.svg"  target="_blank">
+				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/0-profile-details.svg"  target="_blank" rel="noreferrer">
 					<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/0-profile-details.svg" alt="profile-card" className="responsive"/>
 				</a>
 				<br/>
 				<br/>
 
-				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/1-repos-per-language.svg" target="_blank">
+				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/1-repos-per-language.svg" target="_blank" rel="noreferrer">
 					<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/1-repos-per-language.svg" alt="profile-language" className="responsive"/>
 				</a>
 				<br/>
 				<br/>
 
-				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/3-stats.svg" target="_blank">
+				<a href="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/3-stats.svg" target="_blank" rel="noreferrer">
 					<img src="https://raw.githubusercontent.com/codesyariah122/codesyariah122/00b160c14fe54d58bc6ae7ca3459a4b4bec15c20/profile-summary-card-output/dracula/3-stats.svg" alt="profile-stats" className="responsive"/>
 				</a>
 				<br/>

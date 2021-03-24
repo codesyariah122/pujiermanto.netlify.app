@@ -17,6 +17,8 @@ const Contact = () => {
                 <h5>Kirim pesan kamu disini, melalui kolom contact form dibawah ini</h5>
               <ContactForm/>
           </section>
+
+            {/*<Map title="My Location" lat="-6.92170" lng="107.60643"/>*/}
         </Layout>
     )
 }

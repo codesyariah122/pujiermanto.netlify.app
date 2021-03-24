@@ -114,6 +114,20 @@ footer {
 	margin-bottom: 2rem;
 }
 
+.location{
+	position: absolute;
+	padding: 5em;
+	width:100%;
+	align-items: center;
+	margin-left: .1rem;
+	// left:8.5%;
+	height: auto;
+	overflow: hidden;
+	scroll-snap-align: start;
+	margin-top: 50rem;
+	margin-bottom: 2rem;
+}
+
 .post{
 	margin-left: 1.5rem;
 	width: 90%;

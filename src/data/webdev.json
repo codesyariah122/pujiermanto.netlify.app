@@ -8,19 +8,19 @@
     
     "node":{
       "name": "Node.JS",
-      "value": 80,
+      "value": 95,
       "color": "red"
     },
     
     "python": {
       "name": "Python Programming",
-      "value": 75,
+      "value": 80,
       "color": "orange"
     },
     
     "ruby": {
       "name": "Ruby Programming",
-      "value": 65,
+      "value": 75,
       "color": "orange"
     }
 },
@@ -33,7 +33,7 @@
   },
   "preprocessor": {
     "name": "SASS & SCSS",
-    "value": 95,
+    "value": 100,
     "color": "red"
   }
 },
@@ -51,7 +51,7 @@
   },
   "express": {
     "name": "Express.js",
-    "value": 75,
+    "value": 90,
     "color": "orange"
   },
   "django": {
@@ -92,7 +92,7 @@
 "lima": {
   "react": {
     "name": "React.js",
-    "value": 85,
+    "value": 100,
     "color": "red"
   },
   "vue": {
@@ -179,7 +179,7 @@
 "sembilan": {
   "wordpress": {
     "name": "Wordpress",
-    "value": 97,
+    "value": 100,
     "color": "red"
   },
   "drupal": {
@@ -194,7 +194,7 @@
   },
   "woo": {
     "name": "WooCommers",
-    "value": 50,
+    "value": 100,
     "color": "teal"
   },
   "gatsby": {
@@ -204,7 +204,7 @@
   },
    "next": {
     "name": "Next.js",
-    "value": 75,
+    "value": 100,
     "color": "red"
   },
   "jekyll": {
@@ -255,13 +255,13 @@
   },
   "mongodb": {
     "name": "Mongo DB",
-    "value": 55,
-    "color": "orange"
+    "value": 95,
+    "color": "red"
   },
-  "nosql": {
-    "name": "NosQl DB",
-    "value": 55,
-    "color": "orange"
+  "postgresql": {
+    "name": "Postgre sQl",
+    "value": 80,
+    "color": "red"
   }
 }
 }
