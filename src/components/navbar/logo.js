@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 // import { Link, useStaticQuery, graphql } from 'gatsby'
 // import ImgLogo from '../../images/anjing.png'
-import ImgLogo from '../../images/jurasic.gif'
+import ImgLogo from '../../images/anjing.png'
 
 
 const LogoWrap = styled.div`

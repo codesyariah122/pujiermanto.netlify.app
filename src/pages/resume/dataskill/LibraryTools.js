@@ -37,6 +37,11 @@ const LibraryTools = () => {
 		          	value
 		          	color
 		          }
+			  webpack{
+			  	name
+				value
+				color
+			  }
 		        }
 		      }
 		    }
@@ -53,7 +58,9 @@ const LibraryTools = () => {
 
 		{ "name": data.site.siteMetadata.webdev.delapan.aos.name, "percent": data.site.siteMetadata.webdev.delapan.aos.value, "color": data.site.siteMetadata.webdev.delapan.aos.color },
 
-		{ "name": data.site.siteMetadata.webdev.delapan.tailwind.name, "percent": data.site.siteMetadata.webdev.delapan.tailwind.value, "color": data.site.siteMetadata.webdev.delapan.tailwind.color  }
+		{ "name": data.site.siteMetadata.webdev.delapan.tailwind.name, "percent": data.site.siteMetadata.webdev.delapan.tailwind.value, "color": data.site.siteMetadata.webdev.delapan.tailwind.color  },
+		
+		{ "name": data.site.siteMetadata.webdev.delapan.webpack.name, "percent": data.site.siteMetadata.webdev.delapan.webpack.value, "color": data.site.siteMetadata.webdev.delapan.webpack.color  }
 	]
 
 	

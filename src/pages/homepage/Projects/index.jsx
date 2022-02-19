@@ -96,7 +96,7 @@ const {
       query{
         github {
           viewer {
-            repositories(first: 15, orderBy: { field: STARGAZERS, direction: DESC }) {
+            repositories(first: 25, orderBy: { field: STARGAZERS, direction: DESC }) {
               edges {
                 node {
                   id
@@ -108,7 +108,7 @@ const {
                     totalCount
                   }
                   forkCount
-                  languages(first: 3) {
+                  languages(first: 4) {
                     nodes {
                       id,
                       name

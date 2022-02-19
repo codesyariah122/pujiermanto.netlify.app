@@ -5,26 +5,26 @@
         "value": 100,
         "color": "red"
     },
-    
+
     "node":{
       "name": "Node.JS",
       "value": 95,
       "color": "red"
     },
-    
+
     "python": {
       "name": "Python Programming",
       "value": 80,
       "color": "orange"
     },
-    
+
     "ruby": {
       "name": "Ruby Programming",
       "value": 75,
       "color": "orange"
     }
 },
-        
+
 "dua": {
   "markup":{
     "name": "(HTML|HTML5, CSS|CSS3, Javascript)",
@@ -37,11 +37,11 @@
     "color": "red"
   }
 },
-        
+
 "tiga": {
   "laravel": {
     "name": "Laravel",
-    "value": 95,
+    "value": 97,
     "color": "red"
   },
   "codeigniter": {
@@ -51,7 +51,7 @@
   },
   "express": {
     "name": "Express.js",
-    "value": 90,
+    "value": 100,
     "color": "orange"
   },
   "django": {
@@ -96,8 +96,8 @@
     "color": "red"
   },
   "vue": {
-    "name": "Vue.js",
-    "value": 95,
+    "name": "Vue.js + Vuex Store",
+    "value": 100,
     "color": "red"
   },
   "angular": {
@@ -173,6 +173,11 @@
     "name": "Tailwind CSS",
     "value": 50,
     "color": "teal"
+  },
+  "webpack": {
+    "name": "WebPack.JS",
+    "value": 95,
+    "color": "red"
   }
 },
 
@@ -204,6 +209,11 @@
   },
    "next": {
     "name": "Next.js",
+    "value": 100,
+    "color": "red"
+  },
+  "nuxt": {
+    "name": "Nuxt.js",
     "value": 100,
     "color": "red"
   },
@@ -244,9 +254,19 @@
     "name": "Rest API",
     "value": 90,
     "color": "red"
+  },
+  "handlebars": {
+      "name": "HandleBars",
+      "value": 100,
+      "color": "red"
+  },
+  "blade": {
+      "name": "Blade Template",
+      "value": 100,
+      "color": "red"
   }
 },
-        
+
 "sebelas": {
   "mysql": {
     "name": "MysQl Database | Maria DB",
@@ -264,4 +284,5 @@
     "color": "red"
   }
 }
+
 }

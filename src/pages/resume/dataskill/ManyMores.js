@@ -37,6 +37,21 @@ const ManyMores = () => {
 		          	value
 		          	color
 		          }
+			  restapi {
+			  	name
+				value
+				color
+			  }
+			  handlebars {
+			  	name
+				value
+				color
+			  }
+			  blade {
+			  	name
+				value
+				color
+			  }
 		        }
 		      }
 		    }
@@ -53,10 +68,20 @@ const ManyMores = () => {
 
 		{ "name": data.site.siteMetadata.webdev.sepuluh.aws.name, "percent": data.site.siteMetadata.webdev.sepuluh.aws.value, "color": data.site.siteMetadata.webdev.sepuluh.aws.color },
 
-		{ "name": data.site.siteMetadata.webdev.sepuluh.graphql.name, "percent": data.site.siteMetadata.webdev.sepuluh.graphql.value, "color": data.site.siteMetadata.webdev.sepuluh.graphql.color }
+		{ "name": data.site.siteMetadata.webdev.sepuluh.graphql.name, "percent": data.site.siteMetadata.webdev.sepuluh.graphql.value, "color": data.site.siteMetadata.webdev.sepuluh.graphql.color },
+
+		{ "name": data.site.siteMetadata.webdev.sepuluh.restapi.name, "percent": data.site.siteMetadata.webdev.sepuluh.restapi.value, "color": data.site.siteMetadata.webdev.sepuluh.restapi.color },
+
+
+		{ "name": data.site.siteMetadata.webdev.sepuluh.handlebars.name, "percent": data.site.siteMetadata.webdev.sepuluh.handlebars.value, "color": data.site.siteMetadata.webdev.sepuluh.handlebars.color },
+
+
+		{ "name": data.site.siteMetadata.webdev.sepuluh.blade.name, "percent": data.site.siteMetadata.webdev.sepuluh.blade.value, "color": data.site.siteMetadata.webdev.sepuluh.blade.color },
+
+
 	]
 
-	
+
 	return (
 		<>
 		<p><b><u>{data.site.siteMetadata.skill.sepuluh}</u></b></p>
@@ -80,4 +105,4 @@ const ManyMores = () => {
 	)
 }
 
-export default ManyMores 
+export default ManyMores

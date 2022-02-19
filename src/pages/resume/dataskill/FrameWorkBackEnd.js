@@ -1,38 +1,33 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 
-const FrameWorkBackEnd = () => {
+const DesignTools = () => {
 
 	const data = useStaticQuery(graphql`
 		query {
 		  site {
 		    siteMetadata {
 		      skill {
-		        tiga
+		        enam
 		      }
 		      webdev {
-		        tiga {
-		          laravel{
+		        enam {
+		          photoshop {
 		            name
 		            value
 		            color
 		          }
-		          codeigniter {
+		          corel {
 		            name
 		            value
 		            color
 		          }
-		          express {
+		          figma {
 		            name
 		            value
 		            color
 		          }
-		          django {
-		            name
-		            value
-		            color
-		          }
-		          rails {
+		          adobexd {
 		          	name
 		          	value
 		          	color
@@ -45,21 +40,19 @@ const FrameWorkBackEnd = () => {
 	`)
 
 	const fetchings = [
-		{"name":data.site.siteMetadata.webdev.tiga.laravel.name, "percent": data.site.siteMetadata.webdev.tiga.laravel.value, "color": data.site.siteMetadata.webdev.tiga.laravel.color },
+		{"name":data.site.siteMetadata.webdev.enam.photoshop.name, "percent": data.site.siteMetadata.webdev.enam.photoshop.value, "color": data.site.siteMetadata.webdev.enam.photoshop.color },
 
-		{ "name": data.site.siteMetadata.webdev.tiga.codeigniter.name, "percent": data.site.siteMetadata.webdev.tiga.codeigniter.value, "color": data.site.siteMetadata.webdev.tiga.codeigniter.color },
+		{ "name": data.site.siteMetadata.webdev.enam.corel.name, "percent": data.site.siteMetadata.webdev.enam.corel.value, "color": data.site.siteMetadata.webdev.enam.corel.color },
 
-		{ "name": data.site.siteMetadata.webdev.tiga.express.name, "percent": data.site.siteMetadata.webdev.tiga.express.value, "color": data.site.siteMetadata.webdev.tiga.express.color },
-		
-		{ "name":data.site.siteMetadata.webdev.tiga.django.name, "percent": data.site.siteMetadata.webdev.tiga.django.value, "color": data.site.siteMetadata.webdev.tiga.django.color },
+		{ "name": data.site.siteMetadata.webdev.enam.figma.name, "percent": data.site.siteMetadata.webdev.enam.figma.value, "color": data.site.siteMetadata.webdev.enam.figma.color },
 
-		{ "name":data.site.siteMetadata.webdev.tiga.rails.name, "percent": data.site.siteMetadata.webdev.tiga.rails.value, "color": data.site.siteMetadata.webdev.tiga.rails.color }
+		{ "name": data.site.siteMetadata.webdev.enam.adobexd.name, "percent": data.site.siteMetadata.webdev.enam.adobexd.value, "color": data.site.siteMetadata.webdev.enam.adobexd.color }
 	]
 
 	
 	return (
 		<>
-		<p><b><u>{data.site.siteMetadata.skill.tiga}</u></b></p>
+		<p><b><u>{data.site.siteMetadata.skill.enam}</u></b></p>
 		{
 			fetchings.map(fetch => (
 				<>
@@ -80,4 +73,4 @@ const FrameWorkBackEnd = () => {
 	)
 }
 
-export default FrameWorkBackEnd
+export default DesignTools

@@ -1,5 +1,9 @@
 {
-	"satu": "Double Degre",
+        "satu": "Senior High School",
         "dua": "Junior Designer",
-        "tiga": "Senior High School"
+        "tiga": "Responsive Web Design Full Course (300Hours)",
+        "empat": "Javascript Algorithms & Data Structure",
+        "lima": "PHP Web Programming Advance",
+        "enam": "Python, PHP, Git",
+        "tujuh": "Junior Web Developer"
 }
