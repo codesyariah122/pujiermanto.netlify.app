@@ -42,8 +42,8 @@ module.exports = {
       city: "Bandung - West Java",
       country: "Indonesia",
       hoby: {
-        satu: "Content Writer, ",
-        dua: "Web Developer dan ",
+        satu: "Frontend Developer di Prodibee Indonesia, Content Writer di codesyariah122.github.io, ",
+        dua: "Web Developer, dan ",
         tiga: "Penggiat Informasi Teknologi",
       },
       working: {
